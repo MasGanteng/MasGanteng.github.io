@@ -1,7 +1,7 @@
 export const navs = [
   {
     navText: "Promo",
-    navLink: "/pages/promo.html",
+    navLink: "/pages/promo",
     navActive: "active",
   },
   {

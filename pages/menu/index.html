@@ -23,6 +23,50 @@
         </header>
 
         <main>
+            <div class="container">
+                <div class="main-products">
+                    <aside class="products-filter-side">
+                        <ul>
+                            <li>Dear Butter Croffle</li>
+                            <li>Wafle</li>
+                            <li>Croissant</li>
+                        </ul>
+                    </aside>
+
+                    <section class="products-lists">
+                        <div class="products-lists-filter">
+                            <div class="filter">
+                                <fieldset>
+                                    <legend>Sort by</legend>
+                                    <select name="" id="">
+                                        <option value="Best Seller">Best Seller</option>
+                                        <option value="New Items">New Items</option>
+                                    </select>
+                                </fieldset>
+                                <div class="search">
+                                    <input type="search" name="" id="">
+                                </div>
+                            </div>
+                            <div class="display">
+                                <a class="active">
+                                    <svg class="icon">
+                                        <use xlink:href="/assets/images/svg/sprite.svg#display-list"></use>
+                                    </svg>
+                                </a>
+                                <a>
+                                    <svg class="icon">
+                                        <use xlink:href="/assets/images/svg/sprite.svg#display-grid"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="products-lists-grid">
+                            <ul class="grids"></ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </main>
 
         <footer>
@@ -72,6 +116,8 @@
     </div>
 
     <script type="module">
+        import {menuList} from '/components/menu/index.js'
+        menuList()
     </script>
 </body>
 

@@ -38,10 +38,10 @@ img {
   height: auto;
   vertical-align: middle;
 }
-/* ul {
+ul {
   list-style-type: none;
   padding-inline-start: 0;
-} */
+}
 figure {
   position: relative;
   height: 100%;
@@ -88,6 +88,7 @@ figure img {
 .job-description {
   line-height: 2;
 }
+.job-description ul{list-style-type: initial;}
 
 /* Button */
 .btn {
@@ -97,6 +98,7 @@ figure img {
   font-weight: 600;
   text-decoration: none;
   border: none;
+  cursor: pointer;
   /* overflow: hidden; */
   box-shadow: 2px 2px 6px rgb(0 0 0 / 10%);
   transition: all 0.2s ease;
@@ -147,6 +149,7 @@ figure img {
 }
 .main-header img {
   width: 10rem;
+  mix-blend-mode: multiply;
 }
 .promo-month,
 .career-path,
@@ -180,7 +183,6 @@ header {
 }
 .navbar ul {
   display: inherit;
-  list-style-type: none;
 }
 .navbar li {
   padding: 0.625rem 1.25rem;
