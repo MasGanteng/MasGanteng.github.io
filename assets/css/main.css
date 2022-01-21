@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,700&display=swap");
+@font-face {
+  font-family: plusJakartaSans;
+  src: url(/assets/fonts/PlusJakartaSans-2.6/webfonts/PlusJakartaSans-Regular.woff);
+}
+
+/* Table of Contents */
+/* Button, Global, Header, Promo Month, Career Path, Hero, Brand Story, Store Features */
+
+:root {
+  --color-light: hsl(0, 0%, 96%);
+  --color-dark: hsl(0, 0%, 20%);
+  --color-base: hsl(44, 52%, 92%);
+  --color-primary: hsl(205, 41%, 25%);
+  --color-secondary: hsl(35, 32%, 55%);
+  --color-danger: hsl(0, 49%, 51%);
+  --font-family-title: "Cormorant Garamond", serif;
+  --font-family-content: "plusJakartaSans", sans-serif;
+  --font-base: 16px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  font-size: var(--font-base);
+  line-height: 1.5;
+  color: var(--color-dark);
+}
+body {
+  background-color: var(--color-light);
+}
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+/* ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+} */
+figure {
+  position: relative;
+  height: 100%;
+}
+figure img {
+  height: inherit;
+  object-fit: cover;
+}
+.m-auto {
+  margin: auto !important;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--font-family-title);
+}
+.content {
+  font-family: var(--font-family-content);
+}
+
+.flex {
+  display: flex !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.justify-start {
+  justify-content: flex-start !important;
+}
+.justify-end {
+  justify-content: flex-end !important;
+}
+.icon {
+  --size: 1rem;
+  width: var(--size);
+  height: var(--size);
+}
+
+.job-description {
+  line-height: 2;
+}
+
+/* Button */
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  /* overflow: hidden; */
+  box-shadow: 2px 2px 6px rgb(0 0 0 / 10%);
+  transition: all 0.2s ease;
+}
+/* .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: inherit;
+  background-color: #c04545;
+  z-index: 1;
+}
+.btn:hover::before {
+  transform: translateX(0);
+} */
+.btn-pill {
+  border-radius: 3rem;
+}
+.btn-primary {
+  color: white;
+  background-color: var(--color-secondary);
+}
+.btn-light {
+  color: var(--color-dark);
+  background-color: white;
+}
+.btn-outline-light {
+  color: var(--color-primary);
+  border: 1px solid currentColor;
+}
+.btn-outline-light:hover,
+.btn-primary:hover,
+.btn-light:hover {
+  color: white;
+  background-color: var(--color-danger);
+}
+/* End Button */
+
+/* Global */
+.main-header {
+  font-family: var(--font-family-title);
+  margin-bottom: 6rem;
+  text-align: center;
+}
+.main-header img {
+  width: 10rem;
+}
+.promo-month,
+.career-path,
+.job-description {
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+}
+.see-more {
+  display: flex;
+  justify-content: center;
+}
+.grids {
+  margin-bottom: 3rem;
+}
+/* End Global */
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 0px 1px 30px rgb(0 0 0 / 25%);
+  z-index: 100;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9rem;
+  font-family: var(--font-family-title);
+}
+.navbar ul {
+  display: inherit;
+  list-style-type: none;
+}
+.navbar li {
+  padding: 0.625rem 1.25rem;
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: var(--color-dark);
+}
+.navbar a.active {
+  font-style: italic;
+  font-weight: 700;
+}
+.navbar a.active,
+.navbar a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+/* End Header */
+
+/* Hero */
+.hero {
+  height: 90vh;
+  color: var(--color-light);
+}
+.hero figure {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero img {
+  height: inherit;
+}
+.hero figcaption {
+  position: absolute;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+.hero .title {
+  font-size: 3rem;
+  max-width: 60%;
+  margin-bottom: 1.5rem;
+}
+.hero .content {
+  font-size: 1.2rem;
+  max-width: 45%;
+  margin-bottom: 1.5rem;
+}
+/* End Hero */
+
+/* Brand Story */
+.brand-story {
+  height: 100vh;
+  background-color: var(--color-secondary);
+  padding: 15vmin;
+}
+.brand-story figure {
+  display: flex;
+}
+.brand-story img,
+.brand-story figcaption {
+  width: 50%;
+}
+.brand-story figcaption {
+  padding: 2rem 3rem;
+}
+.brand-story .title,
+.brand-story .content {
+  margin-bottom: 1.5rem;
+}
+/* End Brand Story */
+
+/* Store Features */
+.store-features li {
+  height: calc(250vh / 3);
+  color: white;
+}
+.store-features li + li {
+  margin-top: 2rem;
+}
+.store-features figcaption {
+  position: absolute;
+  top: 5rem;
+  left: 8rem;
+  max-width: 30rem;
+}
+.store-features .arrow {
+  font-size: 3rem;
+}
+.store-features .subtitle {
+  margin-bottom: 2.5rem;
+}
+/* End Store Features */
+
+/* Promo */
+.promo-month .promo-lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.25rem;
+}
+.promo-lists figure {
+  text-align: center;
+}
+.promo-lists figure > img {
+  aspect-ratio: 1/1;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+.promo-lists .title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+/* End Promo */
+
+/* Career */
+.presents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  text-align: left;
+}
+.presents img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+.career-path ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.career-path li {
+  padding: 2rem;
+  background-color: white;
+  border: 1px solid currentColor;
+}
+.career-path .title {
+  margin-bottom: 1rem;
+}
+.career-path .content {
+  margin-bottom: 1.5rem;
+}
+.career-path .btn {
+  font-size: 0.75rem;
+}
+/* End Career */
+
+/* Footer */
+footer .contact {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  color: var(--color-light);
+  background-color: var(--color-primary);
+  padding-top: 2.5rem;
+  padding-bottom: 4.5rem;
+  text-align: center;
+}
+footer .contact .title {
+  font-size: 4rem;
+}
+footer .contact .content {
+  max-width: 55%;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+footer .newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-light);
+  background-color: var(--color-secondary);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+footer input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid currentColor;
+}
+footer .navigation {
+  background-color: var(--color-base);
+}
+/* End Footer */
+
+@media screen and (min-width: 1441px) and (max-width: 1980px) {
+  :root {
+    --font-base: 20px;
+  }
+}
