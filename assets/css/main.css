@@ -34,6 +34,7 @@ html {
 body {
   background-color: var(--color-light);
 }
+hr{margin-top: 1rem;margin-bottom: 1rem;}
 img,
 svg {
   width: 100%;
@@ -431,6 +432,7 @@ header.home .navbar a {
 /* endMenu Lists */
 
 /* Footer */
+footer a{text-decoration: none;color: inherit;}
 footer .contact {
   color: var(--color-light);
   background-color: var(--color-primary);
@@ -471,16 +473,14 @@ footer input {
 }
 footer .navigation {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 footer .navigation .footer-content {
   display: grid;
   grid-template-columns: 1fr 4fr;
   gap: 3rem;
-  border-bottom: 1px solid #000;
 }
-footer .navigation,
-footer .copyright {
+footer .navigation{
   display: flex;
   background-color: var(--color-base);
 }
@@ -496,6 +496,9 @@ footer .copyright {
   margin-left: 1rem;
   border-left: 1px solid var(--color-primary);
   padding-left: 1rem;
+}
+footer .copyright{
+  text-align: center;
 }
 /* endFooter */
 
