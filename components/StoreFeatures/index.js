@@ -7,15 +7,16 @@ export const storeFeat = () => {
 
     store.innerHTML += `
         <li>
-            <figure>
-                <img src="${image}" alt="${title}" />
-                <figcaption>
-                    <p class="title">${title}</p>
-                    <span class="arrow">&#10230;</span>
-                    <p class="subtitle">${subtitle}</p>
-                    <a href="${buttonLink}" class="btn btn-light btn-pill">${buttonText}</a>
-                </figcaption>
-            </figure>
+          <figure style="background-image:url(${image})">
+            <div class="container">
+              <figcaption>
+                  <p class="title">${title}</p>
+                  <span class="arrow">&#10230;</span>
+                  <p class="subtitle">${subtitle}</p>
+                  <a href="${buttonLink}" class="btn btn-light btn-pill">${buttonText}</a>
+              </figcaption>
+            </div>
+          </figure>
         </li>
     `;
   });

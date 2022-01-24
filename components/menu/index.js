@@ -7,14 +7,18 @@ export const menuList = () => {
     
     menuGrid.innerHTML += `
         <li>
+          <figure>
             <img src="${image}" alt="${title}" />
-            <p class="content">${title}</p>
-            <p><strong>Rp ${price}</strong></p>
-            <a 
+            <figcaption>
+              <p class="content">${title}</p>
+              <p><strong>Rp ${price}</strong></p>
+              <a 
                 href="${link}"
                 class="btn btn-outline-light btn-pill"
                 >See Details</a
-            >
+              >
+            </figcaption>
+          </figure>
         </li>    
     `;
   });

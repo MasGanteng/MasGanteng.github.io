@@ -15,7 +15,7 @@
 
 <body>
     <div id="app">
-        <header>
+        <header class="home">
             <nav class="navbar container">
                 <a href="/">
                     <img src="/assets/images/logo/logo.png" alt="">
@@ -23,6 +23,7 @@
                 <ul></ul>
             </nav>
         </header>
+        
         
         <main>
             <section class="hero">
@@ -69,7 +70,7 @@
             </section>
 
             <section class="brand-story">
-                <figure>
+                <figure class="container">
                     <img src="https://source.unsplash.com/random/duck" alt="">
                     <figcaption>
                         <p class="title">Our Brand Story</p>
@@ -92,51 +93,9 @@
             </section>
         </main>
 
+        <footer class="my-footer"></footer>
+
         <!-- <my-counter></my-counter> -->
-        <footer>
-            <section class="contact">
-                <p class="title">Let's Become Our DB's Group</p>
-                <p class="content">Be part of DB Group Family, Growing together advancing technology enabled F&B industry in Indonesia</p>
-                <a href="" class="btn btn-light btn-pill"><span>Contact Now</span></a>
-            </section>
-            
-            <section class="newsletter">
-                <p>Wanna see our latest promo and deals</p>
-                <form action="">
-                    <label for="">Enter your email address here</label>
-                    <input type="email" name="" id="">
-                    <button class="btn btn-light btn-pill">Subscribe Newsletter</button>
-                </form>
-            </section>
-            
-            <section class="navigation">
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Menu</a></li>
-                        <li><a href="">Stores</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                    <div>
-                        <p>Shop Partnership</p>
-                        <ul>
-                            <li><img src="" alt=""></li>
-                            <li><img src="" alt=""></li>
-                            <li><img src="" alt=""></li>
-                            <li><img src="" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </footer>
         <!-- <my-footer>
             <span slot="copyright">2021</span>
         </my-footer> -->
@@ -157,6 +116,17 @@
                 el: ".swiper-pagination"
             }
         });
+
+        window.onscroll = () => scrollNav();
+
+        const scrollNav = () => {
+        if (
+            document.body.scrollTop > 350 ||
+            document.documentElement.scrollTop > 350
+        ) {
+            document.querySelector("header.home").classList.add('active')
+        }
+        };
     </script>
 </body>
 

@@ -17,6 +17,7 @@
   --font-family-title: "Cormorant Garamond", serif;
   --font-family-content: "plusJakartaSans", sans-serif;
   --font-base: 16px;
+  --container: 1200px;
 }
 * {
   padding: 0;
@@ -33,7 +34,8 @@ html {
 body {
   background-color: var(--color-light);
 }
-img {
+img,
+svg {
   width: 100%;
   height: auto;
   vertical-align: middle;
@@ -54,7 +56,7 @@ figure img {
   margin: auto !important;
 }
 .container {
-  max-width: 1200px;
+  max-width: var(--container);
   margin-left: auto;
   margin-right: auto;
 }
@@ -88,13 +90,16 @@ figure img {
 .job-description {
   line-height: 2;
 }
-.job-description ul{list-style-type: initial;}
+.job-description ul {
+  list-style-type: initial;
+}
 
 /* Button */
 .btn {
+  --padding: 0.75rem;
   position: relative;
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: var(--padding) calc(var(--padding) * 2);
   font-weight: 600;
   text-decoration: none;
   border: none;
@@ -119,7 +124,7 @@ figure img {
   transform: translateX(0);
 } */
 .btn-pill {
-  border-radius: 3rem;
+  border-radius: calc(var(--padding) * 3);
 }
 .btn-primary {
   color: white;
@@ -139,7 +144,7 @@ figure img {
   color: white;
   background-color: var(--color-danger);
 }
-/* End Button */
+/* endButton */
 
 /* Global */
 .main-header {
@@ -164,21 +169,29 @@ figure img {
 .grids {
   margin-bottom: 3rem;
 }
-/* End Global */
+/* endGlobal */
 
 /* Header */
 header {
+  --height: 9rem;
   position: sticky;
   top: 0;
+  display: flex;
+  align-items: center;
+  height: var(--height);
   background-color: white;
   box-shadow: 0px 1px 30px rgb(0 0 0 / 25%);
+  transition: all 0.3s ease-in-out;
   z-index: 100;
+}
+header.scrolled {
+  --height: 6rem;
 }
 .navbar {
   display: flex;
+  flex: 1 0 auto;
   align-items: center;
   justify-content: space-between;
-  height: 9rem;
   font-family: var(--font-family-title);
 }
 .navbar ul {
@@ -201,7 +214,21 @@ header {
   text-decoration: underline;
   text-underline-offset: 1rem;
 }
-/* End Header */
+header.home {
+  /* position: absolute; */
+  background-color: transparent;
+  box-shadow: none;
+  width: 100%;
+  margin-top: -6rem;
+  height: 4rem;
+}
+header.home.active {
+  background: cornflowerblue;
+}
+header.home .navbar a {
+  color: var(--color-light);
+}
+/* endHeader */
 
 /* Hero */
 .hero {
@@ -233,13 +260,14 @@ header {
   max-width: 45%;
   margin-bottom: 1.5rem;
 }
-/* End Hero */
+/* endHero */
 
 /* Brand Story */
 .brand-story {
   height: 100vh;
   background-color: var(--color-secondary);
-  padding: 15vmin;
+  padding-top: 15vmin;
+  padding-bottom: 15vmin;
 }
 .brand-story figure {
   display: flex;
@@ -255,7 +283,7 @@ header {
 .brand-story .content {
   margin-bottom: 1.5rem;
 }
-/* End Brand Story */
+/* endBrand Story */
 
 /* Store Features */
 .store-features li {
@@ -265,10 +293,14 @@ header {
 .store-features li + li {
   margin-top: 2rem;
 }
+.store-features figure {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .store-features figcaption {
-  position: absolute;
+  position: relative;
   top: 5rem;
-  left: 8rem;
   max-width: 30rem;
 }
 .store-features .arrow {
@@ -277,7 +309,7 @@ header {
 .store-features .subtitle {
   margin-bottom: 2.5rem;
 }
-/* End Store Features */
+/* endStore Features */
 
 /* Promo */
 .promo-month .promo-lists {
@@ -297,7 +329,7 @@ header {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
-/* End Promo */
+/* endPromo */
 
 /* Career */
 .presents {
@@ -330,35 +362,105 @@ header {
 .career-path .btn {
   font-size: 0.75rem;
 }
-/* End Career */
+/* endCareer */
+
+/* Main Products */
+.main-products {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+}
+.main-products aside {
+  width: 20rem;
+}
+.products-lists-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.products-lists-filter .filter {
+  display: flex;
+}
+/* endMain Products */
+
+/* Menu Lists */
+[data-toggle] {
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+[data-toggle] + [data-toggle] {
+  margin-left: 0.25rem;
+}
+[data-toggle].active {
+  color: var(--color-light);
+  background-color: rgb(150, 150, 150);
+  cursor: default;
+}
+.products-lists-grid .display-list,
+.products-lists-grid .display-grid {
+  display: grid;
+}
+.products-lists-grid .display-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.display-grid img {
+  height: auto;
+  aspect-ratio: 1/1;
+}
+.display-list li + li {
+  margin-top: 2rem;
+}
+.display-list figure {
+  display: flex;
+  gap: 2rem;
+}
+.display-list img {
+  width: 8rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  height: 100%;
+}
+.display-grid li {
+  aspect-ratio: 2/3;
+}
+/* endMenu Lists */
 
 /* Footer */
 footer .contact {
-  display: grid;
-  place-items: center;
-  gap: 1rem;
   color: var(--color-light);
   background-color: var(--color-primary);
   padding-top: 2.5rem;
   padding-bottom: 4.5rem;
+}
+footer .contact .footer-content {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
   text-align: center;
 }
 footer .contact .title {
   font-size: 4rem;
 }
 footer .contact .content {
-  max-width: 55%;
+  max-width: 70%;
   line-height: 2.5rem;
   font-size: 1.5rem;
 }
 footer .newsletter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: var(--color-light);
   background-color: var(--color-secondary);
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+footer .newsletter .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer input {
   outline: none;
@@ -368,12 +470,38 @@ footer input {
   border-bottom: 1px solid currentColor;
 }
 footer .navigation {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+footer .navigation .footer-content {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 3rem;
+  border-bottom: 1px solid #000;
+}
+footer .navigation,
+footer .copyright {
+  display: flex;
   background-color: var(--color-base);
 }
-/* End Footer */
+.footer-socmed,
+.footer-nav,
+.footer-partnership {
+  display: flex;
+}
+.footer-nav {
+  margin-bottom: 2rem;
+}
+.footer-nav li + li {
+  margin-left: 1rem;
+  border-left: 1px solid var(--color-primary);
+  padding-left: 1rem;
+}
+/* endFooter */
 
 @media screen and (min-width: 1441px) and (max-width: 1980px) {
   :root {
     --font-base: 20px;
+    --container: 1440px;
   }
 }

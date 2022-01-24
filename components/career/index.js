@@ -12,7 +12,7 @@ export const careerAble = () => {
                     <p class="title">${position}</p>
                     <p class="content">
                         <svg class="icon">
-                            <use xlink:href="/assets/images/svg/sprite.svg#Union"></use>
+                            <use xlink:href="/assets/images/svg/utility-sprite.svg#union"></use>
                         </svg>
                         <span>${location} - ${district}, ${city}</span>
                     </p>

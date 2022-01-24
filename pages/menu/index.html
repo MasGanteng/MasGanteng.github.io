@@ -27,9 +27,9 @@
                 <div class="main-products">
                     <aside class="products-filter-side">
                         <ul>
-                            <li>Dear Butter Croffle</li>
-                            <li>Wafle</li>
-                            <li>Croissant</li>
+                            <li><a href="">Croissant</a></li>
+                            <li><a href="">Dear Butter Croffle</a></li>
+                            <li><a href="">Wafle</a></li>
                         </ul>
                     </aside>
 
@@ -48,76 +48,56 @@
                                 </div>
                             </div>
                             <div class="display">
-                                <a class="active">
+                                <a class="active" data-toggle="toggle-grid">
                                     <svg class="icon">
-                                        <use xlink:href="/assets/images/svg/sprite.svg#display-list"></use>
+                                        <use xlink:href="/assets/images/svg/utility-sprite.svg#display-grid"></use>
                                     </svg>
                                 </a>
-                                <a>
+                                <a data-toggle="toggle-list">
                                     <svg class="icon">
-                                        <use xlink:href="/assets/images/svg/sprite.svg#display-grid"></use>
+                                        <use xlink:href="/assets/images/svg/utility-sprite.svg#display-list"></use>
                                     </svg>
                                 </a>
                             </div>
                         </div>
                         
                         <div class="products-lists-grid">
-                            <ul class="grids"></ul>
+                            <ul class="grids display-grid"></ul>
                         </div>
                     </section>
                 </div>
             </div>
         </main>
 
-        <footer>
-            <section class="contact">
-                <p class="title">Let's Become Our DB's Group</p>
-                <p class="content">Be part of DB Group Family, Growing together advancing technology enabled F&B
-                    industry in Indonesia</p>
-                <a href="" class="btn btn-light btn-pill"><span>Contact Now</span></a>
-            </section>
-
-            <section class="newsletter">
-                <p>Wanna see our latest promo and deals</p>
-                <form action="">
-                    <input type="email" name="" id="">
-                    <button class="btn btn-light btn-pill">Subscribe Newsletter</button>
-                </form>
-            </section>
-
-            <section class="navigation">
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Menu</a></li>
-                        <li><a href="">Stores</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                    <div>
-                        <p>Shop Partnership</p>
-                        <ul>
-                            <li><img src="" alt=""></li>
-                            <li><img src="" alt=""></li>
-                            <li><img src="" alt=""></li>
-                            <li><img src="" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </footer>
+        <footer class="my-footer"></footer>
     </div>
 
     <script type="module">
         import {menuList} from '/components/menu/index.js'
         menuList()
+
+        // const displayToggle = document.querySelectorAll('[data-toggle]')
+        const displayList = document.querySelector("[data-toggle='toggle-list']")
+        const displayGrid = document.querySelector("[data-toggle='toggle-grid']")
+        const display = document.querySelector('.products-lists-grid > ul')
+        // displayToggle.forEach(toggle => {
+        //     toggle.onclick=()=>{
+        //         toggle.classList.toggle('active')
+        //     }
+        // });
+        
+        displayGrid.onclick = () => {
+            display.classList.remove('display-list')
+            display.classList.add('display-grid')
+            displayGrid.classList.add('active')
+            displayList.classList.remove('active')
+        }
+        displayList.onclick = () => {
+            display.classList.add('display-list')
+            display.classList.remove('display-grid')
+            displayGrid.classList.remove('active')
+            displayList.classList.add('active')
+        }
     </script>
 </body>
 
