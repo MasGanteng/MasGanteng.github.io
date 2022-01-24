@@ -1,6 +1,6 @@
+const sourceBase = "/assets/images/svg/socmed-sprite.svg#";
 export const footerDesc =
   "DB’s Group is defined by our culture – one that embrace collaboration, agility, flexibility, constant improvement as well as tolerance to mistake.";
-const sourceBase = "/assets/images/svg/socmed-sprite.svg#";
 export const footerSocMed = [
   {
     src: sourceBase + "facebook",
@@ -34,10 +34,10 @@ export const footerPartnership = [
     src: sourceBase + "go-food",
   },
   {
-    src: sourceBase + "shopee-food",
+    src: sourceBase + "grab-food",
   },
   {
-    src: sourceBase + "grab-food",
+    src: sourceBase + "shopee-food",
   },
 ];
 export const copyright = "2022";

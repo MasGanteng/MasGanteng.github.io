@@ -216,24 +216,25 @@ header.scrolled {
   text-underline-offset: 1rem;
 }
 header.home {
-  /* position: absolute; */
   background-color: transparent;
   box-shadow: none;
-  width: 100%;
-  margin-top: -6rem;
-  height: 4rem;
+  margin-top: calc(var(--height) * -1);
 }
-header.home.active {
-  background: cornflowerblue;
+header.home.scrolled {
+  background: white;
+  box-shadow: 0px 1px 30px rgb(0 0 0 / 25%);
 }
 header.home .navbar a {
   color: var(--color-light);
+}
+header.home.scrolled .navbar a {
+  color: var(--color-dark);
 }
 /* endHeader */
 
 /* Hero */
 .hero {
-  height: 90vh;
+  height: 80vh;
   color: var(--color-light);
 }
 .hero figure {
@@ -262,6 +263,12 @@ header.home .navbar a {
   margin-bottom: 1.5rem;
 }
 /* endHero */
+
+/* Swiper */
+.swiper{
+  --swiper-theme-color: var(--color-light);
+}
+/* endSwiper */
 
 /* Brand Story */
 .brand-story {
@@ -292,7 +299,7 @@ header.home .navbar a {
   color: white;
 }
 .store-features li + li {
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 .store-features figure {
   background-size: cover;
@@ -330,6 +337,7 @@ header.home .navbar a {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
+.promo-lists figcaption{padding-bottom: 2rem;}
 /* endPromo */
 
 /* Career */
@@ -433,6 +441,7 @@ header.home .navbar a {
 
 /* Footer */
 footer a{text-decoration: none;color: inherit;}
+footer a:hover{color: var(--color-danger);}
 footer .contact {
   color: var(--color-light);
   background-color: var(--color-primary);
@@ -483,6 +492,9 @@ footer .navigation .footer-content {
 footer .navigation{
   display: flex;
   background-color: var(--color-base);
+}
+.footer-partnership svg{
+  max-width: 10rem;
 }
 .footer-socmed,
 .footer-nav,

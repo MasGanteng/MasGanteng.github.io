@@ -116,17 +116,6 @@
                 el: ".swiper-pagination"
             }
         });
-
-        window.onscroll = () => scrollNav();
-
-        const scrollNav = () => {
-        if (
-            document.body.scrollTop > 350 ||
-            document.documentElement.scrollTop > 350
-        ) {
-            document.querySelector("header.home").classList.add('active')
-        }
-        };
     </script>
 </body>
 
