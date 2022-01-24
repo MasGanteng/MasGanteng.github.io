@@ -30,7 +30,7 @@ export const myFooter = () => {
         <div class="container">
             <div class="top">
                 <div class="footer-content">
-                    <div>
+                    <div class="footer-about">
                         <img src="/assets/images/logo/logo.png" alt="logo">
                         <p>${footerDesc}</p>
                         <ul class="footer-socmed">
@@ -45,8 +45,8 @@ export const myFooter = () => {
                             `).join("")}
                         </ul>
                     </div>
-                    <div>
-                        <ul class="footer-nav">
+                    <div class="footer-nav">
+                        <ul>
                             ${footerNav.map(nav => `
                                 <li><a href="${nav.path}">${nav.text}</a></li>
                             `).join("")}
@@ -56,7 +56,7 @@ export const myFooter = () => {
                             <ul class="footer-partnership">
                                 ${footerPartnership.map(partner => `
                                     <li>
-                                        <svg>
+                                        <svg class="icon">
                                             <use xlink:href="${partner.src}"></use>
                                         </svg>
                                     </li>
@@ -68,7 +68,7 @@ export const myFooter = () => {
             </div>
             <hr />
             <div class="copyright">
-                <span>${copyright}</span>
+                <span>Copyright © ${copyright} DB’s Group</span>
             </div>
         </div>
     </section>

@@ -22,7 +22,7 @@ export const footerNav = [
   },
   {
     text: "Stores",
-    path: "#",
+    path: "/pages/outlets",
   },
   {
     text: "Contact",
@@ -34,10 +34,10 @@ export const footerPartnership = [
     src: sourceBase + "go-food",
   },
   {
-    src: sourceBase + "grab-food",
+    src: sourceBase + "shopee-food",
   },
   {
-    src: sourceBase + "shopee-food",
+    src: sourceBase + "grab-food",
   },
 ];
 export const copyright = "2022";

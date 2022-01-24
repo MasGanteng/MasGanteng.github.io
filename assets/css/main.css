@@ -34,7 +34,10 @@ html {
 body {
   background-color: var(--color-light);
 }
-hr{margin-top: 1rem;margin-bottom: 1rem;}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 img,
 svg {
   width: 100%;
@@ -265,7 +268,7 @@ header.home.scrolled .navbar a {
 /* endHero */
 
 /* Swiper */
-.swiper{
+.swiper {
   --swiper-theme-color: var(--color-light);
 }
 /* endSwiper */
@@ -337,7 +340,9 @@ header.home.scrolled .navbar a {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
-.promo-lists figcaption{padding-bottom: 2rem;}
+.promo-lists figcaption {
+  padding-bottom: 2rem;
+}
 /* endPromo */
 
 /* Career */
@@ -440,8 +445,13 @@ header.home.scrolled .navbar a {
 /* endMenu Lists */
 
 /* Footer */
-footer a{text-decoration: none;color: inherit;}
-footer a:hover{color: var(--color-danger);}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+footer a:hover {
+  color: var(--color-danger);
+}
 footer .contact {
   color: var(--color-light);
   background-color: var(--color-primary);
@@ -489,27 +499,55 @@ footer .navigation .footer-content {
   grid-template-columns: 1fr 4fr;
   gap: 3rem;
 }
-footer .navigation{
+footer .navigation {
   display: flex;
   background-color: var(--color-base);
 }
-.footer-partnership svg{
+footer .navigation img {
   max-width: 10rem;
+}
+.footer-about {
+  display: grid;
+  gap: 1.5rem;
+}
+.footer-partnership {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.footer-partnership .icon {
+  --size: 7rem;
+  height: 5rem;
+  mix-blend-mode: luminosity;
+}
+.footer-partnership li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.footer-socmed li + li {
+  margin-left: 0.5rem;
+}
+.footer-socmed .icon {
+  --size: 1.5rem;
 }
 .footer-socmed,
 .footer-nav,
+.footer-nav > ul,
 .footer-partnership {
   display: flex;
 }
 .footer-nav {
-  margin-bottom: 2rem;
+  flex-direction: column;
+  justify-content: center;
 }
-.footer-nav li + li {
+.footer-nav > ul {
+  margin-bottom: 4rem;
+}
+.footer-nav > ul li + li {
   margin-left: 1rem;
   border-left: 1px solid var(--color-primary);
   padding-left: 1rem;
 }
-footer .copyright{
+footer .copyright {
   text-align: center;
 }
 /* endFooter */
