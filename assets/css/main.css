@@ -56,6 +56,10 @@ figure img {
   height: inherit;
   object-fit: cover;
 }
+a {
+  font-weight: 700;
+  text-decoration: none;
+}
 .m-auto {
   margin: auto !important;
 }
@@ -160,9 +164,7 @@ figure img {
   width: 10rem;
   mix-blend-mode: multiply;
 }
-.promo-month,
-.career-path,
-.job-description {
+.main-content {
   margin-top: 6rem;
   margin-bottom: 5rem;
 }
@@ -190,6 +192,10 @@ header {
 }
 header.scrolled {
   --height: 6rem;
+}
+header.scrolled img {
+  transform: scale(calc(2 / 3));
+  transition: scale 0.3s ease-in-out;
 }
 .navbar {
   display: flex;
@@ -398,6 +404,42 @@ header.home.scrolled .navbar a {
 }
 /* endMain Products */
 
+/* News */
+.news-lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.news-lists figure {
+  display: grid;
+}
+.news-lists img {
+  aspect-ratio: 3/2;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.news-lists a {
+  width: max-content;
+}
+.news-lists .date {
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+}
+.news-lists .title {
+  margin-bottom: 1rem;
+}
+.news-lists .content {
+  margin-bottom: 2rem;
+}
+.news-lists .title,
+.news-lists .content {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* endNews */
+
 /* Menu Lists */
 [data-toggle] {
   display: inline-flex;
@@ -496,8 +538,8 @@ footer .navigation {
 }
 footer .navigation .footer-content {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  gap: 3rem;
+  grid-template-columns: 2fr 4fr;
+  gap: 4rem;
 }
 footer .navigation {
   display: flex;
@@ -540,7 +582,7 @@ footer .navigation img {
   justify-content: center;
 }
 .footer-nav > ul {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .footer-nav > ul li + li {
   margin-left: 1rem;
