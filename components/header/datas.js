@@ -1,12 +1,13 @@
 export const navs = [
-  {
-    navText: "Promo",
-    navLink: "/pages/promo",
-    navActive: "active",
-  },
+  // {
+  //   navText: "Promo",
+  //   navLink: "/pages/promo",
+  //   navActive: "active",
+  // },
   {
     navText: "Menu",
     navLink: "/pages/menu",
+    // navActive: "active",
   },
   {
     navText: "Partnership",

@@ -9,10 +9,16 @@ export const navList = () => {
         <li>
             <a 
                 href="${navLink}"
-                class="${active}"
                 >${navText}</a
             >
         </li>    
     `;
   });
+  const activePage = window.location.pathname;
+  const activeLink = navbar.querySelectorAll('a')
+
+  activeLink.forEach(active=>{
+    if(active.href.includes(`${activePage}`)){
+      active.classList.add('active');
+    }})
 };
