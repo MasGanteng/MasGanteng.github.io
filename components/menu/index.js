@@ -8,7 +8,7 @@ export const menuList = () => {
     menuGrid.innerHTML += `
         <li>
           <figure>
-            <img src="${image}" alt="${title}" />
+            <img src="${image}" alt="${title}"/>
             <figcaption>
               <p class="content">${title}</p>
               <p><strong>Rp ${price}</strong></p>

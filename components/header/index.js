@@ -14,11 +14,12 @@ export const navList = () => {
         </li>    
     `;
   });
-  const activePage = window.location.pathname;
+  const activePage = location.href;
+  console.log(activePage);
   const activeLink = navbar.querySelectorAll('a')
 
   activeLink.forEach(active=>{
-    if(active.href.includes(`${activePage}`)){
+    if(active.href === activePage){
       active.classList.add('active');
     }})
 };

@@ -1,6 +1,6 @@
 export const menus =[
     {
-        image:'https://source.unsplash.com/random',
+        image:'https://source.unsplash.com/random/chimera',
         title:'Croissant Butter Cream',
         price:'18000',
         link:'/pages/menu/detail.html'

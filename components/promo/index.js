@@ -12,7 +12,7 @@ export const promoMonth = () => {
                 <figcaption>
                     <p class="title">${title}</p>
                     <ul class="items">
-                      ${items.map(item=>`
+                      ${items.map(item => `
                         <li>${item}</li>
                       `).join("")}
                     </ul>

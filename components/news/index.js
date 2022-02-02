@@ -2,7 +2,7 @@ import { newss } from "./datas.js";
 
 const newsLists = document.querySelector(".news-lists");
 
-export const careerAble = () => {
+export const newest = () => {
   newss.map((news) => {
     var { image, date, title, content, link } = news;
     newsLists.innerHTML += `

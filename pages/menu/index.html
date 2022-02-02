@@ -67,14 +67,19 @@
                     </section>
                 </div>
             </div>
+
+            <section class="db-news"></section>
         </main>
 
         <footer class="my-footer"></footer>
     </div>
 
     <script type="module">
-        import {menuList} from '/components/menu/index.js'
+        import { menuList } from '/components/menu/index.js';
+        import { infos } from "/components/news/info.js";
+
         menuList()
+        infos()
 
         // const displayToggle = document.querySelectorAll('[data-toggle]')
         const displayList = document.querySelector("[data-toggle='toggle-list']")
