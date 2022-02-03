@@ -9,10 +9,11 @@
     <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/box-sizing.css">
+    <link rel="stylesheet" href="/assets/css/form.css">
     <script src="/assets/js/app.js" type="module" defer></script>
 </head>
 
-<body>
+<body style="background-color: var(--color-base);">
     <div id="app">
         <header>
             <nav class="navbar container">
@@ -26,33 +27,78 @@
         <main>
             <section class="career-path main-content">
                 <div class="container">
-                    <div class="main-header">
-                        <img src="/assets/images/image/cake-career.png" alt="image">
-                        <h1 class="title"><strong>Dear Butter</strong> Career</h1>
-                    </div>
-                    <div class="main-header">
-                        <div class="presents">
-                            <div>
-                                <img src="https://source.unsplash.com/random/boy" alt="presents image">
-                            </div>
-                            <div class="flex" style="flex-direction: column;justify-content: space-between;">
-                                <div>
-                                    <p style="font-size: 1.75rem; margin-bottom: 1rem;">DO PURPOSEFUL <strong>WORK</strong> THAT BRING <strong>JOY</strong></p>
-                                    <p style="font-size: 1.1rem;">We believe what we do everyday bring joy. At DB Group, you’ll not only build your career, you’ll discover purpose and the delight of bringing joy through quality coffee and constant innovation.</p>
-                                </div>
-                                <div>
-                                    <p style="font-size: 1.5rem; margin-bottom: 1rem;"><strong>Why Work</strong> at DB Group?</p>
-                                    <p style="font-size: 1.1rem;">DB Group  is defined by our culture – one that embrace collaboration, agility, flexibility, constant improvement as well as tolerance to mistake.  Our people are result-oriented and customer centric.  We work in teams and move fast to respond to market and consumer needs.  Together, we bring joy to our consumers by serving quality coffee and delivering better service standards to communities - and we're just getting started.</p>
-                                </div>
-                            </div>
+                    <div class="contact-grid main-header">
+                        <div class="left">
+                            <img src="https://source.unsplash.com/random/cat" class="full-width full-height object-cover" alt="profile">
+                        </div>
+                        <div class="right text-start">
+                            <img src="/assets/images/image/cake-partnership.png" alt="parnership">
+                            <h1 class="title">Brand Partnership</h1>
+                            <p class="content">
+                                Let's join the family of DB Group! You have the opportunity to be a part of the fastest growing technology enabled food and beverage company in Indonesia. We have selections of innovative brands of DB Group.
+                                <br><br>
+                                Brand sustainability is our goal. We support the operations of all outlets with a system. We have product development and innovation team to support our growth. Join us and be our family!
+                            </p>
                         </div>
                     </div>
-                    <div class="main-header">
-                        <h1 class="title"><strong>Getting know better</strong> your career</h1>
-                    </div>
-                    <ul class="career-lists grids"></ul>
-                    <div class="see-more">
-                        <a href="" class="btn btn-primary btn-pill">Show More Opportunity</a>
+
+                    <div class="contact-grid">
+                        <div class="left">
+                            <h3 class="title"><strong>Be Our Partner</strong></h3>
+                            <p class="content">Untuk informasi lebih lanjut tentang DB Group, silahkan menghubungi kontak kami dibawah ini</p>
+                            <table class="separate">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 7rem;">Email</td>
+                                        <td>info.dbgroup.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alamat</td>
+                                        <td>Jl. Kedoya Raya No.2 Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11520</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="right">
+                            <form action="">
+                                <div class="mb-4">
+                                    <label>
+                                        <p>Name</p>
+                                        <input type="text" class="form-input" name="" id="" placeholder="Full name">
+                                    </label>
+                                    <label>
+                                        <p>Email</p>
+                                        <input type="email" class="form-input" name="" id="" placeholder="Your email">
+                                    </label>
+                                    <label>
+                                        <p>Subject</p>
+                                        <select name="" id="" class="form-input">
+                                            <   option value="Licensing">Licensing</option>
+                                            <option value="Partnership">Partnership</option>
+                                            <option value="Career">Career</option>
+                                        </select>
+                                    </label>
+                                    <label>
+                                        <p>Pesan</p>
+                                        <textarea class="form-input" name="" id="" rows="3" style="resize: none;"
+                                            placeholder="Message"></textarea>
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <button class="btn btn-primary btn-block btn-pill">Send</button>
+                                </div>
+                                <p class="text-center my-1">or</p>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-secondary btn-block btn-pill">
+                                        <svg class="icon mr-1">
+                                            <use xlink:href="/assets/images/svg/socmed-sprite.svg#whatsapp"></use>
+                                        </svg>
+                                        Chat via Whatsapp</a>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>

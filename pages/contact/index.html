@@ -9,10 +9,11 @@
     <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/box-sizing.css">
+    <link rel="stylesheet" href="/assets/css/form.css">
     <script src="/assets/js/app.js" type="module" defer></script>
 </head>
 
-<body>
+<body style="background-color: var(--color-base);">
     <div id="app">
         <header>
             <nav class="navbar container">
@@ -32,60 +33,69 @@
                         <hr>
                     </div>
 
-                    <div>
+                    <div class="contact-grid">
                         <div class="left">
-                            <h3><strong>Say Hello!</strong></h3>
-                            <p>Untuk informasi lebih lanjut tentang DB Group, silahkan menghubungi kontak kami dibawah ini</p>
-                            <table>
+                            <h3 class="title">Say Hello!</h3>
+                            <p class="content">Untuk informasi lebih lanjut tentang DB Group, silahkan menghubungi kontak kami dibawah ini</p>
+                            <table class="separate">
                                 <tbody>
                                     <tr>
-                                        <td style="width: 5rem;"><strong>Email</strong></td>
+                                        <td style="width: 7rem;">Email</td>
                                         <td>info.dbgroup.com</td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Alamat</strong></td>
+                                        <td>Alamat</td>
                                         <td>Jl. Kedoya Raya No.2 Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11520</td>
                                     </tr>
                                 </tbody>
                             </table>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126717.44199150267!2d110.33466504954673!3d-7.018682399999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708beaa0f65c8b%3A0x41dcd1fe8fe05525!2sDEAR%20BUTTER%20MENOREH!5e0!3m2!1sen!2sid!4v1643553597183!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
+
                         <div class="right">
                             <form action="">
-                                <label>
-                                    <span>Name</span>
-                                    <input type="text" name="" id="" placeholder="Full name">
-                                </label>
-                                <label>
-                                    <span>Email</span>
-                                    <input type="email" name="" id="" placeholder="Your email">
-                                </label>
-                                <label>
-                                    <span>Subject</span>
-                                    <select name="" id="">
-                                        <option value="Licensing">Licensing</option>
-                                        <option value="Partnership">Partnership</option>
-                                        <option value="Career">Career</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span>Pesan</span>
-                                    <textarea name="" id="" rows="3" style="resize: none;"
-                                        placeholder="Message"></textarea>
-                                </label>
+                                <div class="mb-4">
+                                    <label>
+                                        <p>Name</p>
+                                        <input type="text" class="form-input" name="" id="" placeholder="Full name">
+                                    </label>
+                                    <label>
+                                        <p>Email</p>
+                                        <input type="email" class="form-input" name="" id="" placeholder="Your email">
+                                    </label>
+                                    <label>
+                                        <p>Subject</p>
+                                        <select class="form-input" name="" id="">
+                                            <option value="Licensing">Licensing</option>
+                                            <option value="Partnership">Partnership</option>
+                                            <option value="Career">Career</option>
+                                        </select>
+                                    </label>
+                                    <label>
+                                        <p>Pesan</p>
+                                        <textarea class="form-input" name="" id="" rows="3" style="resize: none;"
+                                            placeholder="Message"></textarea>
+                                    </label>
+                                </div>
 
-                                <button class="btn btn-primary btn-pill">Send</button>
+                                <div>
+                                    <button class="btn btn-primary btn-block btn-pill">Send</button>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <section class="db-news"></section>
         </main>
 
         <footer class="my-footer"></footer>
     </div>
 
     <script type="module">
+        const { infos } = await import("/components/news/info.js")
+        infos()
     </script>
 </body>
 
