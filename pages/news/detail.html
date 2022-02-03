@@ -8,6 +8,7 @@
     <title>Dear Butter - News</title>
     <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/box-sizing.css">
     <script src="/assets/js/app.js" type="module" defer></script>
 </head>
 
@@ -23,12 +24,16 @@
         </header>
 
         <main>
+
+            <section class="db-news"></section>
         </main>
 
         <footer class="my-footer"></footer>
     </div>
 
     <script type="module">
+        import { infos } from "/components/news/info.js";
+        infos()
     </script>
 </body>
 

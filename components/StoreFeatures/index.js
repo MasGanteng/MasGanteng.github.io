@@ -1,11 +1,13 @@
 import { storeFeatures } from "./datas.js";
 
 export const storeFeat = () => {
-  const store = document.querySelector(".store-features > ul");
+  const store = document.querySelector(".store-features");
+  const ul = store.appendChild(document.createElement('ul'))
+
   storeFeatures.map((storeFeature) => {
     const { image, title, subtitle, buttonText, buttonLink } = storeFeature;
 
-    store.innerHTML += `
+    ul.innerHTML += `
         <li>
           <figure style="background-image:url(${image})">
             <div class="container">
