@@ -8,7 +8,7 @@ export const promoMonth = () => {
     promod.innerHTML += `
         <li>
             <figure>
-                <img src="${image}" class="" alt="${title}" />
+                <img src="${image}" class="" alt="${title}" title="${title}" />
                 <figcaption>
                     <p class="title">${title}</p>
                     <ul class="items">

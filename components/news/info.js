@@ -22,7 +22,7 @@ export const infos = () => {
                 (news) => `
               <li class="swiper-slide">
                   <figure>
-                      <img src="https://source.unsplash.com/random/${news.image}" alt="${news.title}">
+                      <img src="https://source.unsplash.com/random/${news.image}" alt="${news.title}" title="${news.title}">
                       <figcaption>
                           <p class="title line-clamp mb-1" style="--line:2"><small>${news.title}</small></p>
                           <hr />
