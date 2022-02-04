@@ -32,7 +32,7 @@ html {
   color: var(--color-dark);
 }
 body {
-  background-color: var(--color-light);
+  background-color: var(--color-base);
 }
 hr {
   margin-top: 1rem;
