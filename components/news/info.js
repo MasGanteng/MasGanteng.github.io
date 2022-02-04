@@ -1,10 +1,12 @@
 import { newss } from "./datas.js";
 import Swiper from "/assets/plugins/swiper/swiper-bundle.esm.browser.min.js";
-const sheet = await import("/assets/plugins/swiper/swiper-bundle.min.css", {
-  assert: { type: "css" },
-});
-document.adoptedStyleSheets = [sheet.default];
-ShadowRoot.adoptedStyleSheets = [sheet.default];
+(async () => {
+  const sheet = await import("/assets/plugins/swiper/swiper-bundle.min.css", {
+    assert: { type: "css" },
+  });
+  document.adoptedStyleSheets = [sheet.default];
+  ShadowRoot.adoptedStyleSheets = [sheet.default];
+})();
 
 const dbNews = document.querySelector(".db-news");
 
@@ -26,7 +28,7 @@ export const infos = () => {
                       <figcaption>
                           <p class="title line-clamp mb-1" style="--line:2"><small>${news.title}</small></p>
                           <hr />
-                          <p class="content line-clamp mb-2">${news.content}</p>
+                          <p class="content line-clamp mb-2"><small>${news.content}</small></p>
                           <a href="${news.link}">See Details</a>
                       </figcaption>
                   </figure>

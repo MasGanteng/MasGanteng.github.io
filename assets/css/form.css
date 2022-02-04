@@ -1,3 +1,31 @@
-form p{margin-bottom: .25rem;font-size: .75rem;}
-label{display: block;margin-bottom: 1rem;}
-.form-input{width: 100%;padding: .5rem;}
+form p {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+}
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+.form-input {
+  --color: #bbb;
+  position: relative;
+  width: 100%;
+  padding: 0.5rem;
+  border: thin solid var(--color);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.form-input::placeholder {
+  color: var(--color);
+}
+.form-input:focus {
+  --color: #555;
+  outline: var(--color);
+}
+select.form-input {
+  background: url(/assets/images/svg/chevron-down-solid.svg)
+    no-repeat right #ddd;
+  background-position-x: calc(100% - .5rem);
+  background-size: .5rem;
+}

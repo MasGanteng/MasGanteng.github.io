@@ -72,6 +72,7 @@ td{vertical-align: baseline;}
   font-size: 2rem;
   font-weight: 600;
   font-family: var(--font-family-title);
+  line-height: 1.1;
 }
 .content {
   font-family: var(--font-family-content);
