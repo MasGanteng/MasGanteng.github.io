@@ -24,8 +24,37 @@ label {
   outline: var(--color);
 }
 select.form-input {
-  background: url(/assets/images/svg/chevron-down-solid.svg)
-    no-repeat right #ddd;
-  background-position-x: calc(100% - .5rem);
-  background-size: .5rem;
+  background: url(/assets/images/svg/chevron-down-solid.svg) no-repeat right
+    #ddd;
+  background-position-x: calc(100% - 0.5rem);
+  background-size: 0.5rem;
+}
+.form-floating {
+  position: relative;
+}
+.form-floating label {
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: .25rem;
+  transition: 0.2s ease all;
+}
+.form-floating input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-bottom: thin solid white;
+  outline: none;
+  background: transparent;
+}
+.form-floating input:focus ~ label,
+.form-floating input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #ddd;
 }

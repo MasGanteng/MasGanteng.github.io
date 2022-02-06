@@ -28,7 +28,7 @@ export const infos = () => {
                       <figcaption>
                           <p class="title line-clamp mb-1" style="--line:2"><small>${news.title}</small></p>
                           <hr />
-                          <p class="content line-clamp mb-2"><small>${news.content}</small></p>
+                          <p class="line-clamp mb-2"><small>${news.content}</small></p>
                           <a href="${news.link}">See Details</a>
                       </figcaption>
                   </figure>

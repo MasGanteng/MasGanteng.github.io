@@ -12,7 +12,7 @@ export const newest = () => {
                 <figcaption>
                     <p class="date">${date}</p>
                     <p class="title">${title}</p>
-                    <p class="content">${content.slice(0,300)}</p>
+                    <p>${content.slice(0,300)}</p>
                 </figcaption>
                 <a href="${link}">See Detail News</a>
             </figure>

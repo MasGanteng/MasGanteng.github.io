@@ -7,7 +7,7 @@ export const myFooter = () => {
         <div class="container">
             <div class="footer-content">
                 <p class="title">Let's Become Our DB's Group</p>
-                <p class="content">Be part of DB Group Family, Growing together advancing technology enabled F&B industry in Indonesia</p>
+                <p>Be part of DB Group Family, Growing together advancing technology enabled F&B industry in Indonesia</p>
                 <a href="/pages/contact" class="btn btn-light btn-pill"><span>Contact Now</span></a>
             </div>
         </div>
@@ -16,11 +16,18 @@ export const myFooter = () => {
     <section class="newsletter">
         <div class="container">
             <div class="footer-content">
-                <p>Wanna see our latest promo and deals</p>
+                <p class="title">Wanna see our latest promo and deals</p>
                 <form action="">
-                    <label for="newsletter">Enter your email here</label>
-                    <input type="email" name="" id="newsletter" placeholder="Enter your email here">
-                    <button class="btn btn-light btn-pill">Subscribe Newsletter</button>
+                    <div class="form-floating">
+                        <input type="email" name="" id="newsletter" required>
+                        <label for="newsletter">Enter your email here</label>
+                    </div>
+                    <div>
+                        <button 
+                            class="btn btn-light btn-pill"
+                            style="width:max-content;"
+                        >Subscribe Newsletter</button>
+                    </div>
                 </form>
             </div>
         </div>

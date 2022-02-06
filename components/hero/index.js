@@ -23,7 +23,7 @@ export const heros = () => {
                     <div class="swiper-lazy-preloader"></div>
                     <figcaption>
                         <p class="title">${hero.title}</p>
-                        <p class="content">${hero.content}</p>
+                        <p>${hero.content}</p>
                         <a href="${hero.link}" class="btn btn-light btn-pill">See Our Menu</a>
                     </figcaption>
                 </figure>

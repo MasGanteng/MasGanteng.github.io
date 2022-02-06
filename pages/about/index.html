@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/box-sizing.css">
+    <link rel="stylesheet" href="/assets/css/form.css">
     <script src="/assets/js/app.js" type="module" defer></script>
 </head>
 
@@ -24,12 +25,130 @@
         </header>
 
         <main>
+            <section class="hero d-flex" style="background: url(https://source.unsplash.com/random/cat) no-repeat center; background-size: cover;">
+                <div class="m-auto text-center">
+                    <p class="title m-auto">Spread our passion for high quality food from Indonesia to the rest of Asia
+                    </p>
+                    <p><small>That’s Our Mission</small></p>
+                </div>
+            </section>
+
+            <section class="brand-story">
+                <figure>
+                    <img src="https://source.unsplash.com/random/adult" alt="">
+                    <figcaption class="px-5">
+                        <p class="title">
+                            <span class="text-normal">One of</span> Fastest <span class="text-normal">Growing</span>
+                            Brands <span class="text-normal">in</span> Indonesia
+                        </p>
+                        <p>Dear Butter is one of the fastest growing grab-and-go croffle and coffe chain
+                            in Indonesia. The idea of Dear Butter started because the founders have the mission to
+                            spread their passion for great food and beverage as a local brand from Indonesia to the rest
+                            of the world.
+                        </p>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section class="brand-story py-4" style="background-color: var(--color-light);">
+                <article>
+                    <figure>
+                        <figcaption class="px-5">
+                            <p class="title">Coffee and Croffle Sold 30 million in year 2021</p>
+                            <hr>
+                            <p class="title">Employees More than 3000</p>
+                            <hr>
+                            <p class="title">Our Footprints More than 500 stores across 32 cities in Indonesia</p>
+                        </figcaption>
+                        <img src="https://source.unsplash.com/random/baby" alt="">
+                    </figure>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="https://source.unsplash.com/random/old" alt="">
+                        <img src="https://source.unsplash.com/random/infant" alt="">
+                    </figure>
+                </article>
+            </section>
+
+            <section>
+                <div class="container">
+                    <p class="title text-center">Getting to Know the <span class="text-normal">People Behind DB Group</span></p>
+                    <ul class="d-flex">
+                        <li>
+                            <figure>
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="">
+                                <figcaption>
+                                    <p class="title">Jarwo Sujarwo</p>
+                                    <p>Co-Founder and Chief Executive Officer</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="">
+                                <figcaption>
+                                    <p class="title">Jarwo Sujarwo</p>
+                                    <p>Co-Founder and Chief Executive Officer</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="">
+                                <figcaption>
+                                    <p class="title">Jarwo Sujarwo</p>
+                                    <p>Co-Founder and Chief Executive Officer</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="https://randomuser.me/api/portraits/women/60.jpg" alt="">
+                                <figcaption>
+                                    <p class="title">Jarwo Sujarwo</p>
+                                    <p>Co-Founder and Chief Executive Officer</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="quote">
+                <div class="container">
+                    <hr>
+                    <blockquote class="text-center">
+                        <q class="title">We would like to thank all #DearButterFamily who always support and enjoy the various menus of Dear Butter</q>
+                    </blockquote>
+                    <hr>
+                </div>
+            </section>
+
+            <section class="location">
+                <div class="container">
+                    <div class="main-products">
+                        <div class="left">
+                            <img src="/assets/images/image/cake-location.png" alt="">
+                        </div>
+                        <div class="right">
+                            <p class="title">Dear Butter Office</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126717.44199150267!2d110.33466504954673!3d-7.018682399999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708beaa0f65c8b%3A0x41dcd1fe8fe05525!2sDEAR%20BUTTER%20MENOREH!5e0!3m2!1sen!2sid!4v1643553597183!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="db-news"></section>
         </main>
 
         <footer class="my-footer"></footer>
     </div>
 
     <script type="module">
+        import { infos } from "/components/news/info.js"
+        infos()
     </script>
 </body>
 

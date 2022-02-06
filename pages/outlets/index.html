@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/box-sizing.css">
+    <link rel="stylesheet" href="/assets/css/form.css">
     <script src="/assets/js/app.js" type="module" defer></script>
 </head>
 
@@ -24,12 +25,80 @@
         </header>
 
         <main>
+            <section class="main-content">
+                <div class="container">
+                    <div class="outlet-status mb-2">
+                        <img src="/assets/images/image/cake-outlet.png" alt="outlets">
+                        <div class="outlet-stores">
+                            <p class="title">50 +</p>
+                            <p>Outlets</p>
+                        </div>
+                        <div class="outlet-stores">
+                            <p class="title">10 +</p>
+                            <p>Cities</p>
+                        </div>
+                    </div>
+                    <h1 class="title">Our Stores <span class="text-normal">Across Indonesia</span></h1>
+                </div>
+            </section>
+
+            <section class="mb-3">
+                <div class="container">
+                    <p class="mb-2">Find your nearest Dear Butter outlet!</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126717.44199150267!2d110.33466504954673!3d-7.018682399999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708beaa0f65c8b%3A0x41dcd1fe8fe05525!2sDEAR%20BUTTER%20MENOREH!5e0!3m2!1sen!2sid!4v1643553597183!5m2!1sen!2sid"
+                        class="full-width" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <details>
+                                <summary>Jakarta</summary>
+                                <article>
+                                    <p>halo</p>
+                                </article>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Bogor</summary>
+                                <article>
+                                    <p>halo</p>
+                                </article>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Bandung</summary>
+                                <article>
+                                    <p>halo</p>
+                                </article>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Semarang</summary>
+                                <article>
+                                    <p>halo</p>
+                                </article>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="db-news"></section>
         </main>
 
         <footer class="my-footer"></footer>
     </div>
 
     <script type="module">
+        import { infos } from "/components/news/info.js"
+        infos()
     </script>
 </body>
 
