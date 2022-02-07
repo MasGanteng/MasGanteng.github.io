@@ -10,7 +10,7 @@ export const careerAble = () => {
             <figure>
                 <figcaption>
                     <p class="title">${position}</p>
-                    <p>
+                    <p class="mb-2">
                         <svg class="icon">
                             <use xlink:href="/assets/images/svg/utility-sprite.svg#union"></use>
                         </svg>

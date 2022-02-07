@@ -11,8 +11,8 @@ export const newest = () => {
                 <img src="https://source.unsplash.com/random/${image}" alt="${title}" title="${title}" />
                 <figcaption>
                     <p class="date">${date}</p>
-                    <p class="title">${title}</p>
-                    <p>${content.slice(0,300)}</p>
+                    <p class="title line-clamp" style="--line:2">${title}</p>
+                    <p class="line-clamp mb-2">${content.slice(0,300)}</p>
                 </figcaption>
                 <a href="${link}">See Detail News</a>
             </figure>
