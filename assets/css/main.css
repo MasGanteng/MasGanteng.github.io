@@ -632,7 +632,20 @@ header.home.scrolled .navbar a {
   background-color: white;
   border-radius: 50%;
 }
-
+.our-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+.our-team li {
+  width: 19%;
+  margin: 2rem;
+}
+.our-team img {
+  width: 8rem;
+}
 /* Footer */
 footer a {
   text-decoration: none;
