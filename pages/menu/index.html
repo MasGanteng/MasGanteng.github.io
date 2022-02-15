@@ -28,28 +28,35 @@
             <div class="container">
                 <div class="main-products main-content">
                     <aside class="products-filter-side">
-                        <ul>
-                            <li><a href="">Croissant</a></li>
-                            <li><a href="">Dear Butter Croffle</a></li>
-                            <li><a href="">Wafle</a></li>
+                        <ul class="products-filter">
+                            <li><a>Croffle</a></li>
+                            <li><a>Sauces</a></li>
+                            <li><a>Coffee</a></li>
                         </ul>
                     </aside>
 
                     <section class="products-lists">
-                        <div class="products-lists-filter">
-                            <div class="filter">
-                                <fieldset>
+                        <ul class="products-lists-filter">
+                            <li class="products-sort">
+                                <p>Sort by : </p>
+                                <a class="active">Best Seller</a>
+                                <a>New Items</a>
+                            </li>
+                            <li>
+                            <input type="search" name="" id="" class="form-input" placeholder="Find your favorite products"></li>
+                            <!-- <div class="filter" style="align-items: flex-end;">
+                                <fieldset class="p-1">
                                     <legend>Sort by</legend>
                                     <select name="" id="" class="form-input" title="Sort menu">
                                         <option value="Best Seller">Best Seller</option>
                                         <option value="New Items">New Items</option>
                                     </select>
                                 </fieldset>
-                                <div class="search">
-                                    <input type="search" name="" id="" class="form-input">
+                                <div class="search p-1">
+                                    <input type="search" name="" id="" class="form-input" placeholder="Find your favorite products">
                                 </div>
-                            </div>
-                            <div class="display">
+                            </div> -->
+                            <li class="display">
                                 <a class="active" data-toggle="toggle-grid">
                                     <svg class="icon">
                                         <use xlink:href="/assets/images/svg/utility-sprite.svg#display-grid"></use>
@@ -60,8 +67,8 @@
                                         <use xlink:href="/assets/images/svg/utility-sprite.svg#display-list"></use>
                                     </svg>
                                 </a>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                         
                         <div class="products-lists-grid">
                             <ul class="grids display-grid"></ul>
