@@ -26,7 +26,7 @@ export const infos = () => {
                   <figure>
                       <img src="https://source.unsplash.com/random/${news.image}" alt="${news.title}" title="${news.title}">
                       <figcaption>
-                          <p class="title line-clamp mb-1" style="--line:2"><small>${news.title}</small></p>
+                          <p class="title line-clamp mb-1"><small>${news.title}</small></p>
                           <hr />
                           <p class="line-clamp mb-2"><small>${news.content}</small></p>
                           <a href="${news.link}">See Details</a>

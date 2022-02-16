@@ -27,66 +27,164 @@
         <main>
             <section class="main-content">
                 <div class="container">
-                    <div class="outlet-status mb-2">
-                        <img src="/assets/images/image/cake-outlet.png" alt="outlets">
-                        <div class="outlet-stores">
-                            <p class="title">50 +</p>
-                            <p>Outlets</p>
+                    <section class="outlet-header mb-5">
+                        <div class="outlet-status mb-2">
+                            <img src="/assets/images/image/cake-outlet.png" alt="outlets" loading="lazy">
+                            <div class="outlet-stores">
+                                <p class="title" data-outlets></p>
+                                <p>Outlets</p>
+                            </div>
+                            <div class="outlet-stores">
+                                <p class="title" data-cities></p>
+                                <p>Cities</p>
+                            </div>
                         </div>
-                        <div class="outlet-stores">
-                            <p class="title">10 +</p>
-                            <p>Cities</p>
-                        </div>
-                    </div>
-                    <h1 class="title">Our Stores <span class="text-normal">Across Indonesia</span></h1>
-                </div>
-            </section>
+                        <h1 class="title">Our Stores <span class="text-normal">Across Indonesia</span></h1>
+                    </section>
 
-            <section class="mb-3">
-                <div class="container">
-                    <p class="mb-2">Find your nearest Dear Butter outlet!</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126717.44199150267!2d110.33466504954673!3d-7.018682399999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708beaa0f65c8b%3A0x41dcd1fe8fe05525!2sDEAR%20BUTTER%20MENOREH!5e0!3m2!1sen!2sid!4v1643553597183!5m2!1sen!2sid"
-                        class="full-width" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </section>
-
-            <section class="mb-5">
-                <div class="container">
-                    <ul>
-                        <li>
-                            <details>
-                                <summary>Jakarta</summary>
-                                <article>
-                                    <p>halo</p>
-                                </article>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>Bogor</summary>
-                                <article>
-                                    <p>halo</p>
-                                </article>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>Bandung</summary>
-                                <article>
-                                    <p>halo</p>
-                                </article>
-                            </details>
-                        </li>
-                        <li>
-                            <details>
-                                <summary>Semarang</summary>
-                                <article>
-                                    <p>halo</p>
-                                </article>
-                            </details>
-                        </li>
-                    </ul>
+                    <section class="outlet-map mb-5">
+                        <p class="mb-3">Find your nearest Dear Butter outlet!</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126717.44199150267!2d110.33466504954673!3d-7.018682399999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708beaa0f65c8b%3A0x41dcd1fe8fe05525!2sDEAR%20BUTTER%20MENOREH!5e0!3m2!1sen!2sid!4v1643553597183!5m2!1sen!2sid"
+                            class="full-width" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </section>
+                    
+                    <section class="outlet-location">
+                        <ul class="outlet-lists">
+                            <li class="outlet-city">
+                                <details>
+                                    <summary>Jakarta</summary>
+                                    <article>
+                                        <ul class="outlet-cards">
+                                            <li class="outlet-card">
+                                                <p class="pb-1"><strong>Summarecon Mall Serpong - Chigo</strong></p>
+                                                <p class="pb-3">Summarecon Mall Serpong, 2F-249, Jl. Boulevard Raya Gading Serpong, Pakulonan Barat, Kec. Klp. Dua, Tangerang, Banten 15810</p>
+                                                <div class="outlet-links">
+                                                    <a href="" class="mr-3">
+                                                        <svg class="icon">
+                                                            <use xlink:href="/assets/images/svg/socmed-sprite.svg#plane"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="" class="btn btn-outline-light btn-pill">Get Direction</a>
+                                                </div>
+                                            </li>
+                                            <li class="outlet-card">
+                                                <p class="pb-1"><strong>Summarecon Mall Serpong - Chigo</strong></p>
+                                                <p class="pb-3">Summarecon Mall Serpong, 2F-249, Jl. Boulevard Raya Gading Serpong, Pakulonan Barat, Kec. Klp. Dua, Tangerang, Banten 15810</p>
+                                                <div class="outlet-links">
+                                                    <a href="" class="mr-3">
+                                                        <svg class="icon">
+                                                            <use xlink:href="/assets/images/svg/socmed-sprite.svg#plane"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="" class="btn btn-outline-light btn-pill">Get Direction</a>
+                                                </div>
+                                            </li>
+                                            <li class="outlet-card">
+                                                <p class="pb-1"><strong>Summarecon Mall Serpong - Chigo</strong></p>
+                                                <p class="pb-3">Summarecon Mall Serpong, 2F-249, Jl. Boulevard Raya Gading Serpong, Pakulonan Barat, Kec. Klp. Dua, Tangerang, Banten 15810</p>
+                                                <div class="outlet-links">
+                                                    <a href="" class="mr-3">
+                                                        <svg class="icon">
+                                                            <use xlink:href="/assets/images/svg/socmed-sprite.svg#plane"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="" class="btn btn-outline-light btn-pill">Get Direction</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </article>
+                                </details>
+                            </li>
+                            <li class="outlet-city">
+                                <details>
+                                    <summary>Bogor</summary>
+                                    <article>
+                                        <ul class="outlet-cards">
+                                            <li class="outlet-card">
+                                                <p class="pb-1"><strong>Summarecon Mall Serpong - Chigo</strong></p>
+                                                <p class="pb-3">Summarecon Mall Serpong, 2F-249, Jl. Boulevard Raya Gading Serpong, Pakulonan Barat, Kec. Klp. Dua, Tangerang, Banten 15810</p>
+                                                <div class="outlet-links">
+                                                    <a href="" class="mr-3">
+                                                        <svg class="icon">
+                                                            <use xlink:href="/assets/images/svg/socmed-sprite.svg#plane"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="" class="btn btn-outline-light btn-pill">Get Direction</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </article>
+                                </details>
+                            </li>
+                            <li class="outlet-city">
+                                <details>
+                                    <summary>Bandung</summary>
+                                    <article>
+                                        <ul class="outlet-cards">
+                                            <li class="outlet-card">
+                                                <p class="pb-1"><strong>Summarecon Mall Serpong - Chigo</strong></p>
+                                                <p class="pb-3">Summarecon Mall Serpong, 2F-249, Jl. Boulevard Raya Gading Serpong, Pakulonan Barat, Kec. Klp. Dua, Tangerang, Banten 15810</p>
+                                                <div class="outlet-links">
+                                                    <a href="" class="mr-3">
+                                                        <svg class="icon">
+                                                            <use xlink:href="/assets/images/svg/socmed-sprite.svg#plane"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="" class="btn btn-outline-light btn-pill">Get Direction</a>
+                                                </div>
+                                            </li>
+                                            <li class="outlet-card">
+                                                <p class="pb-1"><strong>Summarecon Mall Serpong - Chigo</strong></p>
+                                                <p class="pb-3">Summarecon Mall Serpong, 2F-249, Jl. Boulevard Raya Gading Serpong, Pakulonan Barat, Kec. Klp. Dua, Tangerang, Banten 15810</p>
+                                                <div class="outlet-links">
+                                                    <a href="" class="mr-3">
+                                                        <svg class="icon">
+                                                            <use xlink:href="/assets/images/svg/socmed-sprite.svg#plane"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="" class="btn btn-outline-light btn-pill">Get Direction</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </article>
+                                </details>
+                            </li>
+                            <li class="outlet-city">
+                                <details>
+                                    <summary>Semarang</summary>
+                                    <article>
+                                        <ul class="outlet-cards">
+                                            <li class="outlet-card">
+                                                <p class="pb-1"><strong>Summarecon Mall Serpong - Chigo</strong></p>
+                                                <p class="pb-3">Summarecon Mall Serpong, 2F-249, Jl. Boulevard Raya Gading Serpong, Pakulonan Barat, Kec. Klp. Dua, Tangerang, Banten 15810</p>
+                                                <div class="outlet-links">
+                                                    <a href="" class="mr-3">
+                                                        <svg class="icon">
+                                                            <use xlink:href="/assets/images/svg/socmed-sprite.svg#plane"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="" class="btn btn-outline-light btn-pill">Get Direction</a>
+                                                </div>
+                                            </li>
+                                            <li class="outlet-card">
+                                                <p class="pb-1"><strong>Summarecon Mall Serpong - Chigo</strong></p>
+                                                <p class="pb-3">Summarecon Mall Serpong, 2F-249, Jl. Boulevard Raya Gading Serpong, Pakulonan Barat, Kec. Klp. Dua, Tangerang, Banten 15810</p>
+                                                <div class="outlet-links">
+                                                    <a href="" class="mr-3">
+                                                        <svg class="icon">
+                                                            <use xlink:href="/assets/images/svg/socmed-sprite.svg#plane"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="" class="btn btn-outline-light btn-pill">Get Direction</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </article>
+                                </details>
+                            </li>
+                        </ul>
+                    </section>
                 </div>
             </section>
 
@@ -99,6 +197,14 @@
     <script type="module">
         import { infos } from "/components/news/info.js"
         infos()
+
+        const outlets = document.querySelector('[data-outlets]')
+        const cities = document.querySelector('[data-cities]')
+        const totalOutlets = document.querySelectorAll('.outlet-card')
+        const totalCities = document.querySelectorAll('.outlet-city')
+
+        outlets.innerText = totalOutlets.length
+        cities.innerText = totalCities.length
     </script>
 </body>
 

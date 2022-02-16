@@ -25,7 +25,9 @@
   --font-base: 16px;
   --container: 1200px;
 }
-* {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -85,7 +87,7 @@ td {
   margin-right: auto;
 }
 .container-news {
-  --container:60rem;
+  --container: 60rem;
 }
 .title {
   font-size: 2rem;
@@ -99,8 +101,12 @@ td {
 .object-cover {
   object-fit: cover !important;
 }
-.font-smaller {font-size: smaller !important;}
-.font-larger {font-size: larger !important;}
+.font-smaller {
+  font-size: smaller !important;
+}
+.font-larger {
+  font-size: larger !important;
+}
 .full-width {
   width: 100% !important;
 }
@@ -148,7 +154,9 @@ td {
 .icon-share {
   --size: 1.5rem;
 }
-.icon-share:hover {filter: brightness(.8);}
+.icon-share:hover {
+  filter: brightness(0.8);
+}
 .icon-twitter {
   color: hsl(203, 89%, 53%);
 }
@@ -158,7 +166,49 @@ td {
 .icon-linkedin {
   color: hsl(201, 100%, 35%);
 }
-summary::marker{content: '';}
+.outlet-lists details {
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+.outlet-lists summary {
+  position: relative;
+  list-style: none;
+  font-family: var(--font-family-title);
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: thin solid rgb(0 0 0 / 0.2);
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+.outlet-lists summary::after {
+  content: url(/assets/images/svg/plus-solid.svg);
+  position: absolute;
+  right: 1rem;
+  bottom: 0rem;
+  width: 1rem;
+  transition: all 0.3s ease;
+}
+.outlet-lists details[open] summary::after {
+  content: url(/assets/images/svg/minus-solid.svg);
+}
+.outlet-lists article {
+  padding: 2rem 1rem 4rem;
+}
+.outlet-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.outlet-links .icon {
+  --size: 1.5rem;
+}
+.outlet-links a {
+  color: inherit;
+}
+.outlet-links .icon:hover {
+  color: var(--color-danger);
+}
 
 .job-description {
   line-height: 2;
@@ -410,6 +460,14 @@ header.home.scrolled .navbar a {
 }
 .news-thumbnail figcaption {
   padding: 2.5rem;
+  height: 19rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.news-thumbnail .title {
+  --line: 2;
+  height: 5rem;
 }
 /* endDB News */
 
@@ -541,7 +599,9 @@ header.home.scrolled .navbar a {
   display: grid;
   grid-template-columns: repeat(3, auto);
 }
-.products-lists-filter li:last-child{margin-left: auto;}
+.products-lists-filter li:last-child {
+  margin-left: auto;
+}
 .products-lists-filter .filter {
   display: flex;
 }
