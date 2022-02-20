@@ -9,8 +9,9 @@ myFooter();
 
 window.onscroll = function () {
   const header = document.querySelector("header");
+  const headerScrolled = 200
 
-  window.scrollY > 200
+  window.scrollY > headerScrolled
     ? header.classList.add("scrolled")
     : header.classList.remove("scrolled");
 };

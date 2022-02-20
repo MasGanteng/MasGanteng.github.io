@@ -15,7 +15,7 @@ export const navList = () => {
     `;
   });
   const activePage = location.href;
-  console.log(activePage);
+  // console.log(activePage);
   const activeLink = navbar.querySelectorAll('a')
 
   activeLink.forEach(active=>{

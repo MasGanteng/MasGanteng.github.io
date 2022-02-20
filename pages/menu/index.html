@@ -36,7 +36,7 @@
                     </aside>
 
                     <section class="products-lists">
-                        <ul class="products-lists-filter">
+                        <!-- <ul class="products-lists-filter">
                             <li class="products-sort">
                                 <p>Sort by : </p>
                                 <a class="active">Best Seller</a>
@@ -44,7 +44,7 @@
                             </li>
                             <li>
                             <input type="search" name="" id="" class="form-input" placeholder="Find your favorite products"></li>
-                            <!-- <div class="filter" style="align-items: flex-end;">
+                            <div class="filter" style="align-items: flex-end;">
                                 <fieldset class="p-1">
                                     <legend>Sort by</legend>
                                     <select name="" id="" class="form-input" title="Sort menu">
@@ -55,7 +55,7 @@
                                 <div class="search p-1">
                                     <input type="search" name="" id="" class="form-input" placeholder="Find your favorite products">
                                 </div>
-                            </div> -->
+                            </div>
                             <li class="display">
                                 <a class="active" data-toggle="toggle-grid">
                                     <svg class="icon">
@@ -68,10 +68,10 @@
                                     </svg>
                                 </a>
                             </li>
-                        </ul>
+                        </ul> -->
                         
                         <div class="products-lists-grid">
-                            <ul class="grids display-grid"></ul>
+                            <ul class="grids"></ul>
                         </div>
                     </section>
                 </div>
@@ -100,18 +100,18 @@
         //     }
         // });
         
-        displayGrid.onclick = () => {
-            display.classList.remove('display-list')
-            display.classList.add('display-grid')
-            displayGrid.classList.add('active')
-            displayList.classList.remove('active')
-        }
-        displayList.onclick = () => {
-            display.classList.add('display-list')
-            display.classList.remove('display-grid')
-            displayGrid.classList.remove('active')
-            displayList.classList.add('active')
-        }
+        // displayGrid.onclick = () => {
+        //     display.classList.remove('display-list')
+        //     display.classList.add('display-grid')
+        //     displayGrid.classList.add('active')
+        //     displayList.classList.remove('active')
+        // }
+        // displayList.onclick = () => {
+        //     display.classList.add('display-list')
+        //     display.classList.remove('display-grid')
+        //     displayGrid.classList.remove('active')
+        //     displayList.classList.add('active')
+        // }
     </script>
 </body>
 

@@ -25,12 +25,58 @@
         </header>
 
         <main>
+            <section class="main-content">
+                <div class="container container-news">
+                    <h1 class="title">Croffle</h1>
+
+                    <hr>
+
+                    <div class="products-detail">
+                        <img src="https://source.unsplash.com/random/sting"
+                            class="mb-3"
+                            alt="Dear Butter Croffle"
+                            title="Dear Butter Croffle"
+                            loading="lazy"
+                        >
+                        <h2 class="title mb-3">Dear Butter Croffle</h2>
+                        <div>
+                            <p>It combines croissants and waffles by placing rich buttery croissant pastries into a waffle iron. The innovative snack can be covered in a variety of toppings, such as Nutella, avocado, meats, fruits, and much more.</p>
+                            <p>And, here in the Dear Butter, look out for the exclusive croissant toasts at Dear Butter’s soon-to-open flagship store in Central – another delicious variation on the croissant from the inventor of the cronut. This drop features two flavours: sea salt and maple.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="mb-3">
+                        <p><strong>Price</strong></p>
+                        <p class="rupiah">18000</p>
+                    </div>
+
+                    <a href="" class="btn btn-primary btn-pill btn-block text-center">Order Now</a>
+                </div>
+            </section>
+
+            <section class="db-news"></section>
         </main>
 
         <footer class="my-footer"></footer>
     </div>
 
     <script type="module">
+        import { infos } from "/components/news/info.js";
+        infos()
+
+
+        const rupiah = document.querySelector(".rupiah");
+        function convert(number) {
+            return new Intl.NumberFormat("id-ID", {
+            style: "currency",
+            currency: "IDR",
+            minimumFractionDigits: 0,
+            }).format(number);
+        }
+
+        rupiah.innerText = convert(rupiah.innerText)
     </script>
 </body>
 

@@ -132,3 +132,81 @@ export const menus = [
     link: "/pages/menu/detail.html",
   },
 ];
+
+export const menuLists = [
+  {
+    groupMenus: "Croffle",
+    menuItems: [
+      {
+        image: "https://source.unsplash.com/random/chimera",
+        title: "Croffle Butter Cream",
+        price: 18000,
+        link: "/pages/menu/detail.html",
+      },
+      {
+        image: "https://source.unsplash.com/random/bee",
+        title: "Croffle Chocolate Cheese",
+        price: 11000,
+        link: "/pages/menu/detail.html",
+      },
+    ],
+  },
+  {
+    groupMenus: "Sauces",
+    menuItems: [
+      {
+        image: "https://source.unsplash.com/random/sting",
+        title: "Peanut",
+        price: 38000,
+        link: "/pages/menu/detail.html",
+      },
+      {
+        image: "https://source.unsplash.com/random/cow",
+        title: "Ovomaltine",
+        price: 36000,
+        link: "/pages/menu/detail.html",
+      },
+      {
+        image: "https://source.unsplash.com/random/fox",
+        title: "Peanut",
+        price: 38000,
+        link: "/pages/menu/detail.html",
+      },
+      {
+        image: "https://source.unsplash.com/random/ant",
+        title: "Ovomaltine",
+        price: 36000,
+        link: "/pages/menu/detail.html",
+      },
+      {
+        image: "https://source.unsplash.com/random/chick",
+        title: "Peanut",
+        price: 38000,
+        link: "/pages/menu/detail.html",
+      },
+      {
+        image: "https://source.unsplash.com/random/cub",
+        title: "Ovomaltine",
+        price: 36000,
+        link: "/pages/menu/detail.html",
+      },
+    ],
+  },
+  {
+    groupMenus: "Coffee",
+    menuItems: [
+      {
+        image: "https://source.unsplash.com/random/bull",
+        title: "Mocha",
+        price: 22000,
+        link: "/pages/menu/detail.html",
+      },
+      {
+        image: "https://source.unsplash.com/random/buffalo",
+        title: "Cappucino",
+        price: 23000,
+        link: "/pages/menu/detail.html",
+      },
+    ],
+  },
+];

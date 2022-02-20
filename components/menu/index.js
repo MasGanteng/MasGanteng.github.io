@@ -1,24 +1,61 @@
-import { menus } from "./datas.js";
+import { menus, menuLists } from "./datas.js";
+
+// export const menuList = () => {
+//   const menuGrid = document.querySelector(".products-lists-grid > ul");
+//   menus.map((menu) => {
+//     const { image, title, price, link } = menu;
+
+//     menuGrid.innerHTML += `
+//         <li>
+//           <figure>
+//             <img src="${image}" alt="${title}" title="${title}" />
+//             <figcaption>
+//               <p><small>${title}</small></p>
+//               <p><small class="rupiah">${price}</small></p>
+//               <a
+//                 href="${link}"
+//                 class="btn btn-outline-light btn-pill"
+//                 >See Details</a
+//               >
+//             </figcaption>
+//           </figure>
+//         </li>
+//     `;
+//   });
 
 export const menuList = () => {
   const menuGrid = document.querySelector(".products-lists-grid > ul");
-  menus.map((menu) => {
-    const { image, title, price, link } = menu;
+  menuLists.map((menu) => {
+    // const { image, title, price, link } = menu;
+    // const {
+    //   groupMenus,
+    //   menuItems: { image, title, price, link },
+    // } = menu;
 
     menuGrid.innerHTML += `
-        <li>
-          <figure>
-            <img src="${image}" alt="${title}" title="${title}" />
-            <figcaption>
-              <p><small>${title}</small></p>
-              <p><small class="rupiah">${price}</small></p>
-              <a 
-                href="${link}"
-                class="btn btn-outline-light btn-pill"
-                >See Details</a
-              >
-            </figcaption>
-          </figure>
+        <li id="${menu.groupMenus}" class="products-groups">
+          <h2 class="mb-3">${menu.groupMenus}</h2>
+          <ul class="display-grid">
+            ${menu.menuItems
+              .map(
+                (m) => `
+                         <li class="products-card">
+                           <figure>
+                             <img src="${m.image}" alt="${m.title}" title="${m.title}" loading="lazy" />
+                             <figcaption>
+                               <p><small>${m.title}</small></p>
+                             <p><small class="rupiah">${m.price}</small></p>
+                               <a
+                                 href="${m.link}"
+                                 class="btn btn-outline-light btn-pill"
+                                 >See Details</a
+                               >
+                             </figcaption>
+                           </figure>
+                         </li>`
+              )
+              .join("")}
+          </ul>
         </li>    
     `;
   });
@@ -32,9 +69,8 @@ export const menuList = () => {
     }).format(number);
   }
 
-  // console.log(rupiahs);
   for (const rupiah of rupiahs) {
-    const value = rupiah.innerText
-    rupiah.innerText = convert(value)
+    const value = rupiah.innerText;
+    rupiah.innerText = convert(value);
   }
 };

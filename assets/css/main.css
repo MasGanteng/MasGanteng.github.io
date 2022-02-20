@@ -82,7 +82,7 @@ td {
   vertical-align: baseline;
 }
 .container {
-  max-width: var(--container);
+  max-width: min(100% - 2rem, var(--container));
   margin-left: auto;
   margin-right: auto;
 }
@@ -155,7 +155,7 @@ td {
   --size: 1.5rem;
 }
 .icon-share:hover {
-  filter: brightness(0.8);
+  filter: brightness(0.9);
 }
 .icon-twitter {
   color: hsl(203, 89%, 53%);
@@ -224,6 +224,7 @@ td {
   display: inline-flex;
   align-items: center;
   padding: var(--padding) calc(var(--padding) * 2);
+  font-family: var(--font-family-content);
   font-weight: 600;
   text-decoration: none;
   border: none;
@@ -414,7 +415,7 @@ header.home.scrolled .navbar a {
   --swiper-navigation-size: 2rem;
   padding-top: 4.5rem;
   padding-bottom: 5rem;
-  background: #f4f4f4;
+  background: var(--color-light);
 }
 .db-news .container {
   position: relative;
@@ -677,13 +678,19 @@ header.home.scrolled .navbar a {
   background-color: rgb(150, 150, 150);
   cursor: default;
 }
+.products-filter a{
+  cursor: pointer;
+}
+.products-filter li+li{
+  margin-top: 1rem;
+}
 .products-lists-grid .display-list,
 .products-lists-grid .display-grid {
   display: grid;
-  gap: 2rem;
+  gap: 4rem 2rem;
 }
 .products-lists-grid .display-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 .products-lists-grid .display-grid img {
   margin-bottom: 0.5rem;
@@ -693,9 +700,12 @@ header.home.scrolled .navbar a {
   --padding: 0.4rem;
   font-size: 0.75rem;
 }
+.products-groups{
+  margin-bottom: 5rem;
+}
 .display-grid img {
   height: auto;
-  aspect-ratio: 1/1;
+  aspect-ratio: 3/4;
 }
 .display-list figure {
   display: flex;
@@ -707,9 +717,9 @@ header.home.scrolled .navbar a {
   object-fit: cover;
   height: 100%;
 }
-.display-grid li {
+/* .display-grid li {
   aspect-ratio: 2/3;
-}
+} */
 /* endMenu Lists */
 
 .contact-grid {
