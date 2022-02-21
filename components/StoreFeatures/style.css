@@ -1,0 +1,26 @@
+
+/* Store Features */
+.store-features li {
+    height: calc(250vh / 3);
+    color: white;
+  }
+  .store-features li + li {
+    margin-top: 5rem;
+  }
+  .store-features figure {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .store-features figcaption {
+    position: relative;
+    top: 5rem;
+    max-width: 30rem;
+  }
+  .store-features .arrow {
+    font-size: 3rem;
+  }
+  .store-features .subtitle {
+    margin-bottom: 2.5rem;
+  }
+  /* endStore Features */
