@@ -1,0 +1,40 @@
+/* Career */
+.presents {
+  display: grid;
+  gap: 4rem;
+  text-align: left;
+}
+.presents img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+.career-path ul {
+  display: grid;
+  gap: 1.5rem;
+}
+.career-path li {
+  padding: 2rem;
+  background-color: white;
+  border: 1px solid currentColor;
+}
+.career-path .title {
+  margin-bottom: 1rem;
+}
+.career-path .content {
+  margin-bottom: 1.5rem;
+}
+.career-path .btn {
+  font-size: 0.75rem;
+}
+/* endCareer */
+
+@media screen and (max-width: 480px) {
+} /* Mobile */
+
+@media screen and (min-width: 481px) {
+  .presents,
+  .career-path ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

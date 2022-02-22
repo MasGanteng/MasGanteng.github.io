@@ -94,7 +94,7 @@ td {
   --container: 60rem;
 }
 .title {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 600;
   font-family: var(--font-family-title);
   line-height: 1.1;
@@ -273,8 +273,6 @@ td {
 }
 /* endGlobal */
 
-
-
 /* DB News */
 .db-news {
   --swiper-theme-color: var(--color-dark);
@@ -367,7 +365,6 @@ td {
 }
 /* endBrand Story */
 
-
 /* Promo */
 .promo-month .promo-lists {
   display: grid;
@@ -390,39 +387,6 @@ td {
   padding-bottom: 2rem;
 }
 /* endPromo */
-
-/* Career */
-.presents {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
-  text-align: left;
-}
-.presents img {
-  width: 100%;
-  aspect-ratio: 3/2;
-  object-fit: cover;
-}
-.career-path ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-}
-.career-path li {
-  padding: 2rem;
-  background-color: white;
-  border: 1px solid currentColor;
-}
-.career-path .title {
-  margin-bottom: 1rem;
-}
-.career-path .content {
-  margin-bottom: 1.5rem;
-}
-.career-path .btn {
-  font-size: 0.75rem;
-}
-/* endCareer */
 
 /* Main Products */
 .main-products {
@@ -471,7 +435,7 @@ td {
 .news-lists {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: clamp(1.5rem, 5vw, 4rem);
 }
 .news-lists figure {
   display: grid;
@@ -588,13 +552,21 @@ td {
     --font-base: 12px;
     --container: 340px;
   }
-  .view-mobile{display: block;}
-  .view-desktop{display: none;}
+  .view-mobile {
+    display: block;
+  }
+  .view-desktop {
+    display: none;
+  }
 } /* Mobile */
 
 @media screen and (min-width: 481px) {
-  .view-mobile{display: none;}
-  .view-desktop{display: block;}
+  .view-mobile {
+    display: none;
+  }
+  .view-desktop {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1441px) and (max-width: 1980px) {
