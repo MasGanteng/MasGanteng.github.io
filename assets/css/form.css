@@ -1,6 +1,5 @@
 form p {
   margin-bottom: 0.25rem;
-  font-size: 0.75rem;
 }
 label {
   display: block;
@@ -57,4 +56,16 @@ select.form-input {
   top: -20px;
   font-size: 14px;
   color: #ddd;
+}
+
+@media screen and (max-width: 480px) {
+  form p {
+    font-size: 1rem;
+  }
+} /* Mobile */
+
+@media screen and (min-width: 481px) {
+  form p {
+    font-size: .75rem;
+  }
 }
