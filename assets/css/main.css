@@ -47,6 +47,7 @@ body {
   font-family: var(--font-family-content);
 }
 hr {
+  width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -169,49 +170,6 @@ td {
 .icon-linkedin {
   color: hsl(201, 100%, 35%);
 }
-.outlet-lists details {
-  margin-bottom: 1.5rem;
-  transition: all 0.3s ease;
-}
-.outlet-lists summary {
-  position: relative;
-  list-style: none;
-  font-family: var(--font-family-title);
-  font-size: 2rem;
-  font-weight: bold;
-  border-bottom: thin solid rgb(0 0 0 / 0.2);
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  cursor: pointer;
-}
-.outlet-lists summary::after {
-  content: url(/assets/images/svg/plus-solid.svg);
-  position: absolute;
-  right: 1rem;
-  bottom: 0rem;
-  width: 1rem;
-  transition: all 0.3s ease;
-}
-.outlet-lists details[open] summary::after {
-  content: url(/assets/images/svg/minus-solid.svg);
-}
-.outlet-lists article {
-  padding: 2rem 1rem 4rem;
-}
-.outlet-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-}
-.outlet-links .icon {
-  --size: 1.5rem;
-}
-.outlet-links a {
-  color: inherit;
-}
-.outlet-links .icon:hover {
-  color: var(--color-danger);
-}
 
 .job-description {
   line-height: 2;
@@ -225,7 +183,7 @@ td {
   --padding: 0.75rem;
   position: relative;
   display: inline-flex;
-  align-items: center;
+  place-content: center;
   padding: var(--padding) calc(var(--padding) * 2);
   font-family: var(--font-family-content);
   font-weight: 600;
@@ -609,24 +567,6 @@ td {
   display: grid;
   grid-template-columns: 3fr 5fr;
   gap: 7rem;
-}
-
-.outlet-status {
-  display: flex;
-  gap: 3rem;
-}
-.outlet-status img {
-  max-width: 8rem;
-}
-.outlet-stores {
-  width: 6rem;
-  height: 6rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  border-radius: 50%;
 }
 .our-team {
   display: flex;
