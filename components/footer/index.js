@@ -26,7 +26,10 @@ export const myFooter = () => {
                         <button 
                             class="btn btn-light btn-pill"
                             style="width:max-content;"
-                        >Subscribe Newsletter</button>
+                        >
+                            <span>Subscribe</span> 
+                            <span class="view-desktop">&nbsp;Newsletter</span>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -40,17 +43,19 @@ export const myFooter = () => {
                     <div class="footer-about">
                         <img src="/assets/images/logo/logo.png" alt="logo">
                         <p>${footerDesc}</p>
-                        <ul class="footer-socmed">
-                            ${footerSocMed.map(socmed => `
-                                <li>
-                                    <a href="${socmed.path}">
-                                        <svg class="icon">
-                                            <use xlink:href="${socmed.src}"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            `).join("")}
-                        </ul>
+                        <div class="view-desktop">
+                            <ul class="footer-socmed">
+                                ${footerSocMed.map(socmed => `
+                                    <li>
+                                        <a href="${socmed.path}">
+                                            <svg class="icon">
+                                                <use xlink:href="${socmed.src}"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                `).join("")}
+                            </ul>
+                        </div>
                     </div>
                     <div class="footer-nav">
                         <ul>
@@ -75,7 +80,20 @@ export const myFooter = () => {
             </div>
             <hr />
             <div class="copyright">
-                <span>Copyright © ${copyright} DB’s Group</span>
+                <p>Copyright © ${copyright} DB’s Group</p>
+                <div class="view-mobile mt-2">
+                    <ul class="footer-socmed">
+                        ${footerSocMed.map(socmed => `
+                            <li>
+                                <a href="${socmed.path}">
+                                    <svg class="icon">
+                                        <use xlink:href="${socmed.src}"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        `).join("")}
+                    </ul>
+                </div>
             </div>
         </div>
     </section>

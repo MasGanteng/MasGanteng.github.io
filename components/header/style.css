@@ -1,65 +1,64 @@
-
 /* Header */
 header {
-    --height: 9rem;
-    position: sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    height: var(--height);
-    background-color: white;
-    box-shadow: 0px 1px 30px rgb(0 0 0 / 25%);
-    transition: all 0.3s ease-in-out;
-    z-index: 100;
-  }
-  header.scrolled {
-    --height: 6rem;
-  }
-  header.scrolled img {
-    transform: scale(calc(2 / 3));
-    transition: scale 0.3s ease-in-out;
-  }
-  .navbar {
-    display: flex;
-    flex: 1 0 auto;
-    align-items: center;
-    justify-content: space-between;
-    font-family: var(--font-family-title);
-  }
-  .navbar ul {
-    display: inherit;
-  }
-  .navbar li {
-    padding: 0.625rem 1.25rem;
-  }
-  .navbar a {
-    text-decoration: none;
-    font-size: 1.25rem;
-    font-weight: normal;
-    color: var(--color-dark);
-  }
-  .navbar a.active {
-    font-style: italic;
-    font-weight: bold;
-  }
-  .navbar a.active,
-  .navbar a:hover {
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-  }
-  header.home {
-    background-color: transparent;
-    box-shadow: none;
-    margin-top: calc(var(--height) * -1);
-  }
-  header.home.scrolled {
-    background: white;
-    box-shadow: 0px 1px 30px rgb(0 0 0 / 25%);
-  }
-  header.home .navbar a {
-    color: var(--color-light);
-  }
-  header.home.scrolled .navbar a {
-    color: var(--color-dark);
-  }
-  /* endHeader */
+  --height: 9rem;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: var(--height);
+  background-color: white;
+  box-shadow: 0px 1px 30px rgb(0 0 0 / 25%);
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+}
+header.scrolled {
+  --height: 6rem;
+}
+header.scrolled img {
+  transform: scale(calc(2 / 3));
+  transition: scale 0.3s ease-in-out;
+}
+.navbar {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-family-title);
+}
+.navbar ul {
+  display: inherit;
+}
+.navbar li {
+  padding: 0.625rem 1.25rem;
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: var(--color-dark);
+}
+.navbar a.active {
+  font-style: italic;
+  font-weight: bold;
+}
+.navbar a.active,
+.navbar a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+header.home {
+  background-color: transparent;
+  box-shadow: none;
+  margin-top: calc(var(--height) * -1);
+}
+header.home.scrolled {
+  background: white;
+  box-shadow: 0px 1px 30px rgb(0 0 0 / 25%);
+}
+header.home .navbar a {
+  color: var(--color-light);
+}
+header.home.scrolled .navbar a {
+  color: var(--color-dark);
+}
+/* endHeader */

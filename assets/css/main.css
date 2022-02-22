@@ -648,7 +648,14 @@ td {
     --font-base: 12px;
     --container: 340px;
   }
+  .view-mobile{display: block;}
+  .view-desktop{display: none;}
 } /* Mobile */
+
+@media screen and (min-width: 481px) {
+  .view-mobile{display: none;}
+  .view-desktop{display: block;}
+}
 
 @media screen and (min-width: 1441px) and (max-width: 1980px) {
   :root {
