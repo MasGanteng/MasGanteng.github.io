@@ -47,6 +47,13 @@ header.home {
 header.home .navbar a {
   color: var(--color-light);
 }
+
+.logo-mobile{
+  max-width: 8rem;
+}
+.toggle-menu .icon{
+  --size:1.5rem;
+}
 .nav-menu {
   display: none;
   position: fixed;
