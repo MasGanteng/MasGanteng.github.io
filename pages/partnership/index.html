@@ -17,15 +17,20 @@
 
 <body>
     <div id="app">
-        <header>
-            <nav class="navbar container view-desktop">
-                <a href="/">
-                    <img src="/assets/images/logo/logo.png" alt="Logo">
-                </a>
-                <ul></ul>
-            </nav>
-            <nav class="navbar container">
-                <div>
+        <div class="view-desktop">
+            <header>
+                <nav class="navbar container">
+                    <a href="/">
+                        <img src="/assets/images/logo/logo.png" alt="Logo">
+                    </a>
+                    <ul></ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="view-mobile">
+            <header>
+                <nav class="navbar container">
                     <a href="/">
                         <img src="/assets/images/logo/logo.png" alt="Logo">
                     </a>
@@ -34,128 +39,128 @@
                             <use xlink:href="/assets/images/svg/utility-sprite.svg#burger"></use>
                         </svg>
                     </a>
-                </div>
+                </nav>
+            </header>
+        </div>
 
-                <div id="nav-menu" class="nav-menu">
-                    <div class="container">
-                        <ul class="nav-links-mobile">
-                            <li>
-                                <a href="/" class="nav-link">
-                                    <svg class="icon">
-                                        <use xlink:href="/assets/images/svg/nav-sprite.svg#home"></use>
-                                    </svg>
-                                    <span>Home</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/pages/menu" class="nav-link">
-                                    <svg class="icon">
-                                        <use xlink:href="/assets/images/svg/nav-sprite.svg#menu"></use>
-                                    </svg>
-                                    <span>Menu</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/pages/partnership" class="nav-link">
-                                    <svg class="icon">
-                                        <use xlink:href="/assets/images/svg/nav-sprite.svg#partnership"></use>
-                                    </svg>
-                                    <span>Partnership</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/pages/outlets" class="nav-link">
-                                    <svg class="icon">
-                                        <use xlink:href="/assets/images/svg/nav-sprite.svg#cart"></use>
-                                    </svg>
-                                    <span>Outlets</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/pages/news" class="nav-link">
-                                    <svg class="icon">
-                                        <use xlink:href="/assets/images/svg/nav-sprite.svg#folder"></use>
-                                    </svg>
-                                    <span>News</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/pages/career" class="nav-link">
-                                    <svg class="icon">
-                                        <use xlink:href="/assets/images/svg/nav-sprite.svg#career"></use>
-                                    </svg>
-                                    <span>Career</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/pages/contact" class="nav-link">
-                                    <svg class="icon">
-                                        <use xlink:href="/assets/images/svg/nav-sprite.svg#contact"></use>
-                                    </svg>
-                                    <span>Contact</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/pages/about" class="nav-link">
-                                    <svg class="icon">
-                                        <use xlink:href="/assets/images/svg/nav-sprite.svg#info"></use>
-                                    </svg>
-                                    <span>About</span>
-                                </a>
-                            </li>
-                        </ul> <!-- Navigation -->
+        <div id="nav-menu" class="nav-menu">
+            <div class="container">
+                <ul class="nav-links-mobile">
+                    <li>
+                        <a href="/" class="nav-link">
+                            <svg class="icon">
+                                <use xlink:href="/assets/images/svg/nav-sprite.svg#home"></use>
+                            </svg>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pages/menu" class="nav-link">
+                            <svg class="icon">
+                                <use xlink:href="/assets/images/svg/nav-sprite.svg#menu"></use>
+                            </svg>
+                            <span>Menu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pages/partnership" class="nav-link">
+                            <svg class="icon">
+                                <use xlink:href="/assets/images/svg/nav-sprite.svg#partnership"></use>
+                            </svg>
+                            <span>Partnership</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pages/outlets" class="nav-link">
+                            <svg class="icon">
+                                <use xlink:href="/assets/images/svg/nav-sprite.svg#cart"></use>
+                            </svg>
+                            <span>Outlets</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pages/news" class="nav-link">
+                            <svg class="icon">
+                                <use xlink:href="/assets/images/svg/nav-sprite.svg#folder"></use>
+                            </svg>
+                            <span>News</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pages/career" class="nav-link">
+                            <svg class="icon">
+                                <use xlink:href="/assets/images/svg/nav-sprite.svg#career"></use>
+                            </svg>
+                            <span>Career</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pages/contact" class="nav-link">
+                            <svg class="icon">
+                                <use xlink:href="/assets/images/svg/nav-sprite.svg#contact"></use>
+                            </svg>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pages/about" class="nav-link">
+                            <svg class="icon">
+                                <use xlink:href="/assets/images/svg/nav-sprite.svg#info"></use>
+                            </svg>
+                            <span>About</span>
+                        </a>
+                    </li>
+                </ul> <!-- Navigation -->
 
-                        <hr>
+                <hr>
 
-                        <ul class="nav-links-sosmed">
-                            <li>
-                                <a href="" class="nav-link">
-                                    <svg class="icon">
-                                        <use xlink:href="/assets/images/svg/socmed-sprite.svg#facebook-square"></use>
-                                    </svg>
-                                    <span>Facebook</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="nav-link">
-                                    <svg class="icon">
-                                        <use xlink:href="/assets/images/svg/socmed-sprite.svg#instagram"></use>
-                                    </svg>
-                                    <span>Instagram</span>
-                                </a>
-                            </li>
-                        </ul> <!-- Sosmed -->
+                <ul class="nav-links-sosmed">
+                    <li>
+                        <a href="" class="nav-link">
+                            <svg class="icon">
+                                <use xlink:href="/assets/images/svg/socmed-sprite.svg#facebook-square"></use>
+                            </svg>
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">
+                            <svg class="icon">
+                                <use xlink:href="/assets/images/svg/socmed-sprite.svg#instagram"></use>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                </ul> <!-- Sosmed -->
 
-                        <hr>
+                <hr>
 
-                        <div>
-                            <h4>Shop Partnership</h4>
-                            <ul class="nav-partner">
-                                <li>
-                                    <svg class="icon">
-                                        <use xlink:href="/assets/images/svg/socmed-sprite.svg#go-food"></use>
-                                    </svg>
-                                </li>
-                                <li>
-                                    <svg class="icon">
-                                        <use xlink:href="/assets/images/svg/socmed-sprite.svg#shopee-food"></use>
-                                    </svg>
-                                </li>
-                                <li>
-                                    <svg class="icon">
-                                        <use xlink:href="/assets/images/svg/socmed-sprite.svg#grab-food"></use>
-                                    </svg>
-                                </li>
-                            </ul>
-                        </div> <!-- Partnership -->
+                <div>
+                    <p class="font-smaller">Shop Partnership</p>
+                    <ul class="nav-partner">
+                        <li>
+                            <svg class="icon">
+                                <use xlink:href="/assets/images/svg/socmed-sprite.svg#go-food"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="icon">
+                                <use xlink:href="/assets/images/svg/socmed-sprite.svg#shopee-food"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="icon">
+                                <use xlink:href="/assets/images/svg/socmed-sprite.svg#grab-food"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div> <!-- Partnership -->
 
-                        <div class="content text-center font-smaller">
-                            <p>copyright &copy; 2022 DB's Group</p>
-                        </div> <!-- Copuright -->
-                    </div>
-                </div>
-            </nav>
-        </header>
+                <div class="content text-center font-smaller">
+                    <p>copyright &copy; 2022 DB's Group</p>
+                </div> <!-- Copuright -->
+            </div>
+        </div>
 
         <main>
             <section class="career-path main-content">
@@ -245,6 +250,13 @@
     <script type="module">
         import { infos } from "/components/news/info.js";
         infos()
+
+        const dataToggle = document.querySelector("[data-toggle]")
+        const navMenu = document.querySelector("#nav-menu")
+
+        dataToggle.addEventListener("click", function(){
+            navMenu.classList.toggle("active")
+        })
     </script>
 </body>
 
