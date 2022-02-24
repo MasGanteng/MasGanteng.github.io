@@ -553,6 +553,9 @@ td {
   .view-desktop {
     display: none;
   }
+  .swiper-button-prev.news-prev,.swiper-button-next.news-next {
+    display: none;
+  }
 } /* Mobile */
 
 @media screen and (min-width: 481px) {
