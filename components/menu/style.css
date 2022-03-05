@@ -1,0 +1,59 @@
+/* Menu Lists */
+[data-toggle] {
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+[data-toggle] + [data-toggle] {
+  margin-left: 0.25rem;
+}
+[data-toggle].active {
+  color: var(--color-light);
+  background-color: rgb(150, 150, 150);
+  cursor: default;
+}
+.products-filter a {
+  cursor: pointer;
+}
+.products-filter li + li {
+  margin-top: 1rem;
+}
+.products-lists-grid .display-list,
+.products-lists-grid .display-grid {
+  display: grid;
+  gap: 4rem 2rem;
+}
+.products-lists-grid .display-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+.products-lists-grid .display-grid img {
+  margin-bottom: 0.5rem;
+}
+.products-lists-grid .btn {
+  margin-top: 0.5rem;
+  --padding: 0.4rem;
+  font-size: 0.75rem;
+}
+.products-groups {
+  margin-bottom: 5rem;
+}
+.display-grid img {
+  height: auto;
+  aspect-ratio: 3/4;
+}
+.display-list figure {
+  display: flex;
+  gap: 2rem;
+}
+.display-list img {
+  width: 8rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  height: 100%;
+}
+/* .display-grid li {
+    aspect-ratio: 2/3;
+  } */
+/* endMenu Lists */

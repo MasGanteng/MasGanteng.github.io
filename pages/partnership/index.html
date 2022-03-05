@@ -17,6 +17,7 @@
 
 <body>
     <div id="app">
+        <header class="my-header"></header>
         <div class="view-desktop">
             <header>
                 <nav class="navbar container">
@@ -158,7 +159,7 @@
 
                 <div class="content text-center font-smaller">
                     <p>copyright &copy; 2022 DB's Group</p>
-                </div> <!-- Copuright -->
+                </div> <!-- Copyright -->
             </div>
         </div>
 
@@ -167,7 +168,7 @@
                 <div class="container">
                     <div class="contact-grid main-header">
                         <div class="left">
-                            <img src="https://source.unsplash.com/random/cat" class="full-width full-height object-cover" alt="profile">
+                            <img src="https://source.unsplash.com/random/cat" class="full-width img-rect object-cover" alt="profile">
                         </div>
                         <div class="right text-start">
                             <img src="/assets/images/image/cake-partnership.png" alt="parnership">
@@ -251,12 +252,16 @@
         import { infos } from "/components/news/info.js";
         infos()
 
-        const dataToggle = document.querySelector("[data-toggle]")
-        const navMenu = document.querySelector("#nav-menu")
+        const 
+            dataToggle = document.querySelector("[data-toggle]"),
+            navMenu = document.querySelector("#nav-menu")
 
         dataToggle.addEventListener("click", function(){
             navMenu.classList.toggle("active")
         })
+        if(navMenu.classList.contains('active')){
+            console.log('bgf');
+        }
     </script>
 </body>
 

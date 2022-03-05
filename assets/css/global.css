@@ -1,0 +1,76 @@
+:root {
+  --color-light: hsl(0, 0%, 96%);
+  --color-dark: hsl(0, 0%, 20%);
+  --color-base: hsl(44, 52%, 92%);
+  --color-primary: hsl(205, 41%, 25%);
+  --color-secondary: hsl(35, 32%, 55%);
+  --color-danger: hsl(0, 49%, 51%);
+  --font-family-title: "Cormorant Garamond", serif;
+  --font-family-content: "plusJakartaSans", sans-serif;
+  --font-base: 16px;
+  --container: 1200px;
+  --header-height: 9rem;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  font-size: var(--font-base);
+  line-height: 1.5;
+  color: var(--color-dark);
+}
+
+body {
+  background-color: var(--color-base);
+  font-family: var(--font-family-content);
+}
+
+main {
+  margin-top: var(--header-height);
+}
+
+hr {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+img,
+svg {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+figure {
+  position: relative;
+  height: 100%;
+}
+figure img {
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+}
+table.separate {
+  border-collapse: separate;
+  border-spacing: 0 0.75rem;
+}
+table.collapse {
+  border-collapse: collapse;
+}
+td {
+  vertical-align: baseline;
+}

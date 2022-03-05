@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,700&display=swap");
 
+@import "/assets/css/global.css";
+@import "/assets/css/utility.css";
+@import "/assets/css/button.css";
 @import "/components/header/style.css";
 @import "/components/footer/style.css";
+@import "/components/news/style.css";
+
 @font-face {
   font-family: plusJakartaSans;
   src: url(/assets/fonts/PlusJakartaSans-2.6/static/PlusJakartaSans-Regular.ttf);
@@ -13,77 +18,12 @@
   font-weight: bold;
 }
 
-/* Table of Contents */
-/* Button, Global, Header, Promo Month, Career Path, Hero, Brand Story, Store Features */
 
-:root {
-  --color-light: hsl(0, 0%, 96%);
-  --color-dark: hsl(0, 0%, 20%);
-  --color-base: hsl(44, 52%, 92%);
-  --color-primary: hsl(205, 41%, 25%);
-  --color-secondary: hsl(35, 32%, 55%);
-  --color-danger: hsl(0, 49%, 51%);
-  --font-family-title: "Cormorant Garamond", serif;
-  --font-family-content: "plusJakartaSans", sans-serif;
-  --font-base: 16px;
-  --container: 1200px;
-}
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
-  font-family: sans-serif;
-  font-size: var(--font-base);
-  line-height: 1.5;
-  color: var(--color-dark);
-}
-body {
-  background-color: var(--color-base);
-  font-family: var(--font-family-content);
-}
-hr {
-  width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-img,
-svg {
-  width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
 .img-circle {
   border-radius: 50% !important;
 }
-ul {
-  list-style-type: none;
-  padding-inline-start: 0;
-}
-figure {
-  position: relative;
-  height: 100%;
-}
-figure img {
-  object-fit: cover;
-}
-a {
-  /* font-weight: 700; */
-  text-decoration: none;
-}
-table.separate {
-  border-collapse: separate;
-  border-spacing: 0 0.75rem;
-}
-table.collapse {
-  border-collapse: collapse;
-}
-td {
-  vertical-align: baseline;
+.img-rect {
+  aspect-ratio: 1/1;
 }
 .container {
   max-width: min(100% - 4rem, var(--container));
@@ -102,54 +42,7 @@ td {
 .content {
   font-family: var(--font-family-content);
 }
-.object-cover {
-  object-fit: cover !important;
-}
-.font-smaller {
-  font-size: smaller !important;
-}
-.font-larger {
-  font-size: larger !important;
-}
-.full-width {
-  width: 100% !important;
-}
-.full-height {
-  height: 100% !important;
-}
-.d-flex {
-  display: flex !important;
-}
-.d-grid {
-  display: grid !important;
-}
-.grid-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-.text-center {
-  text-align: center !important;
-}
-.text-start {
-  text-align: start !important;
-}
-.text-end {
-  text-align: end !important;
-}
-.text-normal {
-  font-weight: normal !important;
-}
-.text-bold {
-  font-weight: bold !important;
-}
-.justify-start {
-  justify-content: flex-start !important;
-}
-.justify-center {
-  justify-content: center !important;
-}
-.justify-end {
-  justify-content: flex-end !important;
-}
+
 .icon {
   --size: 1rem;
   max-width: var(--size);
@@ -178,70 +71,6 @@ td {
   list-style-type: initial;
 }
 
-/* Button */
-.btn {
-  --padding: 0.75rem;
-  position: relative;
-  display: inline-flex;
-  place-content: center;
-  padding: var(--padding) calc(var(--padding) * 2);
-  font-family: var(--font-family-content);
-  font-weight: 600;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  /* overflow: hidden; */
-  box-shadow: 2px 2px 6px rgb(0 0 0 / 10%);
-  transition: all 0.2s ease;
-}
-/* .btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateX(-100%);
-  transition: inherit;
-  background-color: #c04545;
-  z-index: 1;
-}
-.btn:hover::before {
-  transform: translateX(0);
-} */
-.btn-pill {
-  border-radius: calc(var(--padding) * 3);
-}
-.btn-block {
-  display: block;
-  width: 100%;
-}
-.btn-primary,
-.btn-secondary {
-  color: white;
-}
-.btn-primary {
-  background-color: var(--color-primary);
-}
-.btn-secondary {
-  background-color: var(--color-secondary);
-}
-.btn-light {
-  color: var(--color-dark);
-  background-color: white;
-}
-.btn-outline-light {
-  color: var(--color-primary);
-  border: 1px solid currentColor;
-}
-.btn-outline-light:hover,
-.btn-primary:hover,
-.btn-secondary:hover,
-.btn-light:hover {
-  color: white;
-  background-color: var(--color-danger);
-}
-/* endButton */
 
 /* Global */
 .main-header {
@@ -273,69 +102,6 @@ td {
 }
 /* endGlobal */
 
-/* DB News */
-.db-news {
-  --swiper-theme-color: var(--color-dark);
-  --swiper-navigation-size: 2rem;
-  padding-top: 4.5rem;
-  padding-bottom: 5rem;
-  background: var(--color-light);
-}
-.db-news .container {
-  position: relative;
-}
-.db-news .db-title {
-  display: flex;
-  justify-content: center;
-  color: var(--color-dark);
-  overflow: hidden;
-}
-.db-title .title {
-  position: relative;
-  padding: 0.5rem 1.5rem;
-  border: 1px solid;
-  margin-bottom: 3rem;
-}
-.db-title .title::before,
-.db-title .title::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 200%;
-  height: 1px;
-  background-color: var(--color-dark);
-}
-.db-title .title::before {
-  left: -200%;
-}
-.db-title .title::after {
-  right: -200%;
-}
-.swiper-button-prev.news-prev {
-  left: -4rem;
-}
-.swiper-button-next.news-next {
-  right: -4rem;
-}
-.news-thumbnail .swiper-slide {
-  background-color: white;
-}
-.news-thumbnail img {
-  aspect-ratio: 5/4;
-}
-.news-thumbnail figcaption {
-  padding: 2.5rem;
-  height: 19rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.news-thumbnail .title {
-  --line: 2;
-  height: 5rem;
-}
-/* endDB News */
-
 /* Swiper */
 .swiper {
   --swiper-theme-color: var(--color-light);
@@ -364,29 +130,6 @@ td {
   margin-bottom: 1.5rem;
 }
 /* endBrand Story */
-
-/* Promo */
-.promo-month .promo-lists {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.25rem;
-}
-.promo-lists figure {
-  text-align: center;
-}
-.promo-lists figure > img {
-  aspect-ratio: 1/1;
-  height: auto;
-  margin-bottom: 1.5rem;
-}
-.promo-lists .title {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-.promo-lists figcaption {
-  padding-bottom: 2rem;
-}
-/* endPromo */
 
 /* Main Products */
 .main-products {
@@ -431,121 +174,13 @@ td {
 }
 /* endMain Products */
 
-/* News */
-.news-lists {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(1.5rem, 5vw, 4rem);
-}
-.news-lists figure {
-  display: grid;
-}
-.news-lists img {
-  aspect-ratio: 3/2;
-  height: auto;
-  margin-bottom: 1rem;
-}
-.news-lists a {
-  width: max-content;
-}
-.news-lists .date {
-  margin-bottom: 0.5rem;
-  font-size: 0.75rem;
-}
-.news-lists .title {
-  margin-bottom: 1rem;
-}
-.news-lists .content {
-  margin-bottom: 2rem;
-}
-.news-lists .title,
-.news-lists .content {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-/* endNews */
 
-/* Menu Lists */
-[data-toggle] {
-  display: inline-flex;
-  cursor: pointer;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  transition: all 0.3s ease-in-out;
-}
-[data-toggle] + [data-toggle] {
-  margin-left: 0.25rem;
-}
-[data-toggle].active {
-  color: var(--color-light);
-  background-color: rgb(150, 150, 150);
-  cursor: default;
-}
-.products-filter a {
-  cursor: pointer;
-}
-.products-filter li + li {
-  margin-top: 1rem;
-}
-.products-lists-grid .display-list,
-.products-lists-grid .display-grid {
-  display: grid;
-  gap: 4rem 2rem;
-}
-.products-lists-grid .display-grid {
-  grid-template-columns: repeat(4, 1fr);
-}
-.products-lists-grid .display-grid img {
-  margin-bottom: 0.5rem;
-}
-.products-lists-grid .btn {
-  margin-top: 0.5rem;
-  --padding: 0.4rem;
-  font-size: 0.75rem;
-}
-.products-groups {
-  margin-bottom: 5rem;
-}
-.display-grid img {
-  height: auto;
-  aspect-ratio: 3/4;
-}
-.display-list figure {
-  display: flex;
-  gap: 2rem;
-}
-.display-list img {
-  width: 8rem;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  height: 100%;
-}
-/* .display-grid li {
-  aspect-ratio: 2/3;
-} */
-/* endMenu Lists */
-
-.our-team {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: -2rem;
-  margin-right: -2rem;
-}
-.our-team li {
-  width: 19%;
-  margin: 2rem;
-}
-.our-team img {
-  width: 8rem;
-}
 
 @media screen and (max-width: 480px) {
   :root {
     --font-base: 12px;
     --container: 340px;
+    --header-height: 6rem;
   }
   .view-mobile {
     display: block;

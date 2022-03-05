@@ -1,0 +1,22 @@
+/* Promo */
+.promo-month .promo-lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.25rem;
+}
+.promo-lists figure {
+  text-align: center;
+}
+.promo-lists figure > img {
+  aspect-ratio: 1/1;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+.promo-lists .title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.promo-lists figcaption {
+  padding-bottom: 2rem;
+}
+/* endPromo */

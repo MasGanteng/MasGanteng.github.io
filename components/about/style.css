@@ -1,0 +1,47 @@
+.our-team {
+  --margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: var(--margin);
+  margin-right: var(--margin);
+}
+.our-team img {
+  width: clamp(6rem, 10vw, 8rem);
+}
+
+@media screen and (max-width: 480px) {
+  .our-team {
+    --margin: -1rem;
+    flex-direction: column;
+  }
+  .our-team li {
+    margin: 1rem;
+  }
+  .our-team figure {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+  }
+  .our-team figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .our-team {
+    --margin: -2rem;
+    text-align: center;
+  }
+  .our-team li {
+    margin: 2rem;
+  }
+  .our-team li {
+    width: 19%;
+  }
+  .our-team figcaption p:first-child {
+    margin-top: 2rem;
+  }
+}

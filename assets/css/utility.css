@@ -1,0 +1,51 @@
+.object-cover {
+  object-fit: cover !important;
+}
+.font-smaller {
+  font-size: smaller !important;
+}
+.font-larger {
+  font-size: larger !important;
+}
+
+.full-width {
+  width: 100% !important;
+}
+.full-height {
+  height: 100% !important;
+}
+.d-flex {
+  display: flex !important;
+}
+.d-grid {
+  display: grid !important;
+}
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.text-center {
+  text-align: center !important;
+}
+.text-start {
+  text-align: start !important;
+}
+.text-end {
+  text-align: end !important;
+}
+.text-normal {
+  font-weight: normal !important;
+}
+.text-bold {
+  font-weight: bold !important;
+}
+
+.justify-start {
+  justify-content: flex-start !important;
+}
+.justify-center {
+  justify-content: center !important;
+}
+.justify-end {
+  justify-content: flex-end !important;
+}
