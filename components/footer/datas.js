@@ -3,11 +3,11 @@ export const footerDesc =
   "DB’s Group is defined by our culture – one that embrace collaboration, agility, flexibility, constant improvement as well as tolerance to mistake.";
 export const footerSocMed = [
   {
-    src: sourceBase + "facebook",
+    src: "facebook",
     path: "",
   },
   {
-    src: sourceBase + "linkedin",
+    src: "linkedin",
     path: "",
   },
 ];
@@ -31,13 +31,13 @@ export const footerNav = [
 ];
 export const footerPartnership = [
   {
-    src: sourceBase + "go-food",
+    src: "go-food",
   },
   {
-    src: sourceBase + "shopee-food",
+    src: "shopee-food",
   },
   {
-    src: sourceBase + "grab-food",
+    src: "grab-food",
   },
 ];
 export const copyright = "2022";

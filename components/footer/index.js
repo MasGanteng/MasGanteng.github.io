@@ -49,7 +49,7 @@ export const myFooter = () => {
                                     <li>
                                         <a href="${socmed.path}">
                                             <svg class="icon">
-                                                <use xlink:href="${socmed.src}"></use>
+                                                <use xlink:href="/assets/images/svg/socmed-sprite.svg#${socmed.src}"></use>
                                             </svg>
                                         </a>
                                     </li>
@@ -69,7 +69,7 @@ export const myFooter = () => {
                                 ${footerPartnership.map(partner => `
                                     <li>
                                         <svg class="icon">
-                                            <use xlink:href="${partner.src}"></use>
+                                            <use xlink:href="/assets/images/svg/socmed-sprite.svg#${partner.src}"></use>
                                         </svg>
                                     </li>
                                 `).join("")}
@@ -87,7 +87,7 @@ export const myFooter = () => {
                             <li>
                                 <a href="${socmed.path}">
                                     <svg class="icon">
-                                        <use xlink:href="${socmed.src}"></use>
+                                        <use xlink:href="/assets/images/svg/socmed-sprite.svg#${socmed.src}"></use>
                                     </svg>
                                 </a>
                             </li>

@@ -1,4 +1,5 @@
 import { navs } from "./datas.js";
+import { footerSocMed, footerPartnership, copyright } from "../footer/datas.js"
 
 export const navList = () => {
   const header = document.querySelector(".my-header")
@@ -71,7 +72,7 @@ export const navList = () => {
                       <span>Home</span>
                   </a>
               </li>
-            ${navs.map(nav=>`
+            ${navs.map(nav => `
               <li>
                   <a href="${nav.navLink}" class="nav-link">
                       <svg class="icon">
@@ -81,7 +82,7 @@ export const navList = () => {
                   </a>
               </li>
             `).join("")}
-          </ul> <!-- Navigation -->
+          </ul>
 
           <hr>
 
@@ -102,34 +103,26 @@ export const navList = () => {
                       <span>Instagram</span>
                   </a>
               </li>
-          </ul> <!-- Sosmed -->
+          </ul>
 
           <hr>
 
           <div>
               <p class="font-smaller">Shop Partnership</p>
               <ul class="nav-partner">
+                ${footerPartnership.map(partner => `
                   <li>
                       <svg class="icon">
-                          <use xlink:href="/assets/images/svg/socmed-sprite.svg#go-food"></use>
+                          <use xlink:href="/assets/images/svg/socmed-sprite.svg#${partner.src}"></use>
                       </svg>
                   </li>
-                  <li>
-                      <svg class="icon">
-                          <use xlink:href="/assets/images/svg/socmed-sprite.svg#shopee-food"></use>
-                      </svg>
-                  </li>
-                  <li>
-                      <svg class="icon">
-                          <use xlink:href="/assets/images/svg/socmed-sprite.svg#grab-food"></use>
-                      </svg>
-                  </li>
+                `).join("")}
               </ul>
-          </div> <!-- Partnership -->
+          </div>
 
           <div class="content text-center font-smaller">
-              <p>copyright &copy; 2022 DB's Group</p>
-          </div> <!-- Copyright -->
+              <p>copyright &copy; ${copyright} DB's Group</p>
+          </div>
       </div>
     </div>
   `
@@ -140,17 +133,18 @@ export const navList = () => {
   activeLink.forEach(active=>{
     if(active.href === activePage){
       active.classList.add('active');
-    }})
+    }
+  })
 
 
-    const 
-    dataToggle = document.querySelector("[data-toggle]"),
-    navMenu = document.querySelector("#nav-menu")
+  const 
+      dataToggle = document.querySelector("[data-toggle]"),
+      navMenu = document.querySelector("#nav-menu")
 
-dataToggle.addEventListener("click", function(){
-    navMenu.classList.toggle("active")
-})
-if(navMenu.classList.contains('active')){
-    console.log('bgf');
-}
+  dataToggle.addEventListener("click", function(){
+      navMenu.classList.toggle("active")
+  })
+  if(navMenu.classList.contains('active')){
+      console.log('bgf');
+  }
 };
