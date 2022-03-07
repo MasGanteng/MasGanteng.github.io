@@ -83,8 +83,8 @@
   mix-blend-mode: multiply;
 }
 .main-content {
-  margin-top: 6rem;
-  margin-bottom: 5rem;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
 }
 .see-more {
   display: flex;
@@ -131,48 +131,6 @@
 }
 /* endBrand Story */
 
-/* Main Products */
-.main-products {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 2rem;
-}
-.main-products aside {
-  width: 20rem;
-}
-.products-lists-filter {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
-  margin-bottom: 3rem;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-}
-.products-lists-filter li:last-child {
-  margin-left: auto;
-}
-.products-lists-filter .filter {
-  display: flex;
-}
-.products-sort {
-  display: inline-flex;
-}
-.products-sort li + li {
-  margin-left: 0.5rem;
-}
-.products-sort a {
-  padding: 0.5rem;
-  font-size: 0.75rem;
-  background-color: white;
-  cursor: pointer;
-  /* border: thin solid #bbb; */
-  transition: all 0.2s ease;
-}
-.products-sort a.active {
-  background-color: var(--color-danger);
-  color: white;
-}
-/* endMain Products */
 
 
 

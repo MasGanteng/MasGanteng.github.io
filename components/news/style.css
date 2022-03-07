@@ -1,4 +1,3 @@
-
 /* News */
 .news-lists {
   display: grid;
@@ -86,15 +85,13 @@
   aspect-ratio: 5/4;
 }
 .news-thumbnail figcaption {
-  padding: 2.5rem;
-  height: 19rem;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .news-thumbnail .title {
   --line: 2;
-  height: 5rem;
 }
 /* endDB News */
 
@@ -102,4 +99,10 @@
 } /* Mobile */
 
 @media screen and (min-width: 481px) {
+  .news-thumbnail figcaption {
+    height: 19rem;
+  }
+  .news-thumbnail .title {
+    height: 5rem;
+  }
 }
