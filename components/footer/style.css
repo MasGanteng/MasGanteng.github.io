@@ -15,7 +15,6 @@ footer .contact {
 footer .contact .footer-content {
   display: grid;
   place-items: center;
-  gap: 1rem;
   text-align: center;
 }
 footer .contact .title {
@@ -120,6 +119,7 @@ footer .copyright {
     display: grid;
     text-align: center;
     gap: 3rem;
+    padding-top: 4rem;
   }
   footer .navigation img {
     margin: auto;

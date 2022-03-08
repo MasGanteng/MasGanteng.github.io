@@ -32,8 +32,9 @@ select.form-input {
   position: relative;
 }
 .form-floating label {
+  width: 100%;
   color: #fefefe;
-  font-size: 18px;
+  font-size: 1.25rem;
   font-weight: normal;
   position: absolute;
   pointer-events: none;
@@ -61,6 +62,9 @@ select.form-input {
 @media screen and (max-width: 480px) {
   form p {
     font-size: 1rem;
+  }
+  .form-floating input {
+    text-align: center;
   }
 } /* Mobile */
 

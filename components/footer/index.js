@@ -6,8 +6,8 @@ export const myFooter = () => {
     <section class="contact">
         <div class="container">
             <div class="footer-content">
-                <p class="title">Let's Become Our DB's Group</p>
-                <p>Be part of DB Group Family, Growing together advancing technology enabled F&B industry in Indonesia</p>
+                <p class="title mb-2">Let's Become Our DB's Group</p>
+                <p class="mb-4">Be part of DB Group Family, Growing together advancing technology enabled F&B industry in Indonesia</p>
                 <a href="/pages/contact" class="btn btn-light btn-pill"><span>Contact Now</span></a>
             </div>
         </div>
