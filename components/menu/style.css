@@ -89,6 +89,11 @@
   background-color: var(--color-danger);
   color: white;
 }
+.products-card figure {
+  padding: .5rem;
+  background-color: white;
+  border: thin solid currentColor;
+}
 /* endMain Products */
 
 @media screen and (max-width: 480px) {

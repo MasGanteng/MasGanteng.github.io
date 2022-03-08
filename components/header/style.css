@@ -19,7 +19,7 @@ header {
   font-family: var(--font-family-title);
 }
 .navbar ul {
-  display: inherit;
+  display: flex;
 }
 .navbar li {
   padding: 0.625rem 1.25rem;

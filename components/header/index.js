@@ -17,50 +17,32 @@ export const navList = () => {
   //   `;
   // });
 
-  header.innerHTML += `
-    <div class="container view-desktop">
+  const navHeader = `
+    <div class="container">
       <nav class="navbar">
         <a href="/">
             <img src="/assets/images/logo/logo.png" alt="Logo">
         </a>
-        <ul>
-          ${navs.map(nav=>`
-          <li>
-            <a href="${nav.navLink}">${nav.navText}</a>
-          </li>
-          `).join("")}
-        </ul>
+        <div class="view-desktop">
+          <ul>
+            ${navs.map(nav=>`
+            <li>
+              <a href="${nav.navLink}">${nav.navText}</a>
+            </li>
+            `).join("")}
+          </ul>
+        </div>
+        <div class="view-mobile">
+          <a class="toggle-menu">
+              <svg class="icon">
+                  <use xlink:href="/assets/images/svg/utility-sprite.svg#burger"></use>
+              </svg>
+          </a>
+        </div>
       </nav>
     </div>
-
-
-    <div class="view-desktop">
-        <header>
-            <nav class="navbar container">
-                <a href="/">
-                    <img src="/assets/images/logo/logo.png" alt="Logo">
-                </a>
-                <ul></ul>
-            </nav>
-        </header>
-    </div>
-
-    <div class="view-mobile">
-        <header>
-            <nav class="navbar container">
-                <a href="/" class="logo-mobile">
-                    <img src="/assets/images/logo/logo.png" alt="Logo">
-                </a>
-                <a class="toggle-menu" data-toggle="nav-menu">
-                    <svg class="icon">
-                        <use xlink:href="/assets/images/svg/utility-sprite.svg#burger"></use>
-                    </svg>
-                </a>
-            </nav>
-        </header>
-    </div>
-
-
+  `
+  const navMobile = `
     <div id="nav-menu" class="nav-menu">
       <div class="container">
           <ul class="nav-links-mobile">
@@ -126,6 +108,11 @@ export const navList = () => {
       </div>
     </div>
   `
+  header.innerHTML += `
+    ${navHeader}
+    ${navMobile}
+  `
+
   const activePage = location.href;
   // console.log(activePage);
   const activeLink = document.querySelectorAll('a')
