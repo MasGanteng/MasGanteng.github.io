@@ -134,4 +134,8 @@ export const navList = () => {
   if(navMenu.classList.contains('active')){
       console.log('bgf');
   }
+
+  window.addEventListener("unload", function(){
+    navMenu.classList.remove("active")
+  })
 };
