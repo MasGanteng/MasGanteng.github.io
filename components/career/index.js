@@ -1,4 +1,4 @@
-import { careers } from "./datas.js";
+import { careers } from "./stores.js";
 
 const careerLists = document.querySelector(".career-lists");
 

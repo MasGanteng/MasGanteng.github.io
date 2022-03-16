@@ -1,4 +1,4 @@
-import { newss } from "./datas.js";
+import { newss } from "./stores.js";
 
 const newsLists = document.querySelector(".news-lists");
 

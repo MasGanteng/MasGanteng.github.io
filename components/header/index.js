@@ -1,5 +1,9 @@
-import { navs } from "./datas.js";
-import { footerSocMed, footerPartnership, copyright } from "../footer/datas.js"
+import { navs } from "./stores.js";
+import { 
+  footerSocMed, 
+  footerPartnership, 
+  copyright 
+} from "../footer/stores.js"
 
 export const navList = () => {
   const header = document.querySelector(".my-header")
@@ -125,7 +129,7 @@ export const navList = () => {
 
 
   const 
-      dataToggle = document.querySelector("[data-toggle]"),
+      dataToggle = document.querySelector(".toggle-menu"),
       navMenu = document.querySelector("#nav-menu")
 
   dataToggle.addEventListener("click", function(){

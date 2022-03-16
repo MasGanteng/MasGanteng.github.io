@@ -1,4 +1,4 @@
-import { newss } from "./datas.js";
+import { newss } from "./stores.js";
 import Swiper from "/assets/plugins/swiper/swiper-bundle.esm.browser.min.js";
 (async () => {
   const sheet = await import("/assets/plugins/swiper/swiper-bundle.min.css", {

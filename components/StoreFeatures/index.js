@@ -1,4 +1,4 @@
-import { storeFeatures } from "./datas.js";
+import { storeFeatures } from "./stores.js";
 
 export const storeFeat = () => {
   const store = document.querySelector(".store-features");

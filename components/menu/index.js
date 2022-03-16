@@ -1,4 +1,4 @@
-import { menus, menuLists } from "./datas.js";
+import { menus, menuLists } from "./stores.js";
 
 // export const menuList = () => {
 //   const menuGrid = document.querySelector(".products-lists-grid > ul");

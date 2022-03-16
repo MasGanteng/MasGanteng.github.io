@@ -1,4 +1,10 @@
-import { footerDesc, footerSocMed, footerNav, footerPartnership, copyright } from "./datas.js";
+import { 
+    footerDesc, 
+    footerSocMed, 
+    footerNav, 
+    footerPartnership, 
+    copyright 
+} from "./stores.js";
 
 export const myFooter = () => {
   const footer = document.querySelector(".my-footer");

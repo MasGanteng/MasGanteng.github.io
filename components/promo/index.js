@@ -1,4 +1,4 @@
-import { promos } from "./datas.js";
+import { promos } from "./stores.js";
 
 const promod = document.querySelector(".promo-lists");
 
