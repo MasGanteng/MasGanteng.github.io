@@ -1,0 +1,20 @@
+.icon {
+  --size: 1rem;
+  max-width: var(--size);
+  height: var(--size);
+}
+.icon-share {
+  --size: 1.5rem;
+}
+.icon-share:hover {
+  filter: brightness(0.9);
+}
+.icon-twitter {
+  color: hsl(203, 89%, 53%);
+}
+.icon-facebook {
+  color: hsl(220, 46%, 48%);
+}
+.icon-linkedin {
+  color: hsl(201, 100%, 35%);
+}

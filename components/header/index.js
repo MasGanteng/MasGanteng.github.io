@@ -135,11 +135,9 @@ export const navList = () => {
   dataToggle.addEventListener("click", function(){
       navMenu.classList.toggle("active")
   })
-  if(navMenu.classList.contains('active')){
-      console.log('bgf');
-  }
 
-  window.addEventListener("unload", function(){
+  // navMenu.onunload = function() {}
+  document.addEventListener("unload", function(){
     navMenu.classList.remove("active")
   })
 };

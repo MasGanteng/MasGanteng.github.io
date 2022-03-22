@@ -1,10 +1,10 @@
 export const storeFeatures = [
   {
     image: "https://source.unsplash.com/random/cat",
-    title: "Montly Promo",
+    title: "Follow Us",
     subtitle:
       "It combines croissants and waffles by placing rich buttery croissant pastries into a waffle iron. The innovative snack can be covered in a variety of toppings such as Nutella, avocado, meats, fruits, and much more",
-    buttonText: "See Our Promo",
+    buttonText: "Check Our Instagram",
     buttonLink: "",
   },
   {
