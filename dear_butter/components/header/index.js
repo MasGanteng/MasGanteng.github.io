@@ -24,8 +24,8 @@ export const navList = () => {
   const navHeader = `
     <div class="container">
       <nav class="navbar">
-        <a href="/">
-            <img src="/assets/images/logo/logo.png" alt="Logo">
+        <a href="/dear_butter">
+            <img src="/dear_butter/assets/images/logo/logo.png" alt="Logo">
         </a>
         <div class="view-desktop">
           <ul>
@@ -39,7 +39,7 @@ export const navList = () => {
         <div class="view-mobile">
           <a class="toggle-menu">
               <svg class="icon">
-                  <use xlink:href="/assets/images/svg/utility-sprite.svg#burger"></use>
+                  <use xlink:href="/dear_butter/assets/images/svg/utility-sprite.svg#burger"></use>
               </svg>
           </a>
         </div>
@@ -51,9 +51,9 @@ export const navList = () => {
       <div class="container">
           <ul class="nav-links-mobile">
               <li>
-                  <a href="/" class="nav-link">
+                  <a href="/dear_butter" class="nav-link">
                       <svg class="icon">
-                          <use xlink:href="/assets/images/svg/nav-sprite.svg#home"></use>
+                          <use xlink:href="/dear_butter/assets/images/svg/nav-sprite.svg#home"></use>
                       </svg>
                       <span>Home</span>
                   </a>
@@ -62,7 +62,7 @@ export const navList = () => {
               <li>
                   <a href="${nav.navLink}" class="nav-link">
                       <svg class="icon">
-                          <use xlink:href="/assets/images/svg/nav-sprite.svg#${nav.navIcon}"></use>
+                          <use xlink:href="/dear_butter/assets/images/svg/nav-sprite.svg#${nav.navIcon}"></use>
                       </svg>
                       <span>${nav.navText}</span>
                   </a>
@@ -76,7 +76,7 @@ export const navList = () => {
               <li>
                   <a href="" class="nav-link">
                       <svg class="icon">
-                          <use xlink:href="/assets/images/svg/socmed-sprite.svg#facebook-square"></use>
+                          <use xlink:href="/dear_butter/assets/images/svg/socmed-sprite.svg#facebook-square"></use>
                       </svg>
                       <span>Facebook</span>
                   </a>
@@ -84,7 +84,7 @@ export const navList = () => {
               <li>
                   <a href="" class="nav-link">
                       <svg class="icon">
-                          <use xlink:href="/assets/images/svg/socmed-sprite.svg#instagram"></use>
+                          <use xlink:href="/dear_butter/assets/images/svg/socmed-sprite.svg#instagram"></use>
                       </svg>
                       <span>Instagram</span>
                   </a>
@@ -99,7 +99,7 @@ export const navList = () => {
                 ${footerPartnership.map(partner => `
                   <li>
                       <svg class="icon">
-                          <use xlink:href="/assets/images/svg/socmed-sprite.svg#${partner.src}"></use>
+                          <use xlink:href="/dear_butter/assets/images/svg/socmed-sprite.svg#${partner.src}"></use>
                       </svg>
                   </li>
                 `).join("")}

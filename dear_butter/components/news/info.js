@@ -1,7 +1,7 @@
 import { newss } from "./stores.js";
-import Swiper from "/assets/plugins/swiper/swiper-bundle.esm.browser.min.js";
+import Swiper from "/dear_butter/assets/plugins/swiper/swiper-bundle.esm.browser.min.js";
 (async () => {
-  const sheet = await import("/assets/plugins/swiper/swiper-bundle.min.css", {
+  const sheet = await import("/dear_butter/assets/plugins/swiper/swiper-bundle.min.css", {
     assert: { type: "css" },
   });
   document.adoptedStyleSheets = [sheet.default];

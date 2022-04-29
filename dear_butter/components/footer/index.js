@@ -14,7 +14,7 @@ export const myFooter = () => {
             <div class="footer-content">
                 <p class="title mb-2">Let's Become Our DB's Group</p>
                 <p class="mb-4">Be part of DB Group Family, Growing together advancing technology enabled F&B industry in Indonesia</p>
-                <a href="/pages/contact" class="btn btn-light btn-pill"><span>Contact Now</span></a>
+                <a href="/dear_butter/pages/contact" class="btn btn-light btn-pill"><span>Contact Now</span></a>
             </div>
         </div>
     </section>
@@ -47,7 +47,7 @@ export const myFooter = () => {
             <div class="top">
                 <div class="footer-content">
                     <div class="footer-about">
-                        <img src="/assets/images/logo/logo.png" alt="logo">
+                        <img src="/dear_butter/assets/images/logo/logo.png" alt="logo">
                         <p>${footerDesc}</p>
                         <div class="view-desktop">
                             <ul class="footer-socmed">
@@ -55,7 +55,7 @@ export const myFooter = () => {
                                     <li>
                                         <a href="${socmed.path}">
                                             <svg class="icon">
-                                                <use xlink:href="/assets/images/svg/socmed-sprite.svg#${socmed.src}"></use>
+                                                <use xlink:href="/dear_butter/assets/images/svg/socmed-sprite.svg#${socmed.src}"></use>
                                             </svg>
                                         </a>
                                     </li>
@@ -75,7 +75,7 @@ export const myFooter = () => {
                                 ${footerPartnership.map(partner => `
                                     <li>
                                         <svg class="icon">
-                                            <use xlink:href="/assets/images/svg/socmed-sprite.svg#${partner.src}"></use>
+                                            <use xlink:href="/dear_butter/assets/images/svg/socmed-sprite.svg#${partner.src}"></use>
                                         </svg>
                                     </li>
                                 `).join("")}
@@ -93,7 +93,7 @@ export const myFooter = () => {
                             <li>
                                 <a href="${socmed.path}">
                                     <svg class="icon">
-                                        <use xlink:href="/assets/images/svg/socmed-sprite.svg#${socmed.src}"></use>
+                                        <use xlink:href="/dear_butter/assets/images/svg/socmed-sprite.svg#${socmed.src}"></use>
                                     </svg>
                                 </a>
                             </li>

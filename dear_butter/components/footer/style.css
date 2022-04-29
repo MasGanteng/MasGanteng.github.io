@@ -7,8 +7,8 @@ footer a:hover {
   color: var(--color-danger);
 }
 footer .contact {
-  color: var(--color-light);
-  background-color: var(--color-primary);
+  color: var(--color-light, #f9f9f9);
+  background-color: var(--color-primary, rgb(102, 102, 206));
   padding-top: 2.5rem;
   padding-bottom: 4.5rem;
 }

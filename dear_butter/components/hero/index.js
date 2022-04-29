@@ -1,7 +1,7 @@
-import { heroDatas } from "/components/hero/stores.js";
+import { heroDatas } from "./stores.js";
 
-import Swiper from "/assets/plugins/swiper/swiper-bundle.esm.browser.min.js";
-const sheet = await import("/assets/plugins/swiper/swiper-bundle.min.css", {
+import Swiper from "../../assets/plugins/swiper/swiper-bundle.esm.browser.min.js";
+const sheet = await import("../../assets/plugins/swiper/swiper-bundle.min.css", {
   assert: { type: "css" },
 });
 document.adoptedStyleSheets = [sheet.default];

@@ -5,7 +5,7 @@ export const newss = [
     title: "The croissant-waffle",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore praesentium, itaque molestiae earum tempora, dolore voluptatibus sit minus quae nisi recusandae porro fugiat deserunt eligendi eius. Similique nulla, perferendis facilis quo quaerat voluptates inventore excepturi, dolores aliquid mollitia nihil.",
-    link: "/pages/news/detail.html",
+    link: "/dear_butter/pages/news/detail.html",
   },
   {
     image: "yellowcorn",
@@ -13,7 +13,7 @@ export const newss = [
     title: "The croissant-waffle hybrid that’s taking over Jakarta’s cafés",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore praesentium, itaque molestiae earum tempora, dolore voluptatibus sit minus quae nisi recusandae porro fugiat deserunt eligendi eius. Similique nulla, perferendis facilis quo quaerat voluptates inventore excepturi, dolores aliquid mollitia nihil.",
-    link: "/pages/news/detail.html",
+    link: "/dear_butter/pages/news/detail.html",
   },
   {
     image: "maroon",
@@ -21,7 +21,7 @@ export const newss = [
     title: "The croissant-waffle hybrid that’s taking over Jakarta’s cafés",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore praesentium, itaque molestiae earum tempora, dolore voluptatibus sit minus quae nisi recusandae porro fugiat deserunt eligendi eius. Similique nulla, perferendis facilis quo quaerat voluptates inventore excepturi, dolores aliquid mollitia nihil.",
-    link: "/pages/news/detail.html",
+    link: "/dear_butter/pages/news/detail.html",
   },
   {
     image: "pink",
@@ -29,7 +29,7 @@ export const newss = [
     title: "The croissant-waffle hybrid that’s taking over Jakarta’s cafés The croissant-waffle hybrid that’s taking over Jakarta’s cafés",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore praesentium, itaque molestiae earum tempora, dolore voluptatibus sit minus quae nisi recusandae porro fugiat deserunt eligendi eius. Similique nulla, perferendis facilis quo quaerat voluptates inventore excepturi, dolores aliquid mollitia nihil.",
-    link: "/pages/news/detail.html",
+    link: "/dear_butter/pages/news/detail.html",
   },
   {
     image: "green",
@@ -37,7 +37,7 @@ export const newss = [
     title: "The croissant-waffle hybrid that’s taking over Jakarta’s cafés",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore praesentium, itaque molestiae earum tempora, dolore voluptatibus sit minus quae nisi recusandae porro fugiat deserunt eligendi eius. Similique nulla, perferendis facilis quo quaerat voluptates inventore excepturi, dolores aliquid mollitia nihil.",
-    link: "/pages/news/detail.html",
+    link: "/dear_butter/pages/news/detail.html",
   },
   {
     image: "yellow",
@@ -45,7 +45,7 @@ export const newss = [
     title: "The croissant-waffle hybrid that’s taking over Jakarta’s cafés",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore praesentium, itaque molestiae earum tempora, dolore voluptatibus sit minus quae nisi recusandae porro fugiat deserunt eligendi eius. Similique nulla, perferendis facilis quo quaerat voluptates inventore excepturi, dolores aliquid mollitia nihil.",
-    link: "/pages/news/detail.html",
+    link: "/dear_butter/pages/news/detail.html",
   },
   {
     image: "blue",
@@ -53,7 +53,7 @@ export const newss = [
     title: "The croissant-waffle hybrid that’s taking over Jakarta’s cafés",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore praesentium, itaque molestiae earum tempora, dolore voluptatibus sit minus quae nisi recusandae porro fugiat deserunt eligendi eius. Similique nulla, perferendis facilis quo quaerat voluptates inventore excepturi, dolores aliquid mollitia nihil.",
-    link: "/pages/news/detail.html",
+    link: "/dear_butter/pages/news/detail.html",
   },
   {
     image: "purple",
@@ -61,7 +61,7 @@ export const newss = [
     title: "The croissant-waffle hybrid that’s taking over Jakarta’s cafés",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore praesentium, itaque molestiae earum tempora, dolore voluptatibus sit minus quae nisi recusandae porro fugiat deserunt eligendi eius. Similique nulla, perferendis facilis quo quaerat voluptates inventore excepturi, dolores aliquid mollitia nihil.",
-    link: "/pages/news/detail.html",
+    link: "/dear_butter/pages/news/detail.html",
   },
   {
     image: "black",
@@ -69,7 +69,7 @@ export const newss = [
     title: "The croissant-waffle hybrid that’s taking over Jakarta’s cafés",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore praesentium, itaque molestiae earum tempora, dolore voluptatibus sit minus quae nisi recusandae porro fugiat deserunt eligendi eius. Similique nulla, perferendis facilis quo quaerat voluptates inventore excepturi, dolores aliquid mollitia nihil.",
-    link: "/pages/news/detail.html",
+    link: "/dear_butter/pages/news/detail.html",
   },
   {
     image: "dark",
@@ -77,6 +77,6 @@ export const newss = [
     title: "The croissant-waffle hybrid that’s taking over Jakarta’s cafés",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore praesentium, itaque molestiae earum tempora, dolore voluptatibus sit minus quae nisi recusandae porro fugiat deserunt eligendi eius. Similique nulla, perferendis facilis quo quaerat voluptates inventore excepturi, dolores aliquid mollitia nihil.",
-    link: "/pages/news/detail.html",
+    link: "/dear_butter/pages/news/detail.html",
   },
 ];

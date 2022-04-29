@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,700&display=swap");
 
-@import "/assets/css/global.css";
-@import "/assets/css/utility.css";
-@import "/assets/css/button.css";
-@import "/assets/css/icon.css";
-@import "/components/header/style.css";
-@import "/components/footer/style.css";
-@import "/components/news/style.css";
+@import "/dear_butter/assets/css/global.css";
+@import "/dear_butter/assets/css/utility.css";
+@import "/dear_butter/assets/css/button.css";
+@import "/dear_butter/assets/css/icon.css";
+@import "/dear_butter/components/header/style.css";
+@import "/dear_butter/components/footer/style.css";
+@import "/dear_butter/components/news/style.css";
 
 @font-face {
   font-family: plusJakartaSans;
-  src: url(/assets/fonts/PlusJakartaSans-2.6/static/PlusJakartaSans-Regular.ttf);
+  src: url(/dear_butter/assets/fonts/PlusJakartaSans-2.6/static/PlusJakartaSans-Regular.ttf);
   font-weight: normal;
 }
 @font-face {
   font-family: plusJakartaSans;
-  src: url(/assets/fonts/PlusJakartaSans-2.6/static/PlusJakartaSans-Bold.ttf);
+  src: url(/dear_butter/assets/fonts/PlusJakartaSans-2.6/static/PlusJakartaSans-Bold.ttf);
   font-weight: bold;
 }
 

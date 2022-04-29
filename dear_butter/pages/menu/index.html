@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dear Butter - Menu</title>
     <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/box-sizing.css">
     <link rel="stylesheet" href="/assets/css/form.css">
     <link rel="stylesheet" href="/components/menu/style.css">
-    <script src="/assets/js/app.js" type="module" defer></script>
+    <script src="../../assets/js/app.js" type="module" defer></script>
 </head>
 
 <body>
@@ -79,8 +79,8 @@
     </div>
 
     <script type="module">
-        import { menuList } from '/components/menu/index.js';
-        import { infos } from "/components/news/info.js";
+        import { menuList } from '../../components/menu/index.js';
+        import { infos } from "../../components/news/info.js";
 
         menuList()
         infos()
@@ -89,24 +89,6 @@
         const displayList = document.querySelector("[data-toggle='toggle-list']")
         const displayGrid = document.querySelector("[data-toggle='toggle-grid']")
         const display = document.querySelector('.products-lists-grid > ul')
-        // displayToggle.forEach(toggle => {
-        //     toggle.onclick=()=>{
-        //         toggle.classList.toggle('active')
-        //     }
-        // });
-        
-        // displayGrid.onclick = () => {
-        //     display.classList.remove('display-list')
-        //     display.classList.add('display-grid')
-        //     displayGrid.classList.add('active')
-        //     displayList.classList.remove('active')
-        // }
-        // displayList.onclick = () => {
-        //     display.classList.add('display-list')
-        //     display.classList.remove('display-grid')
-        //     displayGrid.classList.remove('active')
-        //     displayList.classList.add('active')
-        // }
     </script>
 </body>
 

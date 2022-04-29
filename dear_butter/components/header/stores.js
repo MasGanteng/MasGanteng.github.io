@@ -6,38 +6,38 @@ export const navs = [
   // },
   {
     navText: "Menu",
-    navLink: "/pages/menu",
+    navLink: "/dear_butter/pages/menu",
     navIcon: "menu"
     // navActive: "active",
   },
   {
     navText: "Partnership",
-    navLink: "/pages/partnership",
+    navLink: "/dear_butter/pages/partnership",
     navIcon: "partnership"
   },
   {
     navText: "Outlets",
-    navLink: "/pages/outlets",
+    navLink: "/dear_butter/pages/outlets",
     navIcon: "cart"
   },
   {
     navText: "News",
-    navLink: "/pages/news",
+    navLink: "/dear_butter/pages/news",
     navIcon: "folder"
   },
   {
     navText: "Career",
-    navLink: "/pages/career",
+    navLink: "/dear_butter/pages/career",
     navIcon: "career"
   },
   {
     navText: "Contact",
-    navLink: "/pages/contact",
+    navLink: "/dear_butter/pages/contact",
     navIcon: "contact"
   },
   {
     navText: "About",
-    navLink: "/pages/about",
+    navLink: "/dear_butter/pages/about",
     navIcon: "info"
   },
 ];
