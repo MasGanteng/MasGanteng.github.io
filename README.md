@@ -1,3 +1,3 @@
 # MasGanteng.github.io
 
-# some of learn
+some of learning process
