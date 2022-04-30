@@ -14,7 +14,7 @@
   cursor: pointer;
 }
 .outlet-lists summary::after {
-  content: url(/assets/images/svg/plus-solid.svg);
+  content: url(/dear_butter/assets/images/svg/plus-solid.svg);
   position: absolute;
   right: 1rem;
   bottom: 0rem;
@@ -22,7 +22,7 @@
   transition: all 0.3s ease;
 }
 .outlet-lists details[open] summary::after {
-  content: url(/assets/images/svg/minus-solid.svg);
+  content: url(/dear_butter/assets/images/svg/minus-solid.svg);
 }
 .outlet-lists article {
   padding: 2rem 1rem 4rem;
