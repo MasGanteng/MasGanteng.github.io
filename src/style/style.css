@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
 *,
 ::after,
 ::before {
@@ -9,12 +11,17 @@
 body {
   background-color: #f9f9f9;
   color: #333;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Open Sans', sans-serif;
 }
 
 img {
   width: 100%;
   height: auto;
+  vertical-align: middle;
+}
+
+img[alt] {
+  color: initial;
 }
 
 .box {
@@ -36,12 +43,16 @@ img {
   width: var(--size);
   height: var(--size);
   background-color: white;
-  box-shadow: 0.05rem 0.1rem 0.5rem 0 rgb(0 0 0 / 0.1);
+  box-shadow: 
+    0.05rem 0.1rem 0.2rem rgb(0 0 0 / 0.15),
+    .1rem .1rem .8rem .05rem rgb(0 0 0 / 0.1);
   border-radius: 0.25rem;
   overflow: hidden;
 }
 
-.card a {color: white;}
+.card a {
+  color: white;
+}
 
 .card figure {
   position: relative;
@@ -58,6 +69,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
   padding: 0.5rem;
   background-color: rgb(0 0 0 / 0.5);
   opacity: 0;
@@ -65,13 +77,13 @@ img {
 }
 
 .card:hover img {
-    filter: blur(2px);
-    transition: all ease 300ms;
+  filter: blur(2px);
+  transition: all ease 300ms;
 }
 
 .card:hover figcaption {
-    opacity: 1;
-    transform: scale(1);
-    transition: all ease 300ms;
-    /* backdrop-filter: blur(2px); */
+  opacity: 1;
+  transform: scale(1);
+  transition: all ease 300ms;
+  /* backdrop-filter: blur(2px); */
 }
