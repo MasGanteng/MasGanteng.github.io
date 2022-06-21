@@ -10,6 +10,11 @@ const items = [
     image: "c-d-x-PDX_a_82obo-unsplash",
     caption: "Music Player",
   },
+  {
+    link: "cinema",
+    image: "alex-litvin-MAYsdoYpGuk-unsplash",
+    caption: "Cinema",
+  },
 ];
 items.map((item) => {
   const { link, image, caption } = item;
