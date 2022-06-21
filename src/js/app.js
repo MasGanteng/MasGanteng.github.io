@@ -1,31 +1,25 @@
 const cards = document.querySelector(".cards");
-const items = [
-  {
-    link: "dear_butter",
-    image: "jakub-dziubak-XtUd5SiX464-unsplash",
-    caption: "Dear Butter",
-  },
-  {
-    link: "music_player",
-    image: "c-d-x-PDX_a_82obo-unsplash",
-    caption: "Music Player",
-  },
-  {
-    link: "cinema",
-    image: "alex-litvin-MAYsdoYpGuk-unsplash",
-    caption: "Cinema",
-  },
-];
-items.map((item) => {
-  const { link, image, caption } = item;
-  cards.innerHTML += `
-    <li class="card">
-        <a href="${link}">
-            <figure>
-                <img src="/src/image/${image}.webp" alt="${caption}">
-                <figcaption>${caption}</figcaption>
-            </figure>
-        </a>
-    </li>
-  `;
-});
+// import { navs } from "./nav.json";
+
+const navs = async(url) => {
+    let response = await fetch(url)
+    let datas = await response.json()
+    datas.map((nav) => {
+      const { link, image, caption } = nav;
+      cards.innerHTML += `
+        <li class="card">
+            <a href="${link}">
+                <figure>
+                    <img src="/src/image/${image}.webp" alt="${caption}">
+                    <figcaption>${caption}</figcaption>
+                </figure>
+            </a>
+        </li>
+      `;
+    });
+}
+navs('/src/js/nav.json')
+// fetch("./nav.json")
+//   .then((response) => response.json())
+//   .then((data) => console.log(data));
+// console.log(response);
