@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/svg/headphones-solid.svg" type="image/x-icon">
     <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    hello world
+    <div class="box">
+        <i class="fa-solid fa-stop"></i>
+        <i class="fa-solid fa-forward"></i>
+        <i class="fa-solid fa-backward"></i>
+        <i class="fa-solid fa-random"></i>
+
+        <div class="control">
+            <div class="control-nav">
+                <a>
+                    <i class="fa-solid fa-backward-step"></i>
+                </a>
+                <a class="toggle-play">
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-pause"></i>
+                </a>
+                <a>
+                    <i class="fa-solid fa-forward-step"></i>
+                </a>
+            </div>
+            <div class="control-time">
+                <span>00:00</span>
+                <progress value="0" max="100"></progress>
+                <span>00:00</span>
+            </div>
+            <div class="control-library">
+                <a>
+                    <i class="fa-solid fa-volume-low"></i>
+                </a>
+                <progress value="20" max="100"></progress>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function random_bg_color() {
+            let hue = Math.floor(Math.random() * 360)
+            let saturation = Math.floor(Math.random() * (75 - 65 + 1) + 65)
+            let lightness = 80
+
+            let bg = `hsl(${hue}deg, ${saturation}%, ${lightness}%)`
+
+            const box = document.querySelector('.box')
+            box.style.backgroundColor = bg
+        }
+        window.addEventListener('', random_bg_color())
+
+        // const togglePlay = document.querySelector('.toggle-play')
+        const togglePlay = () => {
+
+        }
+    </script>
 </body>
+
 </html>

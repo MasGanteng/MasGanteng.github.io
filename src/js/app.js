@@ -4,21 +4,26 @@ const cards = document.querySelector(".cards");
 const navs = async(url) => {
     let response = await fetch(url)
     let datas = await response.json()
-    datas.map((nav) => {
-      const { link, image, caption } = nav;
-      cards.innerHTML += `
-        <li class="card">
-            <a href="${link}">
-                <figure>
-                    <img src="/src/image/${image}.webp" alt="${caption}">
-                    <figcaption>${caption}</figcaption>
-                </figure>
-            </a>
-        </li>
-      `;
-    });
+    return handleData(datas)
 }
+
 navs('/src/js/nav.json')
+function handleData(data){
+  console.log(data);
+  data.map((nav) => {
+    const { link, image, caption } = nav;
+    cards.innerHTML += `
+      <li class="card">
+          <a href="${link}">
+              <figure>
+                  <img src="/src/image/${image}.webp" alt="${caption}">
+                  <figcaption>${caption}</figcaption>
+              </figure>
+          </a>
+      </li>
+    `;
+  });
+}
 // fetch("./nav.json")
 //   .then((response) => response.json())
 //   .then((data) => console.log(data));

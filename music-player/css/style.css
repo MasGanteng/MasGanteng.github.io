@@ -1,0 +1,45 @@
+:root {
+  --control-height: 5rem;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.fa-solid {
+  font-size: 2rem;
+}
+
+.container {
+  width: min(100% - 4rem, 1200px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  height: 100vh;
+  /* outline: thin dotted mediumseagreen; */
+}
+
+.control {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  height: var(--control-height);
+  color: #eee;
+  background-color: #333;
+}
