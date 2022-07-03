@@ -1,0 +1,14 @@
+:root{--color-light:#ddd;--color-dark:#333;}
+
+*,::after,::before{box-sizing: border-box;padding: 0;margin: 0;}
+
+html {scroll-behavior: smooth;}
+
+body {font-family: sans-serif;}
+
+.box li{min-height: 100vh;display: grid;grid-template-columns: 1fr 1fr;}
+.box .dark, .box .light{padding: 5rem 3rem; position: relative;}
+.box .dark{background-color: var(--color-dark);color: var(--color-light);text-align: right;}
+.box .light{background-color: var(--color-light);color: var(--color-dark);}
+.box .section-title{position: sticky; top: 5rem; font-size: 4rem;}
+h2{position: absolute; bottom: 5rem;left: 50%;transform: translateX(-50%);font-size: 5rem;filter: invert(1);mix-blend-mode: difference;}

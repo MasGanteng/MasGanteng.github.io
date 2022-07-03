@@ -10,6 +10,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -39,6 +43,6 @@ img {
   border-radius: 1rem;
 }
 .movies .caption {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   height: 3rem;
 }

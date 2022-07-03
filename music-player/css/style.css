@@ -1,4 +1,6 @@
 :root {
+  --color-dark: #333;
+  --color-light: #eee;
   --control-height: 5rem;
 }
 
@@ -8,6 +10,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -30,6 +36,11 @@ a {
   /* outline: thin dotted mediumseagreen; */
 }
 
+.thumbnail {
+  width: 8rem;
+  border-radius: 1rem;
+}
+
 .control {
   position: fixed;
   bottom: 0;
@@ -40,6 +51,6 @@ a {
   padding-left: 4rem;
   padding-right: 4rem;
   height: var(--control-height);
-  color: #eee;
-  background-color: #333;
+  color: var(--color-light);
+  background-color: var(--color-dark);
 }
