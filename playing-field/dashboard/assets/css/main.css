@@ -1,0 +1,44 @@
+:root{
+  --header-height:3.5rem;
+  --sidebar-width:5rem;
+  --sidebar-width-active:20rem;
+}
+
+#app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  top: var(--header-height);
+  width: var(--sidebar-width);
+  height: 100%;
+  background-color: rgb(32, 131, 131);
+  padding: 1rem;
+}
+.sidebar.active{
+  width: var(--sidebar-width-active);
+}
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--header-height);
+  background-color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+main {
+  padding-top: var(--header-height);
+  margin-left: var(--sidebar-width-active);
+  background-color: #ddd;
+}
+.main-content{
+  padding: 4rem 2rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}

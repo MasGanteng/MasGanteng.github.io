@@ -9,12 +9,11 @@ const navs = async(url) => {
 
 navs('/src/js/nav.json')
 function handleData(data){
-  console.log(data);
   data.map((nav) => {
     const { link, image, caption } = nav;
     cards.innerHTML += `
       <li class="card">
-          <a href="${link}">
+          <a href="/playing-field/${link}">
               <figure>
                   <img src="/src/image/${image}.webp" alt="${caption}">
                   <figcaption>${caption}</figcaption>

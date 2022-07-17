@@ -11,6 +11,8 @@
 </head>
 
 <body>
+
+    <div class="preloader"></div>
     <div class="box">
         <ul></ul>
     </div>
@@ -18,6 +20,17 @@
     <h2>lorem</h2>
 
     <script src="/irengan/js/app.js" type="module"></script>
+    <script>
+        onload = () => console.log('abc')
+
+        function abc(){
+            let a=12; let b=39;
+            console.log('awal '+a, 'awal '+b);
+            [a,b] =[b,a]
+            console.log('tukar '+a, 'tukar '+b);
+        }
+        abc()
+    </script>
 </body>
 
 </html>

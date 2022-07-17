@@ -42,7 +42,7 @@ img[alt] {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
   width: 60%;
   list-style-type: none;
 }

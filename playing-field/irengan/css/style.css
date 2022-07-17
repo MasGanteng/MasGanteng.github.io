@@ -14,3 +14,4 @@ body {font-family: 'Cabinet Grotesk', sans-serif;}
 .box .light{background-color: var(--color-light);color: var(--color-dark);}
 .box .section-title{position: sticky; top: 5rem; font-size: 4rem;}
 h2{position: absolute; bottom: 5rem;left: 50%;transform: translateX(-50%);font-size: 5rem;filter: invert(1);mix-blend-mode: difference;}
+.preloader{position: fixed; inset: 0; background-color: mediumpurple; z-index: 2;}
