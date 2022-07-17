@@ -13,7 +13,7 @@ function handleData(data){
     const { link, image, caption } = nav;
     cards.innerHTML += `
       <li class="card">
-          <a href="/playing-field/${link}">
+          <a href="/playground/${link}">
               <figure>
                   <img src="/src/image/${image}.webp" alt="${caption}">
                   <figcaption>${caption}</figcaption>
