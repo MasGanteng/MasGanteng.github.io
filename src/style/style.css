@@ -35,7 +35,7 @@ img[alt] {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vmin;
+  min-height: 100vmin;
 }
 
 .cards {
