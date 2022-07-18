@@ -1,4 +1,20 @@
 :root{
+  --bs-primary: rgb(32, 131, 131);
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13,110,253;
+  --bs-secondary-rgb: 108,117,125;
+  --bs-success-rgb: 25,135,84;
+  --bs-info-rgb: 13,202,240;
+  --bs-warning-rgb: 255,193,7;
+  --bs-danger-rgb: 220,53,69;
+  --bs-light-rgb: 248,249,250;
+  --bs-dark-rgb: 33,37,41;
   --header-height:3.5rem;
   --sidebar-width:5rem;
   --sidebar-width-active:20rem;
@@ -13,13 +29,16 @@
   position: fixed;
   top: var(--header-height);
   width: var(--sidebar-width);
-  height: 100%;
-  background-color: rgb(32, 131, 131);
-  padding: 1rem;
+  height: calc(100% - var(--header-height));
+  /* background-color: rgb(32, 131, 131); */
+  background-color: var(--bs-primary);
+  padding: 2rem 1rem 3rem;
+  overflow-y: scroll;
 }
 .sidebar.active{
   width: var(--sidebar-width-active);
 }
+.sidebar hr{filter: invert(1);}
 .header {
   position: fixed;
   display: flex;
@@ -27,18 +46,67 @@
   width: 100%;
   height: var(--header-height);
   background-color: white;
+  box-shadow: 0 .125rem .25rem rgb(0 0 0 / .075);
   padding-left: 1rem;
   padding-right: 1rem;
 }
 main {
   padding-top: var(--header-height);
   margin-left: var(--sidebar-width-active);
-  background-color: #ddd;
+  background-color: #efefef;
 }
 .main-content{
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
 }
 ul {
   list-style: none;
   padding: 0;
+}
+
+.nav-link {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+  gap: .75rem;
+  align-items: center;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: .75rem 1rem;
+  color: rgb(255 255 255 / .6);
+}
+.nav-link:hover {
+  color: rgb(255 255 255 / 1);
+  background-color: rgb(0 0 0 / .25);
+}
+.nav-link.active{
+  color: rgb(255 255 255 / 1);
+  background-color: rgb(0 0 0 / .25);
+}
+
+.box{
+  padding: 1rem;
+  background-color: white;
+  border-radius: .5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 .125rem .25rem rgb(0 0 0 / .075);
+}
+
+[data-notif]{
+  position: relative;
+  color: red;
+}
+[data-notif]::after{
+  --size:1rem;
+  content: attr(data-count);
+  position: absolute;
+  top: -.5rem;
+  right: -.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .5rem;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  color: white;
+  background-color: var(--bs-danger);
 }
