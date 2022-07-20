@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'phosphor';
+    src: url('/src/fonts/phospor-icons/icon-font/Font/Phosphor.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    font-family: 'phospor', sans-serif;
+}
