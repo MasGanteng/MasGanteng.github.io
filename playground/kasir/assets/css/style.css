@@ -1,0 +1,116 @@
+:root {
+  --container: 1200px;
+  --nav-width: 4rem;
+  --checkout-width: 20rem;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #efefef;
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.container {
+  width: min(100% - 4rem, var(--container));
+  margin-left: auto;
+  margin-right: auto;
+}
+aside.navigation,
+aside.checkout {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+aside.navigation {
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: var(--nav-width);
+}
+aside.navigation a {
+  position: relative;
+  display: block;
+  text-align: center;
+  color: #efefef;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+aside.navigation a:hover::after,
+aside.navigation a:focus:after {
+  content: attr(data-title);
+  top: 0;
+  left: 100%;
+  position: absolute;
+  color: #efefef;
+  padding: .5rem 1rem;
+  border-radius: 4rem;
+  /* border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem; */
+  background-color: rgb(16, 66, 86);
+  transition: all .25s ease;
+}
+.svg2 { clip-path: path('M15,45 A30,30,0,0,1,75,45 A30,30,0,0,1,135,45 Q135,90,75,130 Q15,90,15,45 Z');}
+.shape1 { clip-path: circle(50%); }
+.shape2 { clip-path: circle(25% at 25% 25%); }
+.shape3 { clip-path: fill-box    circle(25% at 25% 25%); }
+.shape4 { clip-path: stroke-box  circle(25% at 25% 25%); }
+.shape5 { clip-path: view-box    circle(25% at 25% 25%); }
+.shape6 { clip-path: margin-box  circle(25% at 25% 25%); }
+.shape7 { clip-path: border-box  circle(25% at 25% 25%); }
+.shape8 { clip-path: padding-box circle(25% at 25% 25%); }
+.shape9 { clip-path: content-box circle(25% at 25% 25%); }
+aside.checkout {
+  right: 0;
+  width: var(--checkout-width);
+}
+
+.navbar {
+  flex-grow: 1;
+}
+.navbar ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+.profil-user {
+  display: flex;
+  flex-direction: column;
+}
+main.main {
+  margin-left: var(--nav-width);
+  margin-right: var(--checkout-width);
+}
+aside {
+  background-color: rgb(33, 126, 126);
+  color: white;
+}
+
+.menu-list {
+  list-style-type: none;
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+}
+.icons {
+  width: 24px;
+  height: 24px;
+}

@@ -23,5 +23,10 @@
     "link": "dashboard",
     "image": "",
     "caption": "Dashboard"
+  },
+  {
+    "link": "kasir",
+    "image": "",
+    "caption": "Kasir"
   }
 ]
