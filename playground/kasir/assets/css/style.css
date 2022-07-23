@@ -48,41 +48,42 @@ aside.navigation {
 }
 aside.navigation a {
   position: relative;
-  display: block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #efefef;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 aside.navigation a:hover::after,
 aside.navigation a:focus:after {
   content: attr(data-title);
-  top: 0;
   left: 100%;
   position: absolute;
   color: #efefef;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 4rem;
   /* border-top-right-radius: 4rem;
   border-bottom-right-radius: 4rem; */
-  background-color: rgb(16, 66, 86);
-  transition: all .25s ease;
+  background-color: var(--bg);
+  transition: all 0.25s ease;
 }
-.svg2 { clip-path: path('M15,45 A30,30,0,0,1,75,45 A30,30,0,0,1,135,45 Q135,90,75,130 Q15,90,15,45 Z');}
-.shape1 { clip-path: circle(50%); }
-.shape2 { clip-path: circle(25% at 25% 25%); }
-.shape3 { clip-path: fill-box    circle(25% at 25% 25%); }
-.shape4 { clip-path: stroke-box  circle(25% at 25% 25%); }
-.shape5 { clip-path: view-box    circle(25% at 25% 25%); }
-.shape6 { clip-path: margin-box  circle(25% at 25% 25%); }
-.shape7 { clip-path: border-box  circle(25% at 25% 25%); }
-.shape8 { clip-path: padding-box circle(25% at 25% 25%); }
-.shape9 { clip-path: content-box circle(25% at 25% 25%); }
+aside.navigation .company-logo:hover::after,
+aside.navigation .company-logo:focus::after {
+  display: none;
+}
 aside.checkout {
   right: 0;
   width: var(--checkout-width);
 }
-
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.cart-lists {
+  flex-grow: 1;
+}
 .navbar {
   flex-grow: 1;
 }
@@ -99,7 +100,8 @@ main.main {
   margin-right: var(--checkout-width);
 }
 aside {
-  background-color: rgb(33, 126, 126);
+  --bg: rgb(33, 126, 126);
+  background-color: var(--bg);
   color: white;
 }
 
