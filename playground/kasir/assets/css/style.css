@@ -29,16 +29,14 @@ img {
 
 .container {
   width: min(100% - 4rem, var(--container));
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 }
 aside.navigation,
 aside.checkout {
   position: fixed;
   top: 0;
   bottom: 0;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-block: 1rem 2rem;
 }
 aside.navigation {
   left: 0;
@@ -52,11 +50,10 @@ aside.navigation a {
   align-items: center;
   justify-content: center;
   color: #efefef;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-block: 1rem 1rem;
 }
-aside.navigation a:hover::after,
-aside.navigation a:focus:after {
+aside.navigation a:not(.company-logo):hover::after,
+aside.navigation a:not(.company-logo):focus:after {
   content: attr(data-title);
   left: 100%;
   position: absolute;
@@ -68,10 +65,7 @@ aside.navigation a:focus:after {
   background-color: var(--bg);
   transition: all 0.25s ease;
 }
-aside.navigation .company-logo:hover::after,
-aside.navigation .company-logo:focus::after {
-  display: none;
-}
+
 aside.checkout {
   right: 0;
   width: var(--checkout-width);
@@ -96,8 +90,7 @@ aside.checkout {
   flex-direction: column;
 }
 main.main {
-  margin-left: var(--nav-width);
-  margin-right: var(--checkout-width);
+  margin-inline: var(--nav-width) var(--checkout-width);
 }
 aside {
   --bg: rgb(33, 126, 126);
@@ -113,6 +106,20 @@ aside {
   gap: 2rem;
 }
 .icons {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.form-search {
+  position: relative;
+}
+.filter,
+.filter-list {
+  display: flex;
+}
+
+.filter-list {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin-inline-start: 4ch;
+  gap: 2ch;
 }

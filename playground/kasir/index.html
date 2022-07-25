@@ -12,29 +12,22 @@
         integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="./assets/js/MenuList.js" defer></script>
+    <script src="./assets/js/MenuLists.js" defer></script>
+    <script src="./assets/js/NavLists.js" defer></script>
 </head>
 
 <body>
     <div id="app">
         <aside class="navigation">
             <header class="profil-company">
-                <a href="./index.html" style="padding: .75rem;" class="company-logo">
+                <a href="./index.html"
+                    style="padding: .75rem; margin-bottom: 2rem;"
+                    class="company-logo">
                     <img src="/src/svg/mg.svg" alt="logo">
                 </a>
             </header>
             <nav class="navbar">
-                <ul>
-                    <li>
-                        <a href="./index.html" data-title="Home">
-                            <svg class="icons">
-                                <use xlink:href="./assets/svg/sprite.svg#home"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li><a href="" data-title="History">def</a></li>
-                    <li><a href="" data-title="Home">ghi</a></li>
-                </ul>
+                <ul class="nav-lists"></ul>
             </nav>
             <footer class="profil-user">
                 <a href="" data-title="Nama">
@@ -53,7 +46,7 @@
         <main class="main">
             <header>
                 <div class="container">
-                    <div class="search">
+                    <div class="form-search">
                         <input type="search" name="" id="">
                         <button>
                             <svg class="icons">
@@ -62,7 +55,7 @@
                         </button>
                     </div>
                     <div class="filter">
-                        filter
+                        <p>Filter :</p>
                         <ul class="filter-list">
                             <li>abc</li>
                             <li>def</li>
