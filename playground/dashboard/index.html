@@ -23,7 +23,7 @@
                 <div class="col-auto">
                     <div class="row align-items-center">
                         <div class="col">
-                            <a href="" class="btn" data-toggle="sidebar">
+                            <a class="btn toggle-navdrawer">
                                 <i class="ph-list"></i>
                                 <!-- <span class="material-symbols-outlined">menu</span> -->
                             </a>
@@ -57,16 +57,17 @@
                         </div>
                         <div class="col-auto">
                             <div class="dropdown">
-                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Dropdown link
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown link
                                 </a>
-                              
+
                                 <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
-                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -99,7 +100,7 @@
             </nav>
         </aside>
 
-        <main class="main">
+        <main class="main active" data-main>
             <div class="main-content">
                 <div class="row">
                     <div class="col">
@@ -214,12 +215,28 @@
             </div>
         </main>
     </div>
-    <!-- <div id="modals"></div> -->
+
+    <div id="modals">
+        <dialog id="modal1" class="dialog">
+            <header>abc</header>
+            <main>def</main>
+            <footer>jkl</footer>
+        </dialog>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <script>
+        // document.querySelector('dialog').showModal()
+        const toggleNavDrawer = document.querySelector('.toggle-navdrawer')
+        const navDrawer = document.querySelector('[data-sidebar]')
+        const main = document.querySelector('[data-main]')
+        console.log(navDrawer);
+        toggleNavDrawer.onclick = () => {
+            navDrawer.classList.toggle('active')
+            main.classList.toggle('active')
+        }
         const links = document.querySelectorAll('.nav-link')
         console.log(links);
         const counts = document.querySelectorAll('[data-count]')

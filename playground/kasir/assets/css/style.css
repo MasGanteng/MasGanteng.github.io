@@ -112,6 +112,10 @@ aside {
 .form-search {
   position: relative;
 }
+.btn-search {
+  position: absolute;
+  right: 0;
+}
 .filter,
 .filter-list {
   display: flex;

@@ -1,6 +1,6 @@
 :root {
   --header-height: 3.5rem;
-  --sidebar-width: 5rem;
+  --sidebar-width: 4rem;
   --sidebar-width-active: 15rem;
 }
 :root,
@@ -40,7 +40,7 @@
   background-color: #fff;
   border-color: #86b7fe;
   outline: 0;
-  box-shadow: 0 0 0 0.1rem rgb(13 110 253 / .1);
+  box-shadow: 0 0 0 0.1rem rgb(13 110 253 / 0.1);
 }
 
 .sidebar {
@@ -71,7 +71,14 @@
 }
 main {
   padding-top: var(--header-height);
+  margin-left: var(--sidebar-width);
+}
+main.active {
   margin-left: var(--sidebar-width-active);
+}
+.sidebar,
+.main {
+  transition: all 0.1s ease;
 }
 .main-content {
   padding: 2rem 1rem;
@@ -150,4 +157,8 @@ ul {
 }
 [dats-tooltip]:hover {
   color: blue;
+}
+
+dialog::backdrop {
+  background: #d74e21b6;
 }
