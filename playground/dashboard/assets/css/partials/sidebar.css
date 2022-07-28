@@ -1,0 +1,25 @@
+:root {
+  --sidebar-width: 3.5rem;
+  --sidebar-width-active: 15rem;
+}
+.sidebar {
+  position: fixed;
+  top: var(--header-height);
+  width: var(--sidebar-width);
+  height: calc(100% - var(--header-height));
+  background-color: var(--bs-primary);
+  padding: 2rem 1rem 3rem;
+  overflow-y: scroll;
+}
+.sidebar.active {
+  width: var(--sidebar-width-active);
+}
+.sidebar hr {
+  filter: invert(1);
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --sidebar-width: 0;
+  }
+}
