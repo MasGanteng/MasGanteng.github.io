@@ -10,10 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- <script src="https://unpkg.com/phosphor-icons" defer></script> -->
-    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/material-icons.css">
-    <!-- <link rel="stylesheet" href="./assets/css/phospor-icons.css"> -->
+    <link rel="stylesheet" href="./assets/css/phospor-icons.css">
     <link rel="stylesheet" href="./assets/css/ph.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
@@ -181,34 +181,16 @@
                             <a class="btn btn-primary">Modal</a>
                         </div>
                         <div class="box">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tenetur at ex in veniam
-                                quibusdam repellat ratione consequuntur dignissimos officiis, vel dolorum velit,
-                                consequatur
-                                expedita magni alias amet aliquid ad cum eum perspiciatis nam! Quo quae at dignissimos
-                                obcaecati laborum animi error illo qui tempora sint distinctio voluptate possimus ex id
-                                ratione sequi, ipsum iusto reiciendis quaerat! Nesciunt, quasi dolor velit eius fuga est
-                                hic!</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur neque, repudiandae
-                                nisi
-                                repellat sapiente consectetur aut consequuntur veniam dignissimos necessitatibus, id
-                                asperiores nobis, saepe quisquam! Dicta voluptates ipsam vitae neque? Accusamus repellat
-                                minima beatae, similique eius quas molestias, nihil veritatis perspiciatis deserunt
-                                ipsam
-                                placeat omnis. Dignissimos aliquam harum adipisci possimus. Autem facere voluptas
-                                dolorum
-                                eos distinctio. Sapiente repellendus mollitia veniam adipisci, ab magni doloremque
-                                inventore
-                                obcaecati enim nam suscipit voluptatum et, id maxime illo quidem. Nesciunt molestiae
-                                eveniet
-                                necessitatibus officiis ipsa, sit dolorum doloribus eos accusamus quo dolore. Deserunt
-                                repellendus harum asperiores earum eum suscipit eligendi adipisci eaque rem perferendis
-                                quia
-                                ad voluptate iusto magni quos excepturi, dolorum quod maiores tenetur modi eius facilis
-                                voluptatem ut. Quis repellat minus soluta dolore quibusdam deleniti, eligendi libero
-                                sunt
-                                aperiam sit doloremque fugit voluptatibus amet repudiandae velit earum in hic. Assumenda
-                                dolore expedita ipsam totam asperiores. Expedita ad provident dolore, veritatis aliquam
-                                animi!</p>
+                            <ul class="timeline">
+                                <li>
+                                    <div class="card">
+                                        Lorem ipsum dolor sit.
+                                    </div>
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -227,16 +209,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-    <script>
+    <script type="module">
         // document.querySelector('dialog').showModal()
-        const toggleNavDrawer = document.querySelector('.toggle-navdrawer')
-        const navDrawer = document.querySelector('[data-sidebar]')
-        const main = document.querySelector('[data-main]')
-        console.log(navDrawer);
-        toggleNavDrawer.onclick = () => {
-            navDrawer.classList.toggle('active')
-            main.classList.toggle('active')
-        }
+        import { toggleDrawer } from './assets/js/ToggleDrawer.js'
+        toggleDrawer()
         const links = document.querySelectorAll('.nav-link')
         console.log(links);
         const counts = document.querySelectorAll('[data-count]')
