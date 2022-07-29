@@ -1,6 +1,7 @@
 @import url("./partials/header.css");
 @import url("./partials/sidebar.css");
 @import url("./partials/navigation.css");
+@import url("./partials/form.css");
 
 :root {
   --color-dark: #282828;
@@ -32,18 +33,6 @@
   min-height: 100vh;
 }
 
-.form-control,
-.form-select {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-.form-control:focus {
-  color: #212529;
-  background-color: #fff;
-  border-color: #86b7fe;
-  outline: 0;
-  box-shadow: 0 0 0 0.1rem rgb(13 110 253 / 0.1);
-}
 .main {
   width: 100%;
   padding-top: var(--header-height);
@@ -77,7 +66,6 @@
 
 [data-notif] {
   position: relative;
-  color: red;
 }
 [data-notif]::after {
   --size: 1rem;

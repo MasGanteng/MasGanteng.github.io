@@ -7,7 +7,7 @@
   top: var(--header-height);
   width: var(--sidebar-width);
   height: calc(100% - var(--header-height));
-  background-color: var(--bs-primary);
+  background-color: var(--bg-sidebar, var(--bs-primary));
   padding: 2rem 1rem 3rem;
   overflow-y: scroll;
 }
@@ -23,3 +23,11 @@
     --sidebar-width: 0;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+    .sidebar{--bg-sidebar:#252525;}
+  }
+  
+@media (prefers-color-scheme: light) {
+  }
+  

@@ -11,7 +11,7 @@
 
 @media (prefers-color-scheme: dark) {
   .header {
-    background-color: black;
+    background-color: rgb(37, 37, 37);
   }
 }
 @media (prefers-color-scheme: light) {
