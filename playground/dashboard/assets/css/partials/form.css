@@ -1,7 +1,7 @@
 .form-control,
 .form-select {
   background-color: var(--bg-form);
-  border: thin solid #444;
+  border: thin solid var(--bg-border, #ced4da);
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }

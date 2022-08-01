@@ -44,7 +44,7 @@
                     </form>
                 </div>
                 <div class="col-auto">
-                    <div class="row">
+                    <div class="row header-info">
                         <div class="col-auto">
                             <a href="">
                                 <i class="ph-magnifying-glass"></i>
@@ -62,8 +62,8 @@
                         </div>
                         <div class="col-auto">
                             <div class="dropdown">
-                                <a class="dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     <i class="ph-user-circle"></i>
                                 </a>
 
@@ -80,28 +80,31 @@
         </header>
 
         <aside class="sidebar active" data-sidebar>
-            <nav class="">
-                <div>
-                    <a href="" class="nav-link"><i class="ph-house"></i><span>Dashboard</span></a>
-                    <a href="" class="nav-link active"><i class="ph-house-fill"></i><span>Dashboard</span></a>
-                    <a href="" class="nav-link has-menu"><i class="ph-gear-six"></i><span>More menu</span></a>
-                    <a href="" class="nav-link"><i class="ph-gear-six"></i><span>More menu</span></a>
-                    <a href="" class="nav-link"><i class="ph-gear-six"></i><span>More menu</span></a>
-                    <a href="" class="nav-link has-menu"><i class="ph-gear-six"></i><span>More menu</span></a>
-                </div>
+            <nav>
+                <ul class="nav-lists">
+                    <li class="nav-list active">
+                        <a href="" class="nav-link active"><i class="ph-house"></i><span>Dashboard</span></a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="" class="nav-link"><i class="ph-house-fill"></i><span>Dashboard</span></a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#" class="nav-link has-menu"><i class="ph-gear-six"></i><span>Style Guide</span></a>
+                        <ul class="nav-menu">
+                            <li><a href="">abc</a></li>
+                            <li><a href="">def</a></li>
+                            <li><a href="">ghi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#" class="nav-link has-menu"><i class="ph-gear-six"></i><span>Master</span></a>
+                        <ul class="nav-menu">
+                            <li><a href="">abc</a></li>
+                            <li><a href="">def</a></li>
+                        </ul>
+                    </li>
+                </ul>
                 <hr>
-                <div>
-                    <a href="" class="nav-link"><i class="ph-house"></i><span>Dashboard</span></a>
-                    <a href="" class="nav-link"><i class="ph-gear-six"></i><span>More menu</span></a>
-                    <a href="" class="nav-link"><i class="ph-gear-six"></i><span>More menu</span></a>
-                </div>
-                <hr>
-                <div>
-                    <a href="" class="nav-link"><i class="ph-house"></i><span>Dashboard</span></a>
-                    <a href="" class="nav-link"><i class="ph-gear-six"></i><span>More menu</span></a>
-                    <a href="" class="nav-link"><i class="ph-gear-six"></i><span>More menu</span></a>
-                    <a href="" class="nav-link"><i class="ph-gear-six"></i><span>More menu</span></a>
-                </div>
             </nav>
         </aside>
 
@@ -156,7 +159,8 @@
                                                         <div class="col-form-label">Label</div>
                                                     </div>
                                                     <div class="col">
-                                                        <input type="text" value="abcdef" name="" id="" class="col form-control">
+                                                        <input type="text" value="abcdef" name="" id=""
+                                                            class="col form-control">
                                                     </div>
                                                 </div>
                                             </label>
@@ -166,8 +170,8 @@
                                                         <div class="col-form-label">Label</div>
                                                     </div>
                                                     <div class="col">
-                                                        <input type="text" name="" id="" class="col form-control"
-                                                        disabled>
+                                                        <input type="text" value="disabled" name="" id=""
+                                                            class="col form-control" disabled>
                                                     </div>
                                                 </div>
                                             </label>
@@ -219,15 +223,21 @@
     <script type="module">
         // document.querySelector('dialog').showModal()
         import { toggleDrawer } from './assets/js/ToggleDrawer.js'
+        import { nav } from './assets/js/Navigation.js'
         toggleDrawer()
+        nav()
         const links = document.querySelectorAll('.nav-link')
-        console.log(links);
+        // console.log(links);
+
+        // convert notification counter if count > 9
         const counts = document.querySelectorAll('[data-count]')
         counts.forEach(count => {
             if (count.dataset.count > 9) {
                 count.dataset.count = 9 + "+"
             }
         });
+
+        // initialize bootstrap tooltip
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>

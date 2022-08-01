@@ -9,13 +9,21 @@
   padding-right: 1rem;
 }
 
+.header-info a {
+  font-size: 1.25rem;
+  color: var(--link-color, initial);
+  text-decoration: none;
+}
+
 @media (prefers-color-scheme: dark) {
   .header {
+    --link-color: var(--color-light);
     background-color: rgb(37, 37, 37);
   }
 }
 @media (prefers-color-scheme: light) {
   .header {
+    --link-color: var(--color-dark);
     background-color: white;
   }
 }
