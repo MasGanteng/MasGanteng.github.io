@@ -188,8 +188,42 @@
                             </div>
                         </div>
                         <div class="box">
+                            <!-- Alert -->
                             <button class="btn btn-warning" onclick="alert('hi')">Alert</button>
-                            <a class="btn btn-primary">Modal</a>
+                            <!-- Modal -->
+                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Modal</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Modal</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      Hallo
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save</button>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" onclick="Toasty()" id="toastbtn">Toast</button>
+                            <div class="toast" id="mytoast" role="alert" aria-live="assertive" aria-atomic="true" style="position: absolute; top: 20rem; right: 0;">
+                                <div class="toast-header">
+                                    <strong class="me-auto">Toast Header</strong>
+                                    <button type="button" class="ml-2 mb-2 close" data-bs-dismiss="toast" aria-label="close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="toast-body">
+                                    <p>Some text inside the toast body</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-secondary" data-toggle="popover" title="mypopovers" data-content="Right popover">
+                                Popover on right
+                              </button>
                         </div>
                         <div class="box">
                             <ul class="timeline">
@@ -220,6 +254,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <script src="./assets/js/Toast.js"></script>
     <script type="module">
         // document.querySelector('dialog').showModal()
         import { toggleDrawer } from './assets/js/ToggleDrawer.js'
