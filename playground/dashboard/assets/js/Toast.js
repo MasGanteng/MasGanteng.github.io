@@ -1,4 +1,6 @@
 // export const toast = () => {
+//     const toast = document.querySelector(".toast")
+
 //     var option = {
 //         Animation: true,
 //         delay: 2000
@@ -9,7 +11,10 @@
 //         var toastList = toastElList.map(function(toastEl) {
 //           return new bootstrap.Toast(toastEl)
 //         })
-//         toastList.forEach(toast => toast.show()) 
+//         toastList.forEach(toast => toast.show({
+//             // toast.classList.toggle("option")
+//             option
+//         })) 
 //       }
 // }
 
@@ -30,6 +35,8 @@ var popoverList = popoverTriggerList.map( function( popoverTigger)
 {
     return new bootstrap.Popover( popoverTigger );
 });
+
+
 
 // document.getElementById("toastbtn").onclick = function() {
 //     var toastElList = [].slice.call(document.querySelectorAll('.toast'))
