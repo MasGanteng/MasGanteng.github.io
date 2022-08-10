@@ -32,19 +32,6 @@
   display: flex;
   min-height: 100vh;
 }
-
-.main {
-  width: 100%;
-  padding-top: var(--header-height);
-  padding-left: var(--sidebar-width);
-}
-.main.active {
-  padding-left: var(--sidebar-width-active);
-}
-.sidebar,
-.main {
-  transition: width 0.1s ease;
-}
 .main-content {
   padding: 2rem 1rem;
 }

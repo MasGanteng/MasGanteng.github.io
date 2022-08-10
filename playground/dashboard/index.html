@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/phospor-icons.css">
     <link rel="stylesheet" href="./assets/css/ph.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/partials/main.css">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-5 d-none d-sm-block">
                     <form action="" data-search>
                         <input type="search" value="" name="" id="" class="form-control" placeholder="Find Something">
                         <button type="button" class="btn" title="search">
@@ -45,22 +46,28 @@
                 </div>
                 <div class="col-auto">
                     <div class="row header-info">
-                        <div class="col-auto">
+                        <div class="col-auto d-none d-sm-block">
+                            <a class="toggle-theme">
+                                <i class="ph-sun" data-sun></i>
+                                <i class="ph-moon active" data-moon></i>
+                            </a>
+                        </div>
+                        <div class="col-auto d-sm-none d-block">
                             <a href="">
                                 <i class="ph-magnifying-glass"></i>
                             </a>
                         </div>
-                        <div class="col-auto">
+                        <div class="col-auto d-none d-sm-block">
                             <a href="" data-notif data-count="5">
                                 <i class="ph-envelope-simple"></i>
                             </a>
                         </div>
-                        <div class="col-auto">
+                        <div class="col-auto d-none d-sm-block">
                             <a href="" data-notif data-count="10">
                                 <i class="ph-bell"></i>
                             </a>
                         </div>
-                        <div class="col-auto">
+                        <div class="col-auto d-none d-sm-block">
                             <div class="dropdown">
                                 <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
@@ -80,6 +87,8 @@
         </header>
 
         <aside class="sidebar active" data-sidebar>
+            <div class="backdrop"></div>
+            <a class="close-nav">&times;</a>
             <nav>
                 <ul class="nav-lists">
                     <li class="nav-list active">
@@ -190,6 +199,21 @@
                         <div class="box">
                             <button class="btn btn-warning" onclick="alert('hi')">Alert</button>
                             <a class="btn btn-primary">Modal</a>
+                            <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<!-- <div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div> -->
                         </div>
                         <div class="box">
                             <ul class="timeline">
@@ -224,8 +248,11 @@
         // document.querySelector('dialog').showModal()
         import { toggleDrawer } from './assets/js/ToggleDrawer.js'
         import { nav } from './assets/js/Navigation.js'
+        import{toggleTheme} from './assets/js/ToggleTheme.js'
+
         toggleDrawer()
         nav()
+        toggleTheme()
         const links = document.querySelectorAll('.nav-link')
         // console.log(links);
 
@@ -236,6 +263,20 @@
                 count.dataset.count = 9 + "+"
             }
         });
+
+//         const option={}
+//         const toastElList = document.querySelectorAll('.toast')
+// const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, option))
+
+// const toastTrigger = document.getElementById('liveToastBtn')
+// const toastLiveExample = document.getElementById('liveToast')
+// if (toastTrigger) {
+//   toastTrigger.addEventListener('click', () => {
+//     const toast = new bootstrap.Toast(toastLiveExample)
+
+//     toast.show()
+//   })
+// }
 
         // initialize bootstrap tooltip
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')

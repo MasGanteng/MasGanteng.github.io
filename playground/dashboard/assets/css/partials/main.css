@@ -1,0 +1,23 @@
+.main {
+  width: 100%;
+  padding-top: var(--header-height);
+  padding-left: var(--sidebar-width);
+}
+.sidebar,
+.main {
+  transition: width 0.1s ease;
+}
+.toggle-theme > * {
+  display: none;
+}
+.toggle-theme > *.active {
+  display: inline-flex;
+}
+
+@media screen and (max-width: 479px) {
+}
+@media screen and (min-width: 480px) {
+  .main.active {
+    padding-left: var(--sidebar-width-active);
+  }
+}
