@@ -72,7 +72,7 @@
 }
 
 [data-tooltip] {
-  position: relative;
+  position: flex;
   color: red;
 }
 [dats-tooltip]:hover {
