@@ -28,6 +28,15 @@ h4 {
   z-index: -1;
 }
 
+.elipse1 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  width: 150px;
+  height: 150px;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
