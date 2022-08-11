@@ -14,15 +14,10 @@ body {
   margin: 3rem 6rem 0 6rem;
 }
 
-h1 {
+.login-title {
   color: #3c016a;
   text-align: left;
   font-size: 46px;
-}
-
-h4 {
-  color: #898989;
-  text-align: left;
 }
 
 .elipse {
@@ -174,7 +169,7 @@ h4 {
   top: 50%;
   transform: translateY(-50%);
   color: #999;
-  font-size: 14px;
+  font-size: 8px;
   transition: 0.3s;
 }
 
