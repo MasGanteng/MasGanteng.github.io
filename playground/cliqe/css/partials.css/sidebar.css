@@ -1,0 +1,23 @@
+.offcanvas-side {
+  --bs-offcanvas-bg: #f2f2fd;
+  font-size: 1rem;
+  padding-block: 3.375rem;
+  padding-inline: 1.875rem 5rem;
+}
+
+.offcanvas-backdrop {
+  background-color: unset;
+}
+.offcanvas-side .offcanvas-header{
+    color: var(--color-primary);
+}
+.nav-sidebar {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.nav-sidebar a {
+  padding-block: 1.75rem;
+  color: var(--color-secondary);
+  text-align: end;
+}

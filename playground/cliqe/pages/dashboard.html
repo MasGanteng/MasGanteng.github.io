@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../assets/bootstrap/bootstrap.min.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="row w-100">
+                    <div class="col">
+                        <a class="navbar-brand" href="#">
+                            <img src="../assets/logo/cliqe-logo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">People</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                            </ul>
+                            <div>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#section-setting" role="button"
+                                    aria-controls="section-setting">
+                                    #
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <article class="card-profile box">
+                        <img src="https://source.unsplash.com/random/?portrait,male" class="img-profile rounded-circle" alt="profile">
+                        <p>Joy Putra</p>
+                        <address>Indonesia</address>
+                        <p>Human Resource at Tap in</p>
+                        <p>Hello i’m Joy from Indonesia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="../assets/images/QR Code Website 1.png" alt="qr">
+                            </div>
+                        </div>
+                        <a href="#" class="profile-copy">
+                            <img src="" alt="">
+                            <span>tapin.co/joy-putra</span>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <div class="section-insight">
+                        <h1>Insight</h1>
+                        <ul class="row">
+                            <li class="col">l</li>
+                            <li class="col">l</li>
+                            <li class="col">l</li>
+                            <li class="col">l</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h1>Connect</h1>
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                                    type="button" role="tab" aria-controls="home" aria-selected="true">People</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                    type="button" role="tab" aria-controls="profile" aria-selected="false">Groups</button>
+                            </li>
+                        </ul>
+    
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                groups</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="offcanvas offcanvas-end offcanvas-side" tabindex="-1" id="section-setting"
+        data-bs-scroll="true"
+        aria-labelledby="section-settingLabel"
+        aria-controls="offcanvasRight">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h2 class="offcanvas-title" id="section-settingLabel">Setting</h2>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row flex-column h-100">
+                <div class="col flex-grow-1">
+                    <ul class="nav-sidebar">
+                        <li><a href="#"><span>Complete Profile</span></a></li>
+                        <li><a href="#"><span>Email</span></a></li>
+                        <li><a href="#"><span>Profile Link</span></a></li>
+                        <li><a href="#"><span>Activate a Cliqe Device</span></a></li>
+                        <li><a href="#"><span>Activate a Cliqe Device</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <a href="#" class="text-center">
+                        <span>Log Out</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+</body>
+
+</html>
