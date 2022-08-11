@@ -1,3 +1,8 @@
+body {
+  --bs-body-font-size: 0.875rem;
+  padding-block-end: 5rem;
+}
+
 .box {
   border-radius: 1.25rem;
   background-color: white;
@@ -33,8 +38,12 @@
 }
 
 .profile-copy {
+  display: inline-block;
+  width: 100%;
   padding-block: 0.625rem;
   text-align: center;
+  text-decoration: none;
+  color: #000;
   border-radius: 0.625rem;
   background-color: #0100d50d;
 }
@@ -95,24 +104,57 @@
   --color-blue: 0;
 }
 
-.card-profile{
+.card-profile {
   overflow: hidden;
 }
-.card-profile .card-profile-header{
+.card-profile .card-profile-header {
   height: 8.25rem;
   text-align: center;
-  background-image: url('../../assets/images/pexels-dimitri-dim-1802183\ 1.jpg');
+  background-image: url("../../assets/images/pexels-dimitri-dim-1802183\ 1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.card-profile .card-profile-header img{
+.card-profile .card-profile-header img {
   margin-block-start: 2.5rem;
   width: 7.75rem;
   aspect-ratio: 1/1;
   box-sizing: content-box;
-  border: .625rem solid white;
+  background-color: white;
+  border: 0.625rem solid white;
 }
-.card-profile .card-profile-body{
-  padding-block-start: 3.5rem;
+.card-profile .card-profile-body {
+  padding-block: 3.5rem;
   padding-inline: 1.5rem;
+}
+.card-profile-body .name {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.card-profile-body address {
+  font-style: revert;
+}
+
+.connect-tab .nav-tabs {
+  border-radius: 3rem;
+  overflow: hidden;
+}
+.connect-tab .nav-link {
+  --bs-link-color: black;
+  --bs-nav-tabs-link-active-color: white;
+  --bs-nav-tabs-link-active-bg: #0100d580;
+  border-radius: 3rem;
+  width: 100%;
+}
+.connect-tab .tab-pane {
+  padding-block: 2rem;
+}
+.card-peoples {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+.card-peoples .card-people+.card-people{
+  margin-block-start: 1rem;
+}
+.card-peoples .card-people img {
+  aspect-ratio: 1/1;
 }

@@ -17,7 +17,9 @@
 }
 
 .nav-sidebar a {
+  display: block;
   padding-block: 1.75rem;
   color: var(--color-secondary);
   text-align: end;
+  text-decoration: none;
 }

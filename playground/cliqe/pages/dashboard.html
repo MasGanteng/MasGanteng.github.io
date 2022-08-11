@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <script src="../assets/bootstrap/bootstrap.min.js" defer></script>
 </head>
 
@@ -47,7 +47,7 @@
                             <div>
                                 <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#section-setting"
                                     role="button" aria-controls="section-setting">
-                                    #
+                                    =
                                 </a>
                             </div>
                         </div>
@@ -67,7 +67,7 @@
                                 class="img-profile rounded-circle" alt="profile">
                         </div>
                         <div class="card-profile-body">
-                            <p>Joy Putra</p>
+                            <p class="name">Joy Putra</p>
                             <address>Indonesia</address>
                             <p>Human Resource at Tap in</p>
                             <p>Hello i’m Joy from Indonesia. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -80,10 +80,14 @@
                                     <img src="../assets/images/QR Code Website 1.png" alt="qr">
                                 </div>
                             </div>
-                            <a href="#" class="profile-copy">
-                                <img src="" alt="">
-                                <span>tapin.co/joy-putra</span>
-                            </a>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" class="profile-copy">
+                                        <img src="" alt="">
+                                        <span>tapin.co/joy-putra</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </article>
                 </div>
@@ -137,30 +141,72 @@
                         <h1 class="mb-4">Connect</h1>
 
                         <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                    data-bs-target="#home" type="button" role="tab" aria-controls="home"
-                                    aria-selected="true">People</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                                    type="button" role="tab" aria-controls="profile"
-                                    aria-selected="false">Groups</button>
-                            </li>
-                        </ul>
-
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab"
-                                tabindex="0">
-                                <ul>
-                                    <li></li>
+                        <div class="row connect-tab">
+                            <div class="col">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                            aria-selected="true">People</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                            data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                                            aria-selected="false">Groups</button>
+                                    </li>
                                 </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab"
+                                        tabindex="0">
+                                        <ul class="card-peoples">
+                                            <li class="card-people">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="https://source.unsplash.com/random/?portrait,male"
+                                                            class="img-fluid rounded-circle" alt="people">
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>Popl</p>
+                                                        <p>Indonesia</p>
+                                                        <p>Hello world</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-people">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="https://source.unsplash.com/random/?portrait,male"
+                                                            class="img-fluid rounded-circle" alt="people">
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>Popl</p>
+                                                        <p>Indonesia</p>
+                                                        <p>Hello world</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-people">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="https://source.unsplash.com/random/?portrait,male"
+                                                            class="img-fluid rounded-circle" alt="people">
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>Popl</p>
+                                                        <p>Indonesia</p>
+                                                        <p>Hello world</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab"
+                                        tabindex="0">
+                                        groups</div>
+                                </div>
                             </div>
-                            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab"
-                                tabindex="0">
-                                groups</div>
                         </div>
                     </div>
 
