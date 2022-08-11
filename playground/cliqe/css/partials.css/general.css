@@ -139,7 +139,7 @@ body {
   overflow: hidden;
 }
 .connect-tab .nav-link {
-  --bs-link-color: black;
+  --bs-nav-link-color: black;
   --bs-nav-tabs-link-active-color: white;
   --bs-nav-tabs-link-active-bg: #0100d580;
   border-radius: 3rem;
