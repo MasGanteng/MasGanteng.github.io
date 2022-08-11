@@ -4,6 +4,34 @@
   box-shadow: 0 0.25rem 1.25rem #0004;
 }
 
+.box-grad {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(var(--color-red) var(--color-green) var(--color-blue) / 0),
+    rgb(var(--color-red) var(--color-green) var(--color-blue) / 0.2)
+  );
+}
+.box-grad.box-grad-1 {
+  --color-red: 12;
+  --color-green: 87;
+  --color-blue: 251;
+}
+.box-grad.box-grad-2 {
+  --color-red: 1;
+  --color-green: 0;
+  --color-blue: 124;
+}
+.box-grad.box-grad-3 {
+  --color-red: 0;
+  --color-green: 194;
+  --color-blue: 160;
+}
+.box-grad.box-grad-4 {
+  --color-red: 255;
+  --color-green: 138;
+  --color-blue: 0;
+}
+
 .profile-copy {
   padding-block: 0.625rem;
   text-align: center;
@@ -16,4 +44,75 @@
   height: 100%;
   object-fit: cover;
   aspect-ratio: 1/1;
+}
+
+.card-insights {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.card-insights .card-insight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 600;
+  aspect-ratio: 1/1;
+}
+.card-insight .insight-head {
+  font-size: var(--bs-body-font-size);
+  font-weight: 400;
+}
+.insight-circle {
+  box-sizing: content-box;
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 2px 0.25rem rgb(0 0 0 /0.25);
+  background-color: rgb(var(--color-red) var(--color-green) var(--color-blue));
+}
+.insight-circle.insight-circle-1 {
+  --color-red: 12;
+  --color-green: 87;
+  --color-blue: 251;
+}
+.insight-circle.insight-circle-2 {
+  --color-red: 1;
+  --color-green: 0;
+  --color-blue: 124;
+}
+.insight-circle.insight-circle-3 {
+  --color-red: 0;
+  --color-green: 194;
+  --color-blue: 160;
+}
+.insight-circle.insight-circle-4 {
+  --color-red: 255;
+  --color-green: 138;
+  --color-blue: 0;
+}
+
+.card-profile{
+  overflow: hidden;
+}
+.card-profile .card-profile-header{
+  height: 8.25rem;
+  text-align: center;
+  background-image: url('../../assets/images/pexels-dimitri-dim-1802183\ 1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-profile .card-profile-header img{
+  margin-block-start: 2.5rem;
+  width: 7.75rem;
+  aspect-ratio: 1/1;
+  box-sizing: content-box;
+  border: .625rem solid white;
+}
+.card-profile .card-profile-body{
+  padding-block-start: 3.5rem;
+  padding-inline: 1.5rem;
 }
