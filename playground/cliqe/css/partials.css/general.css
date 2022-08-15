@@ -3,6 +3,35 @@ body {
   padding-block-end: 5rem;
 }
 
+.icon {
+  width: var(--size, 1.5rem);
+  height: var(--size, 1.5rem);
+}
+.btn-side,
+.btn-cliqe {
+  --bs-btn-bg: #0100d50d;
+  --bs-btn-hover-bg: #0000d626;
+  --bs-btn-border-width: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-side {
+  --bs-btn-color: var(--color-primary);
+  width: 3.5rem;
+  aspect-ratio: 1/1;
+}
+
+.btn-cliqe {
+  --bs-btn-color: #6f16b6;
+  --bs-btn-hover-color: #6f16b6;
+  --bs-btn-box-shadow: 0px 15px 30px 1px rgba(0, 0, 0, 0.1);
+  --bs-btn-border-radius: 0.625rem;
+  height: 3rem;
+  box-shadow: var(--bs-btn-box-shadow);
+}
+
 .box {
   border-radius: 1.25rem;
   background-color: white;
@@ -49,10 +78,10 @@ body {
 }
 
 .img-profile {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: var(--width);
   aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 .card-insights {
@@ -105,26 +134,36 @@ body {
 }
 
 .card-profile {
+  --padding: 0;
   overflow: hidden;
 }
 .card-profile .card-profile-header {
-  height: 8.25rem;
-  text-align: center;
+  --height: 8.25rem;
+  position: relative;
+  height: var(--height);
   background-image: url("../../assets/images/pexels-dimitri-dim-1802183\ 1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.card-profile .card-profile-header img {
-  margin-block-start: 2.5rem;
-  width: 7.75rem;
-  aspect-ratio: 1/1;
+.card-profile .card-profile-header .img-profile {
+  --width: 7.75rem;
+  position: absolute;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
   box-sizing: content-box;
   background-color: white;
   border: 0.625rem solid white;
 }
+.card-profile .card-profile-header .img-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .card-profile .card-profile-body {
-  padding-block: 3.5rem;
-  padding-inline: 1.5rem;
+  --padding: 1.5rem;
+  padding-block: 4.5rem;
+  padding-inline: var(--padding);
 }
 .card-profile-body .name {
   font-weight: 700;
@@ -132,6 +171,23 @@ body {
 }
 .card-profile-body address {
   font-style: revert;
+}
+
+.card-profile.card-profile-big {
+  --padding-start: 4.5rem;
+}
+.card-profile.card-profile-big .card-profile-header {
+  --height: 16rem;
+}
+.card-profile.card-profile-big .card-profile-header .img-profile {
+  --width: 11.75rem;
+  left: var(--padding-start);
+  bottom: -3.75rem;
+  transform: translateX(0);
+}
+.card-profile.card-profile-big .card-profile-header,
+.card-profile.card-profile-big .card-profile-body {
+  --padding: var(--padding-start) 3.5rem;
 }
 
 .connect-tab .nav-tabs {
@@ -152,9 +208,26 @@ body {
   list-style-type: none;
   padding-inline-start: 0;
 }
-.card-peoples .card-people+.card-people{
+.card-peoples .card-people + .card-people {
   margin-block-start: 1rem;
 }
 .card-peoples .card-people img {
   aspect-ratio: 1/1;
+}
+
+.status{
+  --size:.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  aspect-ratio: 1/1;
+  color: white;
+  border-radius: 50%;
+}
+.status.status-complete{
+  background-color: green;
+}
+.status.status-incomplete{
+  background-color: red;
 }
