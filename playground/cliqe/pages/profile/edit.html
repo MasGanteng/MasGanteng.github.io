@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/main.css">
     <script src="../../assets/bootstrap/bootstrap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 
 <body>
@@ -65,25 +66,25 @@
                 <div class="col-4">
                     <article class="card-profile box">
                         <div class="card-profile-header">
-                            <div class="img-profile">
-                                <img src="https://source.unsplash.com/random/?portrait,male" alt="profile">
+                            <div class="img-profile" id="img-profile">
+                                
                             </div>
                         </div>
                         <div class="card-profile-body">
-                            <p class="name mb-0">Joy Putra</p>
-                            <address class="mb-0">Indonesia</address>
-                            <p>Human Resource at Tap in</p>
-                            <p>Hello i’m Rayn from Indonesia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p class="name mb-0"><span id="full_name">{ name }</span></p>
+                            <address class="mb-0"><span id="location">{ location }</span></address>
+                            <p><span id="job_title">{ job }</span></p>
+                            <p><span id="personal_bio">{ bio }</span></p>
                             <div class="row">
                                 <div class="col text-center">
-                                    <img src="../../assets/images/QR Code Website 1.png" alt="qr">
+                                    <div id="qrcode"></div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
                                     <a href="#" class="profile-copy">
                                         <img src="" alt="">
-                                        <span>tapin.co/joy-putra</span>
+                                        <span id="label_qr">{ label }</span>
                                     </a>
                                 </div>
                             </div>
@@ -128,11 +129,12 @@
                                                 <label for="add-profile-picture">Add Profile Picture</label>
                                                 <div class="row justify-content-between pt-2">
                                                     <div class="col-auto">
-                                                        <label for="add-profile-picture">Add Profile Picture</label>
+                                                        <!-- <label for="add-profile-picture">Add Profile Picture</label> -->
+                                                        <span id="profil-picture"></span>
                                                         <input type="file" name="add-profile-picture" id="add-profile-picture" class="d-none">
                                                     </div>
                                                     <div class="col-auto">
-                                                        <span class="small">Complete</span>
+                                                        <span class="small" id="status_picture">Complete</span>
                                                         <span class="status status-complete">
                                                             <svg class="icon">
                                                                 <use xlink:href="../../assets/svg/sprite.svg#check"></use>
@@ -248,14 +250,14 @@
                     </div>
                     <div class="row mt-4">
                         <div class="col text-center">
-                            <img src="../../assets/images/QR Code Website 1.png" alt="qr">
+                            <div id="qrcode2"></div>
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col">
                             <a href="#" class="profile-copy">
                                 <img src="" alt="">
-                                <span>tapin.co/joy-putra</span>
+                                <span id="label_qr2">{ label }</span>
                             </a>
                         </div>
                     </div>
@@ -325,7 +327,8 @@
             </div>
         </div>
     </aside>
-
+    <script type="text/javascript" src="js/main.js"></script>
+	<script type="module" src="../../js/profile/form.js"></script>
 </body>
 
 </html>
