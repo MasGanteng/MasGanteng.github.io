@@ -14,15 +14,10 @@ body {
   margin: 3rem 6rem 0 6rem;
 }
 
-h1 {
+.login-title {
   color: #3c016a;
   text-align: left;
   font-size: 46px;
-}
-
-h4 {
-  color: #898989;
-  text-align: left;
 }
 
 .elipse {
@@ -74,7 +69,7 @@ h4 {
   height: 80vh;
   display: grid;
   gap: 0;
-  margin: 3rem 6rem 0 6rem;
+  margin: 2rem 6rem 0 6rem;
   grid-template-columns: repeat(2, 400px);
   padding: 0 0;
 }
@@ -127,7 +122,7 @@ h4 {
   /* padding: 5px; */
   border-radius: 10px;
   background-color: rgba(1, 0, 213, 0.05);
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
 }
 
 .login-content .input-div.one {
@@ -138,10 +133,10 @@ h4 {
   border: none;
   position: relative;
   border-radius: 10px;
-  width: 280px;
+  width: 300px;
   height: 60px;
   background-color: rgba(1, 0, 213, 0.05);
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
   margin: 10px 0 10px 0;
   padding: 0 0 0 10px;
   font-family: "poppins", sans-serif;
@@ -150,6 +145,12 @@ h4 {
 .label-check {
   font-size: 12px;
   margin: 20px 0 20px 0;
+}
+
+.label-form {
+  font-size: 12px;
+  display: block;
+  color: #898989;
 }
 
 .i {
@@ -174,7 +175,7 @@ h4 {
   top: 50%;
   transform: translateY(-50%);
   color: #999;
-  font-size: 14px;
+  font-size: 8px;
   transition: 0.3s;
 }
 
