@@ -112,26 +112,6 @@ body {
   box-shadow: 0 2px 0.25rem rgb(0 0 0 /0.25);
   background-color: rgb(var(--color-red) var(--color-green) var(--color-blue));
 }
-.insight-circle.insight-circle-1 {
-  --color-red: 12;
-  --color-green: 87;
-  --color-blue: 251;
-}
-.insight-circle.insight-circle-2 {
-  --color-red: 1;
-  --color-green: 0;
-  --color-blue: 124;
-}
-.insight-circle.insight-circle-3 {
-  --color-red: 0;
-  --color-green: 194;
-  --color-blue: 160;
-}
-.insight-circle.insight-circle-4 {
-  --color-red: 255;
-  --color-green: 138;
-  --color-blue: 0;
-}
 
 .card-profile {
   --padding: 0;
