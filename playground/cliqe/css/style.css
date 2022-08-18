@@ -65,12 +65,8 @@ body {
 }
 
 .container-reg {
-  width: 80vw;
-  height: 80vh;
-  display: grid;
-  gap: 0;
   margin: 2rem 6rem 0 6rem;
-  grid-template-columns: repeat(2, 400px);
+  max-width: 55%;
   padding: 0 0;
 }
 
@@ -133,7 +129,7 @@ body {
   border: none;
   position: relative;
   border-radius: 10px;
-  width: 300px;
+  width: 350px;
   height: 60px;
   background-color: rgba(1, 0, 213, 0.05);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
@@ -265,9 +261,10 @@ a:hover {
 
 .btn-signup {
   display: block;
-  width: 50%;
+  width: 30%;
   height: 50px;
   border-radius: 25px;
+  margin-top: 10px;
   outline: none;
   border: none;
   background-color: #3c016a;
@@ -278,9 +275,18 @@ a:hover {
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.5s;
+  hover: #c59cf7;
 }
 
 .btn:hover {
   background-position: right;
   background-color: #c59cf7;
+}
+.btn-signup:hover {
+  background-position: right;
+  background-color: #c59cf7;
+}
+
+.col-custom {
+  width: 500px;
 }
