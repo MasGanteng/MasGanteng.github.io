@@ -19,18 +19,18 @@
             <img src="/playground/cliqe/assets/img/elipse1.png">
         </div>
 		<div class="login-content one">
-			<form action="index.html">
+			<!-- <form action="#" onsubmit="return false"> -->
                 <h1 class="login-title">Login</h1>
                 <h5 class="mb-5" style="color: #898989; text-align: left">Login Your Account</h5>
-				<form action="/playground/cliqe/pages/dashboard.html" method="get">
+				<form onsubmit="return false" action="#" id="formData">
 					<div class="input-div">
 						<div class="mb-1">
-							<input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="email or phone number">
+							<input type="text" class="form-control form-control-lg" id="email" name="email" placeholder="email or phone number">
 						</div>
 					</div>
 					<div class="input-div">	
 						<div class="mb-1">
-							<input type="password" class="form-control form-control-lg" id="exampleFormControlTextarea1" placeholder="password"></input>
+							<input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="password"></input>
 						</div>
 					</div>
 					<div class="row">
@@ -38,14 +38,15 @@
 							<a style="padding-top: 10px;" class="a-forgot" href="#">Forgot your password?</a>
 						</div>
 						<div class="col">
-							<input style="width: 65%;" type="submit" class="btn btn-login" value="Login">
+							<button style="width: 65%;" type="submit" class="btn btn-login" id="login">Login</button>
 						</div>
 					</div>
 				</form>
-            </form>
+            <!-- </form> -->
         </div>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
+	<script type="module" src="./js/login.js"></script>
 </body>
 </html>
 
