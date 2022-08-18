@@ -1,0 +1,9 @@
+.navbar .navbar-nav {
+  gap: 4.875rem;
+}
+.navbar .nav-link {
+  --bs-navbar-nav-link-padding-x: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #3c016a;
+}

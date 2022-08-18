@@ -31,6 +31,8 @@
 #app {
   display: flex;
   min-height: 100vh;
+  color: var(--body-color);
+  background-color: var(--body-background);
 }
 .main-content {
   padding: 2rem 1rem;
@@ -93,10 +95,6 @@ dialog::backdrop {
 }
 
 @media (prefers-color-scheme: dark) {
-  #app {
-    background-color: var(--color-dark);
-    color: var(--color-light);
-  }
   .btn {
     --bs-btn-color: white;
   }
@@ -107,10 +105,6 @@ dialog::backdrop {
 }
 
 @media (prefers-color-scheme: light) {
-  #app {
-    background-color: var(--color-light);
-    color: var(--color-dark);
-  }
   .btn {
     --bs-btn-color: #333;
   }
@@ -118,4 +112,13 @@ dialog::backdrop {
     background-color: white;
     /* border: thin solid #eaeaea; */
   }
+}
+
+[data-theme="dark"] {
+  --body-background: var(--color-dark);
+  --body-color: var(--color-light);
+}
+[data-theme="light"] {
+  --body-background: var(--color-light);
+  --body-color: var(--color-dark);
 }

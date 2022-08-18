@@ -8,16 +8,28 @@
 .offcanvas-backdrop {
   background-color: unset;
 }
-.offcanvas-side .offcanvas-header{
-    color: var(--color-primary);
+.offcanvas-side .offcanvas-header {
+  color: var(--color-primary);
 }
 .nav-sidebar {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
   padding-inline-start: 0;
+  gap: 2rem;
 }
 
 .nav-sidebar a {
-  padding-block: 1.75rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: .75rem;
+  padding-block: 0.5rem 0.875rem;
+  padding-inline: 1.25rem 1.75rem;
   color: var(--color-secondary);
+  border-radius: 10px;
   text-align: end;
+  text-decoration: none;
+}
+.nav-sidebar a.active {
+  background-image: linear-gradient(to right, #fff0, #ffffffe6);
 }

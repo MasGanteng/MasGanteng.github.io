@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <script src="../assets/bootstrap/bootstrap.min.js" defer></script>
 </head>
 
@@ -47,7 +47,7 @@
                             <div>
                                 <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#section-setting"
                                     role="button" aria-controls="section-setting">
-                                    #
+                                    <svg class="icon"><use xlink:href="../assets/svg/sprite.svg#menu"></use></svg>
                                 </a>
                             </div>
                         </div>
@@ -63,12 +63,13 @@
                 <div class="col-4">
                     <article class="card-profile box">
                         <div class="card-profile-header">
-                            <img src="https://source.unsplash.com/random/?portrait,male"
-                                class="img-profile rounded-circle" alt="profile">
+                            <div class="img-profile">
+                                <img src="https://source.unsplash.com/random/?portrait,male" alt="profile">
+                            </div>
                         </div>
                         <div class="card-profile-body">
-                            <p>Joy Putra</p>
-                            <address>Indonesia</address>
+                            <p class="name mb-0">Joy Putra</p>
+                            <address class="mb-0">Indonesia</address>
                             <p>Human Resource at Tap in</p>
                             <p>Hello i’m Joy from Indonesia. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do
@@ -80,10 +81,14 @@
                                     <img src="../assets/images/QR Code Website 1.png" alt="qr">
                                 </div>
                             </div>
-                            <a href="#" class="profile-copy">
-                                <img src="" alt="">
-                                <span>tapin.co/joy-putra</span>
-                            </a>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" class="profile-copy">
+                                        <img src="" alt="">
+                                        <span>tapin.co/joy-putra</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </article>
                 </div>
@@ -137,30 +142,72 @@
                         <h1 class="mb-4">Connect</h1>
 
                         <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                    data-bs-target="#home" type="button" role="tab" aria-controls="home"
-                                    aria-selected="true">People</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                                    type="button" role="tab" aria-controls="profile"
-                                    aria-selected="false">Groups</button>
-                            </li>
-                        </ul>
-
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab"
-                                tabindex="0">
-                                <ul>
-                                    <li></li>
+                        <div class="row connect-tab">
+                            <div class="col">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                            aria-selected="true">People</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                            data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                                            aria-selected="false">Groups</button>
+                                    </li>
                                 </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab"
+                                        tabindex="0">
+                                        <ul class="card-peoples">
+                                            <li class="card-people">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="https://source.unsplash.com/random/?portrait,male"
+                                                            class="img-fluid rounded-circle" alt="people">
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>Popl</p>
+                                                        <p>Indonesia</p>
+                                                        <p>Hello world</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-people">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="https://source.unsplash.com/random/?portrait,male"
+                                                            class="img-fluid rounded-circle" alt="people">
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>Popl</p>
+                                                        <p>Indonesia</p>
+                                                        <p>Hello world</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-people">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="https://source.unsplash.com/random/?portrait,male"
+                                                            class="img-fluid rounded-circle" alt="people">
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>Popl</p>
+                                                        <p>Indonesia</p>
+                                                        <p>Hello world</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab"
+                                        tabindex="0">
+                                        groups</div>
+                                </div>
                             </div>
-                            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab"
-                                tabindex="0">
-                                groups</div>
                         </div>
                     </div>
 
@@ -179,16 +226,15 @@
             <div class="row flex-column h-100">
                 <div class="col flex-grow-1">
                     <ul class="nav-sidebar">
-                        <li><a href="#"><span>Complete Profile</span></a></li>
-                        <li><a href="#"><span>Email</span></a></li>
-                        <li><a href="#"><span>Profile Link</span></a></li>
-                        <li><a href="#"><span>Activate a Cliqe Device</span></a></li>
-                        <li><a href="#"><span>Activate a Cliqe Device</span></a></li>
+                        <li><a href="./profile" class="active"><span>Complete Profile</span><svg class="icon"><use xlink:href="../assets/svg/sprite.svg#link"></use></svg></a></li>
+                        <li><a href="./email"><span>Email</span><svg class="icon"><use xlink:href="../assets/svg/sprite.svg#mail"></use></svg></a></li>
+                        <li><a href="./profile-link"><span>Profile Link</span><svg class="icon"><use xlink:href="../assets/svg/sprite.svg#link"></use></svg></a></li>
+                        <li><a href="./activation"><span>Activate a Cliqe Device</span><svg class="icon"><use xlink:href="../assets/svg/sprite.svg#link"></use></svg></a></li>
+                        <li><a href="./how-to-use"><span>How to Use</span><svg class="icon"><use xlink:href="../assets/svg/sprite.svg#double-right"></use></svg></a></li>
                     </ul>
-                </div>
-                <div class="col-auto">
                     <a href="#" class="text-center">
                         <span>Log Out</span>
+                        <svg class="icon"><use xlink:href="../assets/svg/sprite.svg#power"></use></svg>
                     </a>
                 </div>
             </div>

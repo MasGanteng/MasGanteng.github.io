@@ -27,9 +27,12 @@
         <div class="row">
             <form action="/playground/cliqe/login.html" method="get">
                 <div class="col">
-                    <input type="text" class="form-control form-control-lg form-custom" placeholder="First name">
-                    <input type="email" class="form-control form-control-lg form-custom" placeholder="E-mail">
-                    <input type="password" class="form-control form-control-lg form-custom" placeholder="Password">
+                    <label class="label-form" for="firstame">First Name</label>
+                    <input id="firstname" type="text" class="form-control form-control-lg form-custom" placeholder="First name" required>
+                    <label class="label-form" for="email">E-mail</label>
+                    <input id="email" type="email" class="form-control form-control-lg form-custom" placeholder="E-mail" required>
+                    <label class="label-form" for="password">Password</label>
+                    <input id="password" type="password" class="form-control form-control-lg form-custom" placeholder="Password" required>
                 </div>
                 <div class="form-check label-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -41,9 +44,12 @@
             </form>    
         </div>
         <div class="col">
-            <input type="text" class="form-control form-control-lg form-custom" placeholder="Last name">
-            <input type="tel" class="form-control form-control-lg form-custom" placeholder="Phone Number">
-            <input type="password" class="form-control form-control-lg form-custom" placeholder="Confirrm Password">
+            <label class="label-form" for="lastname">Last Name</label>
+            <input id="lastname" type="text" class="form-control form-control-lg form-custom" placeholder="Last name">
+            <label class="label-form" for="phone">Phone Number</label>
+            <input id="phone" type="tel" class="form-control form-control-lg form-custom" placeholder="Phone Number" pattern="[0-9]{4} [0-9]{4} [0-9]{4}" required>
+            <label class="label-form" for="confirm">Confirm Password</label>
+            <input id="confirm" type="password" class="form-control form-control-lg form-custom" placeholder="Confirrm Password" required>
         </div>
     </div>
 
