@@ -35,14 +35,33 @@ loginBtn.addEventListener("click", function(event){
             localStorage.setItem('token', result.token)
             localStorage.setItem('token_type', result.token_type)
             localStorage.setItem('expired', result.expired_in)
+            window.location.href = baseUrl+'/playground/cliqe/pages/profile/index.html'
         }else{
+            deleteDiv('email')
+            deleteDiv('name')
+            deleteDiv('phone')
+            deleteDiv('password')
+            deleteDiv('confirm')
+
+            createDiv(result.errors.email[0], 'email')
+            createDiv(result.errors.full_name[0], 'name')
+            createDiv(result.errors.phone[0], 'phone')
+            createDiv(result.errors.password[0], 'password')
+            createDiv(result.errors.password_confirmation[0], 'confirm')
             console.log(result.errors)
         }
-        window.location.href = baseUrl+'/playground/cliqe/pages/profile/index.html'
     }).catch((error) => {
-        const error_response = document.createElement('p')
-        error_response.innerText = error.errors.email[0]
-        console.log(error_response)
-        document.getElementById('error').appendChild(error_response)
+        console.log(error)
     })
 })
+
+function createDiv(text, dom){
+    const error_response = document.createElement('p')
+    error_response.innerText = text
+    document.getElementById('error-'+dom).appendChild(error_response)
+}
+
+function deleteDiv(dom){
+    var resource = document.getElementById("error-"+dom);
+    resource.removeAttribute('p');
+}

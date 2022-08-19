@@ -81,30 +81,31 @@
                 <div class="col">
                     <label class="label-form" for="firstame">First Name</label>
                     <input type="text" class="form-custom" placeholder="First name" aria-label="First name" name="full_name">
+                    <span id="error-name"></span>
                 </div> 
-                <!-- <div class="col">
-                    <label class="label-form" for="lastname">Last Name</label>
-                    <input id="lastname" type="text" class="form-custom" placeholder="Last name">
-                </div> -->
             </div>
             <div class="row">
                 <div class="col">
                     <label class="label-form" for="email">E-mail</label>
                     <input id="email" type="email" class="form-custom" placeholder="E-mail" name="email" required>
+                    <span id="error-email"></span>
                 </div> 
                 <div class="col">
                     <label class="label-form" for="phone">Phone Number</label>
                     <input id="phone" type="tel" class="form-custom" placeholder="Phone Number" name="phone" required>
+                    <span id="error-phone"></span>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <label class="label-form" for="password">Password</label>
                     <input id="password" type="password" class="form-custom" placeholder="Password" name="password" required>
+                    <span id="error-password"></span>
                 </div> 
                 <div class="col">
                     <label class="label-form" for="confirm">Confirm Password</label>
                     <input id="confirm" type="password" class="form-custom" placeholder="Confirrm Password" name="password_confirmation" required>
+                    <span id="error-confirm"></span>
                 </div>
             </div>
         </form> 
@@ -114,7 +115,7 @@
             i agree with to the <a class="a-signup" href="#">privacy</a> and <a href="#">policy</a>
             </label>
         </div>
-        <button type="submit" class="btn-signup" id="signup" name="signup" value="Sign Up"></button>
+        <input type="submit" class="btn-signup" id="signup" name="signup" value="Sign Up">
     </div>
     <div class="elipse3">
         <img src="/playground/cliqe/assets/img/elipse3.png">
