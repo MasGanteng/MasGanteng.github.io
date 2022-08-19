@@ -24,7 +24,7 @@ body {
   height: var(--size, 1.5rem);
 }
 .title-custom {
-  margin: 3rem 6rem 0 6rem;
+  margin: 3rem 6rem 2rem 7.5rem;
 }
 
 .login-title {
@@ -70,16 +70,17 @@ body {
 }
 
 .container-login {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 0 0;
+  gap: none;
 }
 
 .container-reg {
   margin: 2rem 6rem 0 6rem;
-  max-width: 55%;
+  max-width: 100%;
   padding: 0 0;
 }
 
@@ -89,7 +90,7 @@ body {
   align-items: left;
   width: 70%;
   height: 70%;
-  margin-top: 180px;
+  margin-top: 170px;
   margin-right: 100px;
 }
 
@@ -142,12 +143,12 @@ body {
   border: none;
   position: relative;
   border-radius: 10px;
-  width: 400px;
+  width: 300px;
   height: 50px;
   background-color: rgba(1, 0, 213, 0.05);
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.06);
   margin: 0 0 20px 0;
-  padding: 0 0 0 0;
+  padding: 0 0 0 10px;
   font-family: "poppins", sans-serif;
 }
 
@@ -175,7 +176,7 @@ body {
 
 .input-div > div {
   position: relative;
-  height: 45px;
+  height: 60px;
 }
 
 .input-div > div > h5 {
@@ -231,7 +232,7 @@ body {
   outline: none;
   background: none;
   padding: 0.5rem 0.7rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #555;
   font-family: "poppins", sans-serif;
 }
@@ -302,11 +303,7 @@ a:hover {
 }
 
 .btn-primary{
-  
-}
-
-.col-custom {
-  width: 500px;
+  background-color: red;
 }
 
 .col-forgot {
