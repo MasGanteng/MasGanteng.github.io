@@ -1,7 +1,7 @@
 import { baseUrl, baseUrlApi } from "./env.js";
-const login = baseUrlApi+'api/login'
+const login = baseUrlApi+'api/register'
 
-const loginBtn = document.querySelector("#login");
+const loginBtn = document.querySelector("#signup");
 const form = document.querySelectorAll("#formData input")
 
 const header = new Headers()
@@ -29,21 +29,20 @@ loginBtn.addEventListener("click", function(event){
     fetch(login, options)
     .then(
         response => response.json()
-    )
-    .then((result) => {
+    ).then((result) => {
         // console.log(result)
         if(result.token){
             localStorage.setItem('token', result.token)
             localStorage.setItem('token_type', result.token_type)
             localStorage.setItem('expired', result.expired_in)
-            // window.location.href = baseUrl+'/playground/cliqe/pages/profile/index.html'
         }else{
-            const error_response = document.createElement('p')
-            error_response.innerText = result.errors.email[0]
-            console.log(error_response)
-            document.getElementById('error').appendChild(error_response)
-        } 
+            console.log(result.errors)
+        }
+        window.location.href = baseUrl+'/playground/cliqe/pages/profile/index.html'
     }).catch((error) => {
-        console.log(error)     
+        const error_response = document.createElement('p')
+        error_response.innerText = error.errors.email[0]
+        console.log(error_response)
+        document.getElementById('error').appendChild(error_response)
     })
 })
