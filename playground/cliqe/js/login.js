@@ -5,11 +5,13 @@ const loginBtn = document.querySelector("#login");
 const form = document.querySelectorAll("#formData input")
 
 const header = new Headers()
+header.append("Accept", "application/json, text/plain, */*")
 header.append("Content-type", "application/json")
 
 const data = new FormData()
 
 loginBtn.addEventListener("click", function(event){
+    event.preventDefault()
     form.forEach((item, index, array) => {
         data.append(item.name, item.value)
     })
@@ -27,15 +29,21 @@ loginBtn.addEventListener("click", function(event){
     fetch(login, options)
     .then(
         response => response.json()
-    ).then((result) => {
+    )
+    .then((result) => {
         // console.log(result)
         if(result.token){
             localStorage.setItem('token', result.token)
             localStorage.setItem('token_type', result.token_type)
             localStorage.setItem('expired', result.expired_in)
-        }
-        window.location.href = baseUrl+'/playground/cliqe/pages/profile/index.html'
-    }).catch(
-        error => console.log('error', error)
-    )
+            // window.location.href = baseUrl+'/playground/cliqe/pages/profile/index.html'
+        }else{
+            const error_response = document.createElement('p')
+            error_response.innerText = result.errors.email[0]
+            console.log(error_response)
+            document.getElementById('error').appendChild(error_response)
+        } 
+    }).catch((error) => {
+        console.log(error)     
+    })
 })
