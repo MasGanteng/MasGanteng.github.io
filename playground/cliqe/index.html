@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <a href="./pages/login.html">login</a>
     <a href="./pages/register.html">register</a>
+    <script type="text/javascript">
+        if (screen.width <= 699) {
+            document.location = "https://play.google.com/store/apps/details?id=id.cliqe";
+        }
+    </script>
+    <script language=javascript>
+        if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+            location.replace("https://apps.apple.com/id/app/cliqe-digital-business-card/id1636819781?l=id");
+        }
+    </script>
 </body>
+
 </html>
