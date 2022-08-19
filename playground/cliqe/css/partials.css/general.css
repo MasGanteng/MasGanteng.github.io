@@ -230,3 +230,14 @@ body {
 .status.status-incomplete {
   background-color: red;
 }
+
+.link-to-socmed{
+  display: inline-block;
+  width: 3.125rem;
+}
+.link-to-socmed:not(:first-child){
+  margin-inline-start: 1.8rem;
+}
+.link-to-socmed.linkedin{
+  width: 3.675rem;
+}
