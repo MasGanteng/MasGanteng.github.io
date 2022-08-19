@@ -19,7 +19,7 @@ body {
   font-weight: 500;
   color: #3c016a;
 }
-.icon{
+.icon {
   width: var(--size, 1.5rem);
   height: var(--size, 1.5rem);
 }
@@ -290,7 +290,6 @@ a:hover {
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.5s;
-  hover: #c59cf7;
 }
 
 .btn:hover {
@@ -302,8 +301,19 @@ a:hover {
   background-color: #c59cf7;
 }
 
-.btn-primary{
-  background-color: red;
+.btn-primary {
+  --bs-btn-bg: #6f16b6;
+  --bs-btn-hover-bg: hsl(273, 78%, 30%);
+  --bs-btn-border-width: none;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #6f16b6;
+  --bs-btn-border-color: currentColor;
+}
+.btn-log {
+  --bs-btn-padding-x: 3.25rem;
+  --bs-btn-padding-y: 0.875rem;
 }
 
 .col-forgot {
