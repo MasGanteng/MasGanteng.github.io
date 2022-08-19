@@ -10,6 +10,19 @@ body {
   overflow: hidden;
 }
 
+.navbar .navbar-nav {
+  gap: 4.875rem;
+}
+.navbar .nav-link {
+  --bs-navbar-nav-link-padding-x: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #3c016a;
+}
+.icon{
+  width: var(--size, 1.5rem);
+  height: var(--size, 1.5rem);
+}
 .title-custom {
   margin: 3rem 6rem 2rem 7.5rem;
 }
@@ -69,7 +82,6 @@ body {
   margin: 2rem 6rem 0 6rem;
   max-width: 100%;
   padding: 0 0;
-  columns-width: 150px;
 }
 
 .img-log {
@@ -290,8 +302,8 @@ a:hover {
   background-color: #c59cf7;
 }
 
-.row-custom {
-  width: 400px;
+.btn-primary{
+  background-color: red;
 }
 
 .col-forgot {
