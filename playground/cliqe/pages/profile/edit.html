@@ -79,8 +79,8 @@
                             <p><span id="job_title">{ job }</span></p>
                             <p><span id="personal_bio">{ bio }</span></p>
                             <div class="row">
-                                <div class="col text-center">
-                                    <div id="qrcode"></div>
+                                <div class="col align-items-center">
+                                    <div id="qrcode" style="display: flex; justify-content: center"></div>
                                 </div>
                             </div>
                             <div class="row">
@@ -109,17 +109,17 @@
                                                 role="progressbar" 
                                                 aria-label="complete progress" 
                                                 style="width: 25%" 
-                                                aria-valuenow="30" 
+                                                aria-valuenow="0" 
                                                 aria-valuemin="0" 
                                                 aria-valuemax="100"
                                             ></div>
                                         </div>
                                         <div class="row justify-content-between small mt-1">
                                             <div class="col-auto">
-                                                <span>30%</span><span> Complete</span>
+                                                <span>25%</span><span> Complete</span>
                                             </div>
                                             <div class="col-auto">
-                                                <span>2</span>/<span>5</span><span> Task Done</span>
+                                                <span>1</span>/<span>5</span><span> Task Done</span>
                                             </div>
                                         </div>
                                     </div>
@@ -158,10 +158,10 @@
                                                         <input type="file" name="add-profile-links" id="add-profile-links" class="d-none">
                                                     </div>
                                                     <div class="col-auto">
-                                                        <span class="small">Complete</span>
-                                                        <span class="status status-complete">
+                                                        <span class="small">Inomplete</span>
+                                                        <span class="status status-incomplete">
                                                             <svg class="icon">
-                                                                <use xlink:href="../../assets/svg/sprite.svg#check"></use>
+                                                                <use xlink:href="../../assets/svg/sprite.svg#x"></use>
                                                             </svg>
                                                         </span>
                                                     </div>
@@ -260,7 +260,7 @@
                         <div class="col">
                             <a href="#" class="profile-copy">
                                 <img src="" alt="">
-                                <span id="label_qr2">{ label }</span>
+                                <span id="label_qr2"></span>
                             </a>
                         </div>
                     </div>
