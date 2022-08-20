@@ -1,4 +1,4 @@
-import { baseUrl, baseUrlApi } from "../env.js";
+import { baseUrl, baseUrlApi } from "./env.js";
 
 const profile = baseUrlApi+'api/user'
 const link = baseUrlApi+'api/profile/links'
@@ -8,7 +8,6 @@ const header = new Headers()
 header.append("Content-type", "application/json")
 header.append("Authorization", token)
 
-// console.log(token)
 const options = {
     method: 'GET',
     headers: header,
@@ -34,15 +33,6 @@ fetch(profile, options)
         document.getElementById("img-profile").appendChild(img)
         var qrcode = new QRCode(document.getElementById("qrcode"), result.qr_path)
         document.getElementById("label_qr").innerHTML = result.profile_link
-    }).catch(
-        error => console.log('error', error)
-    )
-
-fetch(link, options)
-    .then(
-        response => response.json()
-    ).then((result) => {
-        // console.log(result)
     }).catch(
         error => console.log('error', error)
     )
