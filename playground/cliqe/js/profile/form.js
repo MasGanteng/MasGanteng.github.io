@@ -48,7 +48,10 @@ fetch(profile, options)
     img.src = result.profile_pic != null ? result.profile_pic : "";
 
     document.getElementById("img-profile").appendChild(img);
-    var qrcode = new QRCode(document.getElementById("qrcode"), result.qr_path);
+    const qrCodeImg = document.getElementById("qrcode")
+    var qrcode = new QRCode(qrCodeImg, {
+      text: result.qr_path
+    });
     var qrcode2 = new QRCode(
       document.getElementById("qrcode2"),
       result.qr_path

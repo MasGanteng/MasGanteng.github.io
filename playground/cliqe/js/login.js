@@ -10,6 +10,8 @@ header.append("Content-type", "application/json")
 
 const data = new FormData()
 
+const date = new Date();
+
 loginBtn.addEventListener("click", function(event){
     event.preventDefault()
     form.forEach((item, index, array) => {
@@ -31,11 +33,14 @@ loginBtn.addEventListener("click", function(event){
         response => response.json()
     )
     .then((result) => {
-        // console.log(result)
         if(result.token){
+            const sumDate = date.setHours(date.getHours() + (result.expires_in / 3600))
+            const tomorow = new Date(sumDate)
+
             localStorage.setItem('token', result.token)
             localStorage.setItem('token_type', result.token_type)
-            localStorage.setItem('expired', result.expired_in)
+            localStorage.setItem('expired', result.expires_in)
+            localStorage.setItem('expired_time', tomorow)
             window.location.href = baseUrl+'/playground/cliqe/pages/dashboard.html'
         }else{
             const error_response = document.createElement('p')
@@ -44,6 +49,6 @@ loginBtn.addEventListener("click", function(event){
             document.getElementById('error').appendChild(error_response)
         } 
     }).catch((error) => {
-        console.log(error)     
+        console.log(error)
     })
 })

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <script src="../assets/bootstrap/bootstrap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 
 <body>
@@ -68,29 +69,25 @@
                 <div class="col-4">
                     <article class="card-profile box">
                         <div class="card-profile-header">
-                            <div class="img-profile">
-                                <img src="https://source.unsplash.com/random/?portrait,male" alt="profile">
+                            <div class="img-profile" id="img-profile">
+                                
                             </div>
                         </div>
                         <div class="card-profile-body">
-                            <p class="name mb-0">Joy Putra</p>
-                            <address class="mb-0">Indonesia</address>
-                            <p>Human Resource at Tap in</p>
-                            <p>Hello i’m Joy from Indonesia. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis
-                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p class="name mb-0"><span id="full_name"></span></p>
+                            <address class="mb-0"><span id="location"></span></address>
+                            <p><span id="job_title"></span></p>
+                            <p><span id="personal_bio"></span></p>
                             <div class="row">
                                 <div class="col text-center">
-                                    <img src="../assets/images/QR Code Website 1.png" alt="qr">
+                                    <div id="qrcode" style="display: flex; justify-content: center"></div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
                                     <a href="#" class="profile-copy">
                                         <img src="" alt="">
-                                        <span>tapin.co/joy-putra</span>
+                                        <span id="label_qr"></span>
                                     </a>
                                 </div>
                             </div>
@@ -110,7 +107,7 @@
                                         <span class="insight-circle insight-circle-1"></span>
                                         <span>Pops</span>
                                     </div>
-                                    <p>1</p>
+                                    <p>0</p>
                                     <div class="pop">i</div>
                                 </div>
                             </li>
@@ -120,7 +117,7 @@
                                         <span class="insight-circle insight-circle-2"></span>
                                         <span>Link Taps</span>
                                     </div>
-                                    <p>3</p>
+                                    <p>0</p>
                                     <div class="pop">i</div>
                                 </div>
                             </li>
@@ -130,7 +127,7 @@
                                         <span class="insight-circle insight-circle-3"></span>
                                         <span>New Connections</span>
                                     </div>
-                                    <p>7</p>
+                                    <p>0</p>
                                     <div class="pop">i</div>
                                 </div>
                             </li>
@@ -140,7 +137,7 @@
                                         <span class="insight-circle insight-circle-4"></span>
                                         <span>Tap Tought Rate</span>
                                     </div>
-                                    <p>2%</p>
+                                    <p>0%</p>
                                     <div class="pop">i</div>
                                 </div>
                             </li>
@@ -170,7 +167,7 @@
                                 <div class="tab-content">
                                     <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab"
                                         tabindex="0">
-                                        <ul class="card-peoples">
+                                        <!-- <ul class="card-peoples">
                                             <li class="card-people">
                                                 <div class="row">
                                                     <div class="col-2">
@@ -210,11 +207,11 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                        </ul>
+                                        </ul> -->
                                     </div>
                                     <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab"
                                         tabindex="0">
-                                        groups</div>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -259,6 +256,8 @@
             </div>
         </div>
     </aside>
+    <script type="module" src="../js/dashboard.js"></script>
+    <script type="module" src="../js/auth.js"></script>
 </body>
 
 </html>
