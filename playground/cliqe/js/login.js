@@ -36,7 +36,7 @@ loginBtn.addEventListener("click", function(event){
             localStorage.setItem('token', result.token)
             localStorage.setItem('token_type', result.token_type)
             localStorage.setItem('expired', result.expired_in)
-            // window.location.href = baseUrl+'/playground/cliqe/pages/profile/index.html'
+            window.location.href = baseUrl+'/playground/cliqe/pages/dashboard.html'
         }else{
             const error_response = document.createElement('p')
             error_response.innerText = result.errors.email[0]
